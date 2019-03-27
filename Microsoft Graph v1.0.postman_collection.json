@@ -312,8 +312,8 @@
 					{
 						"key": "Content-Type",
 						"name": "Content-Type",
-						"value": "application/x-www-form-urlencoded",
-						"type": "text"
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
 					}
 				],
 				"body": {
@@ -370,7 +370,7 @@
 			"response": []
 		},
 		{
-			"name": "Get my profile",
+			"name": "Get My Profile",
 			"request": {
 				"method": "GET",
 				"header": [
