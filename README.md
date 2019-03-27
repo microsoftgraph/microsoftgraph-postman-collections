@@ -35,7 +35,7 @@ You should now see the **Microsoft Graph v1.0** collection on the left had side 
 
 9. In the **MicrosoftGraph v1.0** collection on left hand side. Click on the **Get App-only Access Token**. Then click **Send** button on right hand side.
 
-**Optional** You can also provide a user name and password in the environment settions and use **Get User Access Token** instead.
+**Optional** You can also provide a **UserName** and **UserPassword** in the environment settings and use **Get User Access Token** instead.
 
 **IMPORTANT:** It is not recommended to use production user accounts as this information is stored directly in Postman. This is also not a recommended approach for obtaining access tokens in production and should only be used for testing purposes.
 
