@@ -6,155 +6,309 @@
 	},
 	"item": [
 		{
-			"name": "Mail",
+			"name": "On Behalf of a User",
 			"item": [
 				{
-					"name": "Get Message",
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "{{AccessToken}}",
-									"type": "string"
+					"name": "Users",
+					"item": [
+						{
+							"name": "Get My Photo",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/me/photo/$value",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"me",
+										"photo",
+										"$value"
+									]
 								}
-							]
+							},
+							"response": []
 						},
-						"method": "GET",
-						"header": [
-							{
-								"key": "Content-Type",
-								"name": "Content-Type",
-								"value": "application/json",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
-						"url": {
-							"raw": "https://graph.microsoft.com/v1.0/users/c2fbdded-6070-4463-8c56-b784c2610b65/messages/AAMkADllOGRmMGZhLWFmNzEtNDZiMC1iODdhLWJhNGNmY2M0ZmNiYwBGAAAAAABXWWENXpaNT7T7GPjRp7-fBwCO68yNPjy4T43ga5DIBVgUAAAAAAEMAACO68yNPjy4T43ga5DIBVgUAACGCTd_AAA=",
-							"protocol": "https",
-							"host": [
-								"graph",
-								"microsoft",
-								"com"
-							],
-							"path": [
-								"v1.0",
-								"users",
-								"c2fbdded-6070-4463-8c56-b784c2610b65",
-								"messages",
-								"AAMkADllOGRmMGZhLWFmNzEtNDZiMC1iODdhLWJhNGNmY2M0ZmNiYwBGAAAAAABXWWENXpaNT7T7GPjRp7-fBwCO68yNPjy4T43ga5DIBVgUAAAAAAEMAACO68yNPjy4T43ga5DIBVgUAACGCTd_AAA="
-							]
+						{
+							"name": "Get Users",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/users",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"users"
+									]
+								}
+							},
+							"response": []
 						}
-					},
-					"response": []
+					],
+					"_postman_isSubFolder": true
 				},
 				{
-					"name": "Get Messages",
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "{{AccessToken}}",
-									"type": "string"
+					"name": "Mail",
+					"item": [
+						{
+							"name": "Get my messages",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/me/messages",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"me",
+										"messages"
+									]
 								}
-							]
+							},
+							"response": []
 						},
-						"method": "GET",
-						"header": [
-							{
-								"key": "Content-Type",
-								"name": "Content-Type",
-								"value": "application/json",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
-						"url": {
-							"raw": "https://graph.microsoft.com/v1.0/users/c2fbdded-6070-4463-8c56-b784c2610b65/messages",
-							"protocol": "https",
-							"host": [
-								"graph",
-								"microsoft",
-								"com"
-							],
-							"path": [
-								"v1.0",
-								"users",
-								"c2fbdded-6070-4463-8c56-b784c2610b65",
-								"messages"
-							]
+						{
+							"name": "SendMail",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"message\": {\r\n    \"subject\": \"Meet for lunch?\",\r\n    \"body\": {\r\n      \"contentType\": \"Text\",\r\n      \"content\": \"The new cafeteria is open.\"\r\n    },\r\n    \"toRecipients\": [\r\n      {\r\n        \"emailAddress\": {\r\n          \"address\": \"me@jeremythake.com\"\r\n        }\r\n      }\r\n    ],\r\n    \"ccRecipients\": [\r\n      {\r\n        \"emailAddress\": {\r\n          \"address\": \"jthake@microsoft.com\"\r\n        }\r\n      }\r\n    ]\r\n  },\r\n  \"saveToSentItems\": \"false\"\r\n}"
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/users/c2fbdded-6070-4463-8c56-b784c2610b65/sendMail",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"users",
+										"c2fbdded-6070-4463-8c56-b784c2610b65",
+										"sendMail"
+									]
+								}
+							},
+							"response": []
 						}
-					},
-					"response": []
+					],
+					"_postman_isSubFolder": true
 				},
 				{
-					"name": "SendMail",
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "{{AccessToken}}",
-									"type": "string"
+					"name": "Files",
+					"item": [
+						{
+							"name": "Get Drive",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/me/drive/root/children",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"me",
+										"drive",
+										"root",
+										"children"
+									]
 								}
-							]
-						},
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Get User Access Token",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "a9ee25f8-890e-499d-9b0a-63df29cf3673",
+								"exec": [
+									"var json = JSON.parse(responseBody);\r",
+									"postman.setEnvironmentVariable(\"UserAccessToken\", json.access_token);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
 						"method": "POST",
 						"header": [
 							{
 								"key": "Content-Type",
 								"name": "Content-Type",
-								"value": "application/json",
-								"type": "text"
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
 							}
 						],
 						"body": {
-							"mode": "raw",
-							"raw": "{\r\n  \"message\": {\r\n    \"subject\": \"Meet for lunch?\",\r\n    \"body\": {\r\n      \"contentType\": \"Text\",\r\n      \"content\": \"The new cafeteria is open.\"\r\n    },\r\n    \"toRecipients\": [\r\n      {\r\n        \"emailAddress\": {\r\n          \"address\": \"me@jeremythake.com\"\r\n        }\r\n      }\r\n    ],\r\n    \"ccRecipients\": [\r\n      {\r\n        \"emailAddress\": {\r\n          \"address\": \"jthake@microsoft.com\"\r\n        }\r\n      }\r\n    ]\r\n  },\r\n  \"saveToSentItems\": \"false\"\r\n}"
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "client_id",
+									"value": "{{ClientID}}",
+									"type": "text"
+								},
+								{
+									"key": "client_secret",
+									"value": "{{ClientSecret}}",
+									"type": "text"
+								},
+								{
+									"key": "scope",
+									"value": "https://graph.microsoft.com/.default",
+									"type": "text"
+								},
+								{
+									"key": "userName",
+									"value": "{{UserName}}",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "{{UserPassword}}",
+									"type": "text"
+								}
+							]
 						},
 						"url": {
-							"raw": "https://graph.microsoft.com/v1.0/users/c2fbdded-6070-4463-8c56-b784c2610b65/sendMail",
+							"raw": "https://login.microsoftonline.com/{{TenantID}}/oauth2/v2.0/token",
 							"protocol": "https",
 							"host": [
-								"graph",
-								"microsoft",
+								"login",
+								"microsoftonline",
 								"com"
 							],
 							"path": [
-								"v1.0",
-								"users",
-								"c2fbdded-6070-4463-8c56-b784c2610b65",
-								"sendMail"
+								"{{TenantID}}",
+								"oauth2",
+								"v2.0",
+								"token"
 							]
 						}
 					},
 					"response": []
-				}
-			]
-		},
-		{
-			"name": "Files",
-			"item": [
+				},
 				{
-					"name": "Get Drive",
+					"name": "Get My Profile",
 					"request": {
 						"auth": {
 							"type": "bearer",
 							"bearer": [
 								{
 									"key": "token",
-									"value": "{{AccessToken}}",
+									"value": "{{UserAccessToken}}",
 									"type": "string"
 								}
 							]
@@ -166,7 +320,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://graph.microsoft.com/v1.0/users/c2fbdded-6070-4463-8c56-b784c2610b65/drive/root/children",
+							"raw": "https://graph.microsoft.com/v1.0/me",
 							"protocol": "https",
 							"host": [
 								"graph",
@@ -175,11 +329,7 @@
 							],
 							"path": [
 								"v1.0",
-								"users",
-								"c2fbdded-6070-4463-8c56-b784c2610b65",
-								"drive",
-								"root",
-								"children"
+								"me"
 							]
 						}
 					},
@@ -188,217 +338,213 @@
 			]
 		},
 		{
-			"name": "Users",
+			"name": "Application",
 			"item": [
 				{
-					"name": "Get Users",
+					"name": "Mail",
+					"item": [
+						{
+							"name": "Get a users message",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AppAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/users/{{UserId}}/messages/{MessageId}}",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"users",
+										"{{UserId}}",
+										"messages",
+										"{MessageId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get a users messages",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AppAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/users/{{UserId}}/messages",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"users",
+										"{{UserId}}",
+										"messages"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Users",
+					"item": [
+						{
+							"name": "Get Users",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AppAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/users",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"users"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Get App-Only Access Token",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "a9ee25f8-890e-499d-9b0a-63df29cf3673",
+								"exec": [
+									"var json = JSON.parse(responseBody);\r",
+									"postman.setEnvironmentVariable(\"AppAccessToken\", json.access_token);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"request": {
-						"method": "GET",
+						"method": "POST",
 						"header": [
 							{
-								"key": "Authorization",
-								"value": "Bearer {{AccessToken}}",
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
 								"type": "text"
 							}
 						],
 						"body": {
-							"mode": "raw",
-							"raw": ""
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "text"
+								},
+								{
+									"key": "client_id",
+									"value": "{{ClientID}}",
+									"type": "text"
+								},
+								{
+									"key": "client_secret",
+									"value": "{{ClientSecret}}",
+									"type": "text"
+								},
+								{
+									"key": "scope",
+									"value": "https://graph.microsoft.com/.default",
+									"type": "text"
+								}
+							]
 						},
 						"url": {
-							"raw": "https://graph.microsoft.com/v1.0/users",
+							"raw": "https://login.microsoftonline.com/{{TenantID}}/oauth2/v2.0/token",
 							"protocol": "https",
 							"host": [
-								"graph",
-								"microsoft",
+								"login",
+								"microsoftonline",
 								"com"
 							],
 							"path": [
-								"v1.0",
-								"users"
+								"{{TenantID}}",
+								"oauth2",
+								"v2.0",
+								"token"
 							]
 						}
 					},
 					"response": []
 				}
 			]
-		},
-		{
-			"name": "Get App-Only Access Token",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "a9ee25f8-890e-499d-9b0a-63df29cf3673",
-						"exec": [
-							"var json = JSON.parse(responseBody);\r",
-							"postman.setEnvironmentVariable(\"AccessToken\", json.access_token);"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"name": "Content-Type",
-						"value": "application/x-www-form-urlencoded",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "urlencoded",
-					"urlencoded": [
-						{
-							"key": "grant_type",
-							"value": "client_credentials",
-							"type": "text"
-						},
-						{
-							"key": "client_id",
-							"value": "{{ClientID}}",
-							"type": "text"
-						},
-						{
-							"key": "client_secret",
-							"value": "{{ClientSecret}}",
-							"type": "text"
-						},
-						{
-							"key": "scope",
-							"value": "https://graph.microsoft.com/.default",
-							"type": "text"
-						}
-					]
-				},
-				"url": {
-					"raw": "https://login.microsoftonline.com/{{TenantID}}/oauth2/v2.0/token",
-					"protocol": "https",
-					"host": [
-						"login",
-						"microsoftonline",
-						"com"
-					],
-					"path": [
-						"{{TenantID}}",
-						"oauth2",
-						"v2.0",
-						"token"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Get User Access Token",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "a9ee25f8-890e-499d-9b0a-63df29cf3673",
-						"exec": [
-							"var json = JSON.parse(responseBody);\r",
-							"postman.setEnvironmentVariable(\"AccessToken\", json.access_token);"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"name": "Content-Type",
-						"type": "text",
-						"value": "application/x-www-form-urlencoded"
-					}
-				],
-				"body": {
-					"mode": "urlencoded",
-					"urlencoded": [
-						{
-							"key": "grant_type",
-							"value": "password",
-							"type": "text"
-						},
-						{
-							"key": "client_id",
-							"value": "{{ClientID}}",
-							"type": "text"
-						},
-						{
-							"key": "client_secret",
-							"value": "{{ClientSecret}}",
-							"type": "text"
-						},
-						{
-							"key": "scope",
-							"value": "https://graph.microsoft.com/.default",
-							"type": "text"
-						},
-						{
-							"key": "userName",
-							"value": "{{UserName}}",
-							"type": "text"
-						},
-						{
-							"key": "password",
-							"value": "{{UserPassword}}",
-							"type": "text"
-						}
-					]
-				},
-				"url": {
-					"raw": "https://login.microsoftonline.com/{{TenantID}}/oauth2/v2.0/token",
-					"protocol": "https",
-					"host": [
-						"login",
-						"microsoftonline",
-						"com"
-					],
-					"path": [
-						"{{TenantID}}",
-						"oauth2",
-						"v2.0",
-						"token"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Get My Profile",
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "Authorization",
-						"value": "Bearer {{AccessToken}}",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
-				"url": {
-					"raw": "https://graph.microsoft.com/v1.0/me",
-					"protocol": "https",
-					"host": [
-						"graph",
-						"microsoft",
-						"com"
-					],
-					"path": [
-						"v1.0",
-						"me"
-					]
-				}
-			},
-			"response": []
 		}
 	]
 }
