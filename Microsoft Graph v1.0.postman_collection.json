@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "bb622e96-0ff5-4f54-b25f-88e1a91f2442",
+		"_postman_id": "f5bb5714-0d18-47df-9bfb-8d6c76f90905",
 		"name": "Microsoft Graph v1.0",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -225,6 +225,74 @@
 		},
 		{
 			"name": "Get App-Only Access Token",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "a9ee25f8-890e-499d-9b0a-63df29cf3673",
+						"exec": [
+							"var json = JSON.parse(responseBody);\r",
+							"postman.setEnvironmentVariable(\"AccessToken\", json.access_token);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "{{ClientID}}",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "{{ClientSecret}}",
+							"type": "text"
+						},
+						{
+							"key": "scope",
+							"value": "https://graph.microsoft.com/.default",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://login.microsoftonline.com/{{TenantID}}/oauth2/v2.0/token",
+					"protocol": "https",
+					"host": [
+						"login",
+						"microsoftonline",
+						"com"
+					],
+					"path": [
+						"{{TenantID}}",
+						"oauth2",
+						"v2.0",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User Access Token",
 			"event": [
 				{
 					"listen": "test",
