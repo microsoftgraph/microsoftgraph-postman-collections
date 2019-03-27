@@ -358,6 +358,21 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Get my profile",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
 		}
 	]
 }
