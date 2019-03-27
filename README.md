@@ -1,6 +1,6 @@
 # Microsoft Graph Postman Collections
 
-The Microsoft Graph Postman Collections is an community contributed open source repo to provide both the collection and the environment variable files to import into Postman.
+The Microsoft Graph Postman Collections is a community contributed open source repo to provide both the collection and the environment variable files to import into Postman.
 
 The collection allows you to test common Microsoft Graph APIs from within Postman. 
 
@@ -37,3 +37,7 @@ You should now see the *Microsoft Graph v1.0* collection on the left had side Co
 10. Expand the *Users* folder and click on *Get Users*. Then Click the **Send** button.
 
 You are now up and running with Microsoft Graph v1.0 collections. NOTE: that if you wish to run other APIs in the collection, you will need to consent the required permissions for your application.
+
+## Contribute
+
+You can contribute to this project by forking the repo and following the setup steps to import those files. When you've made your contributions in Postman editor, use the *File | Export* to overwrite the file in your forked branch. Then simply submit the forked branch as a PR back to this repo.
