@@ -4,7 +4,7 @@ The Microsoft Graph Postman Collections is a community contributed open source r
 
 The collection allows you to test common Microsoft Graph APIs from within Postman. 
 
-The most up-to-date experience to explore the APIs will always be Microsoft Graph Explorer in a web browser. This project has been created based on requests from the community.
+The most up-to-date experience to explore the APIs will always be [Microsoft Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) in a web browser. This project has been created based on requests from the community. Remgber the best place to understand the workings of these APIs is to read our [Microsoft Graph API documentation](https://docs.microsoft.com/en-us/graph/).
 
 ## Setup
 
