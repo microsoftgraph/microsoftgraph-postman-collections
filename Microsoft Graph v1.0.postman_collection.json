@@ -30,11 +30,6 @@
 											"        {\r",
 											"            console.log(\"You need to add user delegated permissions in your application to atleast *Mail.Read* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
 											"        }\r",
-											"        else\r",
-											"        {\r",
-											"            var json = JSON.parse(responseBody);\r",
-											"            postman.setEnvironmentVariable(\"MessageId\", json.value[0].id);\r",
-											"        }\r",
 											"    }\r",
 											"}\r",
 											"catch (e) {\r",
@@ -113,7 +108,7 @@
 											"        else\r",
 											"        {\r",
 											"            var json = JSON.parse(responseBody);\r",
-											"            postman.setEnvironmentVariable(\"MessageId\", json.value[0].id);\r",
+											"            postman.setEnvironmentVariable(\"EventId\", json.value[0].id);\r",
 											"        }\r",
 											"    }\r",
 											"}\r",
@@ -214,7 +209,7 @@
 											"        else\r",
 											"        {\r",
 											"            var json = JSON.parse(responseBody);\r",
-											"            postman.setEnvironmentVariable(\"MessageId\", json.value[0].id);\r",
+											"            postman.setEnvironmentVariable(\"CalendarId\", json.value[0].id);\r",
 											"        }\r",
 											"    }\r",
 											"}\r",
@@ -872,7 +867,7 @@
 											"        else\r",
 											"        {\r",
 											"            var json = JSON.parse(responseBody);\r",
-											"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
+											"            postman.setEnvironmentVariable(\"GroupId\", json[0].id);\r",
 											"        }\r",
 											"    }\r",
 											"}\r",
@@ -1114,7 +1109,7 @@
 											"        else\r",
 											"        {\r",
 											"            var json = JSON.parse(responseBody);\r",
-											"            postman.setEnvironmentVariable(\"MessageId\", json.value[0].id);\r",
+											"            postman.setEnvironmentVariable(\"MessageId\", json[0].id);\r",
 											"        }\r",
 											"    }\r",
 											"}\r",
@@ -1190,11 +1185,6 @@
 											"        if (pm.response.status === \"Forbidden\")\r",
 											"        {\r",
 											"            console.log(\"You need to add user delegated permissions in your application to atleast *Mail.Read* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
-											"        }\r",
-											"        else\r",
-											"        {\r",
-											"            var json = JSON.parse(responseBody);\r",
-											"            postman.setEnvironmentVariable(\"MessageId\", json.value[0].id);\r",
 											"        }\r",
 											"    }\r",
 											"}\r",
@@ -1277,11 +1267,6 @@
 											"        {\r",
 											"            console.log(\"You need to add user delegated permissions in your application to atleast *Mail.Read* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
 											"        }\r",
-											"        else\r",
-											"        {\r",
-											"            var json = JSON.parse(responseBody);\r",
-											"            postman.setEnvironmentVariable(\"MessageId\", json.value[0].id);\r",
-											"        }\r",
 											"    }\r",
 											"}\r",
 											"catch (e) {\r",
@@ -1363,11 +1348,6 @@
 											"        {\r",
 											"            console.log(\"You need to add user delegated permissions in your application to atleast *Mail.Read* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
 											"        }\r",
-											"        else\r",
-											"        {\r",
-											"            var json = JSON.parse(responseBody);\r",
-											"            postman.setEnvironmentVariable(\"MessageId\", json.value[0].id);\r",
-											"        }\r",
 											"    }\r",
 											"}\r",
 											"catch (e) {\r",
@@ -1448,11 +1428,6 @@
 											"        if (pm.response.status === \"Forbidden\")\r",
 											"        {\r",
 											"            console.log(\"You need to add user delegated permissions in your application to atleast *Mail.Read* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
-											"        }\r",
-											"        else\r",
-											"        {\r",
-											"            var json = JSON.parse(responseBody);\r",
-											"            postman.setEnvironmentVariable(\"MessageId\", json.value[0].id);\r",
 											"        }\r",
 											"    }\r",
 											"}\r",
@@ -1622,11 +1597,6 @@
 											"        {\r",
 											"            console.log(\"You need to add user delegated permissions in your application to atleast *MailboxSettings.Read* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
 											"        }\r",
-											"        else\r",
-											"        {\r",
-											"            var json = JSON.parse(responseBody);\r",
-											"            postman.setEnvironmentVariable(\"MessageId\", json.value[0].id);\r",
-											"        }\r",
 											"    }\r",
 											"}\r",
 											"catch (e) {\r",
@@ -1704,11 +1674,6 @@
 											"        {\r",
 											"            console.log(\"You need to add user delegated permissions in your application to atleast *MailboxSettings.Read* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
 											"        }\r",
-											"        else\r",
-											"        {\r",
-											"            var json = JSON.parse(responseBody);\r",
-											"            postman.setEnvironmentVariable(\"MessageId\", json.value[0].id);\r",
-											"        }\r",
 											"    }\r",
 											"}\r",
 											"catch (e) {\r",
@@ -1784,11 +1749,6 @@
 											"        if (pm.response.status === \"Forbidden\")\r",
 											"        {\r",
 											"            console.log(\"You need to add user delegated permissions in your application to atleast *MailboxSettings.Read* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
-											"        }\r",
-											"        else\r",
-											"        {\r",
-											"            var json = JSON.parse(responseBody);\r",
-											"            postman.setEnvironmentVariable(\"MessageId\", json.value[0].id);\r",
 											"        }\r",
 											"    }\r",
 											"}\r",
@@ -1966,7 +1926,7 @@
 											"        else\r",
 											"        {\r",
 											"            var json = JSON.parse(responseBody);\r",
-											"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
+											"            postman.setEnvironmentVariable(\"NotebookId\", json[0].id);\r",
 											"        }\r",
 											"    }\r",
 											"}\r",
@@ -2047,7 +2007,7 @@
 											"        else\r",
 											"        {\r",
 											"            var json = JSON.parse(responseBody);\r",
-											"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
+											"            postman.setEnvironmentVariable(\"SectionId\", json[0].id);\r",
 											"        }\r",
 											"    }\r",
 											"}\r",
@@ -2128,7 +2088,7 @@
 											"        else\r",
 											"        {\r",
 											"            var json = JSON.parse(responseBody);\r",
-											"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
+											"            postman.setEnvironmentVariable(\"PageId\", json[0].id);\r",
 											"        }\r",
 											"    }\r",
 											"}\r",
@@ -2209,7 +2169,7 @@
 											"        else\r",
 											"        {\r",
 											"            var json = JSON.parse(responseBody);\r",
-											"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
+											"            postman.setEnvironmentVariable(\"NotebookId\", json.id);\r",
 											"        }\r",
 											"    }\r",
 											"}\r",
@@ -2290,7 +2250,7 @@
 											"        else\r",
 											"        {\r",
 											"            var json = JSON.parse(responseBody);\r",
-											"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
+											"            postman.setEnvironmentVariable(\"SectionId\", json.id);\r",
 											"        }\r",
 											"    }\r",
 											"}\r",
@@ -2379,11 +2339,6 @@
 													"        {\r",
 													"            console.log(\"You need to add user delegated permissions in your application to atleast *User.Read* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
 													"        }\r",
-													"        else\r",
-													"        {\r",
-													"            var json = JSON.parse(responseBody);\r",
-													"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
-													"        }\r",
 													"    }\r",
 													"}\r",
 													"catch (e) {\r",
@@ -2463,11 +2418,6 @@
 													"        {\r",
 													"            console.log(\"You need to add user delegated permissions in your application to atleast *User.ReadWrite* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
 													"        }\r",
-													"        else\r",
-													"        {\r",
-													"            var json = JSON.parse(responseBody);\r",
-													"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
-													"        }\r",
 													"    }\r",
 													"}\r",
 													"catch (e) {\r",
@@ -2543,11 +2493,6 @@
 													"        if (pm.response.status === \"Forbidden\")\r",
 													"        {\r",
 													"            console.log(\"You need to add user delegated permissions in your application to atleast *User.ReadWrite* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
-													"        }\r",
-													"        else\r",
-													"        {\r",
-													"            var json = JSON.parse(responseBody);\r",
-													"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
 													"        }\r",
 													"    }\r",
 													"}\r",
@@ -2632,11 +2577,6 @@
 													"        {\r",
 													"            console.log(\"You need to add user delegated permissions in your application to atleast *User.Read* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
 													"        }\r",
-													"        else\r",
-													"        {\r",
-													"            var json = JSON.parse(responseBody);\r",
-													"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
-													"        }\r",
 													"    }\r",
 													"}\r",
 													"catch (e) {\r",
@@ -2705,11 +2645,6 @@
 													"        if (pm.response.status === \"Forbidden\")\r",
 													"        {\r",
 													"            console.log(\"You need to add user delegated permissions in your application to atleast *Group.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
-													"        }\r",
-													"        else\r",
-													"        {\r",
-													"            var json = JSON.parse(responseBody);\r",
-													"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
 													"        }\r",
 													"    }\r",
 													"}\r",
@@ -2785,11 +2720,6 @@
 													"        if (pm.response.status === \"Forbidden\")\r",
 													"        {\r",
 													"            console.log(\"You need to add user delegated permissions in your application to atleast *User.Read* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
-													"        }\r",
-													"        else\r",
-													"        {\r",
-													"            var json = JSON.parse(responseBody);\r",
-													"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
 													"        }\r",
 													"    }\r",
 													"}\r",
@@ -2869,11 +2799,6 @@
 													"        if (pm.response.status === \"Forbidden\")\r",
 													"        {\r",
 													"            console.log(\"You need to add user delegated permissions in your application to atleast *User.Read* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
-													"        }\r",
-													"        else\r",
-													"        {\r",
-													"            var json = JSON.parse(responseBody);\r",
-													"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
 													"        }\r",
 													"    }\r",
 													"}\r",
@@ -2960,11 +2885,6 @@
 											"        {\r",
 											"            console.log(\"You need to add user delegated permissions in your application to atleast *People.Read* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
 											"        }\r",
-											"        else\r",
-											"        {\r",
-											"            var json = JSON.parse(responseBody);\r",
-											"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
-											"        }\r",
 											"    }\r",
 											"}\r",
 											"catch (e) {\r",
@@ -3039,11 +2959,6 @@
 											"        if (pm.response.status === \"Forbidden\")\r",
 											"        {\r",
 											"            console.log(\"You need to add user delegated permissions in your application to atleast *People.Read* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
-											"        }\r",
-											"        else\r",
-											"        {\r",
-											"            var json = JSON.parse(responseBody);\r",
-											"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
 											"        }\r",
 											"    }\r",
 											"}\r",
@@ -3130,11 +3045,6 @@
 											"        {\r",
 											"            console.log(\"You need to add user delegated permissions in your application to atleast *People.Read* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
 											"        }\r",
-											"        else\r",
-											"        {\r",
-											"            var json = JSON.parse(responseBody);\r",
-											"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
-											"        }\r",
 											"    }\r",
 											"}\r",
 											"catch (e) {\r",
@@ -3216,11 +3126,6 @@
 											"        if (pm.response.status === \"Forbidden\")\r",
 											"        {\r",
 											"            console.log(\"You need to add user delegated permissions in your application to atleast *People.Read* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
-											"        }\r",
-											"        else\r",
-											"        {\r",
-											"            var json = JSON.parse(responseBody);\r",
-											"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
 											"        }\r",
 											"    }\r",
 											"}\r",
@@ -3308,11 +3213,6 @@
 											"        {\r",
 											"            console.log(\"You need to add user delegated permissions in your application to atleast *People.Read* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
 											"        }\r",
-											"        else\r",
-											"        {\r",
-											"            var json = JSON.parse(responseBody);\r",
-											"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
-											"        }\r",
 											"    }\r",
 											"}\r",
 											"catch (e) {\r",
@@ -3394,11 +3294,6 @@
 											"        if (pm.response.status === \"Forbidden\")\r",
 											"        {\r",
 											"            console.log(\"You need to add user delegated permissions in your application to atleast *People.Read* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
-											"        }\r",
-											"        else\r",
-											"        {\r",
-											"            var json = JSON.parse(responseBody);\r",
-											"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
 											"        }\r",
 											"    }\r",
 											"}\r",
@@ -3482,11 +3377,6 @@
 											"        {\r",
 											"            console.log(\"You need to add user delegated permissions in your application to atleast *People.Read* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
 											"        }\r",
-											"        else\r",
-											"        {\r",
-											"            var json = JSON.parse(responseBody);\r",
-											"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
-											"        }\r",
 											"    }\r",
 											"}\r",
 											"catch (e) {\r",
@@ -3568,11 +3458,6 @@
 											"        if (pm.response.status === \"Forbidden\")\r",
 											"        {\r",
 											"            console.log(\"You need to add user delegated permissions in your application to atleast *People.Read* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
-											"        }\r",
-											"        else\r",
-											"        {\r",
-											"            var json = JSON.parse(responseBody);\r",
-											"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
 											"        }\r",
 											"    }\r",
 											"}\r",
@@ -3659,7 +3544,7 @@
 											"        else\r",
 											"        {\r",
 											"            var json = JSON.parse(responseBody);\r",
-											"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
+											"            postman.setEnvironmentVariable(\"TaskId\", json.value[0].id);\r",
 											"        }\r",
 											"    }\r",
 											"}\r",
@@ -3717,6 +3602,255 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "Get all planner plans associated with group",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to atleast *Group.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            postman.setEnvironmentVariable(\"PlanId\", json[0].id);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/groups/{{GroupId}}/planner/plans",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"groups",
+										"{{GroupId}}",
+										"planner",
+										"plans"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Plan",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to atleast *Group.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            postman.setEnvironmentVariable(\"PlanETag\", json[\"@odata.etag\"]);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/planner/plans/{{PlanId}}",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"planner",
+										"plans",
+										"{{PlanId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Plan",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to atleast *Group.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									},
+									{
+										"key": "If-Match",
+										"value": "{{PlanETag}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"title\": \"Updated plan title\"\n}"
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/planner/plans/{{PlanId}}",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"planner",
+										"plans",
+										"{{PlanId}}"
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"_postman_isSubFolder": true
@@ -3742,11 +3876,6 @@
 											"        if (pm.response.status === \"Forbidden\")\r",
 											"        {\r",
 											"            console.log(\"You need to add user delegated permissions in your application to atleast *Group.Read.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
-											"        }\r",
-											"        else\r",
-											"        {\r",
-											"            var json = JSON.parse(responseBody);\r",
-											"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
 											"        }\r",
 											"    }\r",
 											"}\r",
@@ -3831,7 +3960,7 @@
 											"        else\r",
 											"        {\r",
 											"            var json = JSON.parse(responseBody);\r",
-											"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
+											"            postman.setEnvironmentVariable(\"TaskId\", json[0].id);\r",
 											"        }\r",
 											"    }\r",
 											"}\r",
@@ -3989,11 +4118,6 @@
 											"        {\r",
 											"            console.log(\"You need to add user delegated permissions in your application to atleast *User.Read* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
 											"        }\r",
-											"        else\r",
-											"        {\r",
-											"            var json = JSON.parse(responseBody);\r",
-											"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
-											"        }\r",
 											"    }\r",
 											"}\r",
 											"catch (e) {\r",
@@ -4063,11 +4187,6 @@
 											"        if (pm.response.status === \"Forbidden\")\r",
 											"        {\r",
 											"            console.log(\"You need to add user delegated permissions in your application to atleast *User.Read* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
-											"        }\r",
-											"        else\r",
-											"        {\r",
-											"            var json = JSON.parse(responseBody);\r",
-											"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
 											"        }\r",
 											"    }\r",
 											"}\r",
@@ -4145,11 +4264,6 @@
 											"        {\r",
 											"            console.log(\"You need to add user delegated permissions in your application to atleast *User.Read.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
 											"        }\r",
-											"        else\r",
-											"        {\r",
-											"            var json = JSON.parse(responseBody);\r",
-											"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
-											"        }\r",
 											"    }\r",
 											"}\r",
 											"catch (e) {\r",
@@ -4220,11 +4334,6 @@
 											"        {\r",
 											"            console.log(\"You need to add user delegated permissions in your application to atleast *User.Read.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
 											"        }\r",
-											"        else\r",
-											"        {\r",
-											"            var json = JSON.parse(responseBody);\r",
-											"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
-											"        }\r",
 											"    }\r",
 											"}\r",
 											"catch (e) {\r",
@@ -4294,11 +4403,6 @@
 											"        if (pm.response.status === \"Forbidden\")\r",
 											"        {\r",
 											"            console.log(\"You need to add user delegated permissions in your application to atleast *Directory.Read.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
-											"        }\r",
-											"        else\r",
-											"        {\r",
-											"            var json = JSON.parse(responseBody);\r",
-											"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
 											"        }\r",
 											"    }\r",
 											"}\r",
@@ -4654,11 +4758,6 @@
 											"        if (pm.response.status === \"Forbidden\")\r",
 											"        {\r",
 											"            console.log(\"You need to add user delegated permissions in your application to atleast *User.Read.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
-											"        }\r",
-											"        else\r",
-											"        {\r",
-											"            var json = JSON.parse(responseBody);\r",
-											"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
 											"        }\r",
 											"    }\r",
 											"}\r",
