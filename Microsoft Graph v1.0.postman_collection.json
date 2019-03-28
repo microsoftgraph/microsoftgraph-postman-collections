@@ -910,6 +910,89 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "Create Section",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to atleast *Tasks.Read* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"displayName\": \"Section 1\"\n}"
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/me/onenote/notebooks/{{NotebookId}}/sections",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"me",
+										"onenote",
+										"notebooks",
+										"{{NotebookId}}",
+										"sections"
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"_postman_isSubFolder": true
