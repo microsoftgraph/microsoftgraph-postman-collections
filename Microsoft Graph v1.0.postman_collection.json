@@ -3604,6 +3604,88 @@
 							"response": []
 						},
 						{
+							"name": "All Planner Tasks for a User",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to atleast *Group.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            postman.setEnvironmentVariable(\"PlanETag\", json[\"@odata.etag\"]);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/users/{{UserName}}/planner/tasks",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"users",
+										"{{UserName}}",
+										"planner",
+										"tasks"
+									]
+								}
+							},
+							"response": []
+						},
+						{
 							"name": "Get all planner plans associated with group",
 							"event": [
 								{
@@ -3847,6 +3929,667 @@
 										"planner",
 										"plans",
 										"{{PlanId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Plan Buckets",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to atleast *Group.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            postman.setEnvironmentVariable(\"PlanETag\", json[\"@odata.etag\"]);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/planner/plans/{{PlanId}}/buckets",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"planner",
+										"plans",
+										"{{PlanId}}",
+										"buckets"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create a bucket in a Plan",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to atleast *Group.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            postman.setEnvironmentVariable(\"BucketId\", json.id);\r",
+											"            postman.setEnvironmentVariable(\"PlanETag\", json[\"@odata.etag\"]);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									},
+									{
+										"key": "If-Match",
+										"type": "text",
+										"value": "{{PlanETag}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\": \"New bucket\",\n  \"planId\": \"{{PlanId}}\",\n  \"orderHint\": \" !\"\n}"
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/planner/buckets",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"planner",
+										"buckets"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update a bucket",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to atleast *Group.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									},
+									{
+										"key": "If-Match",
+										"type": "text",
+										"value": "{{PlanETag}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\": \"Updated bucket name\"\n}"
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/planner/buckets/{{BucketId}}",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"planner",
+										"buckets",
+										"{{BucketId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "All Planner Tasks for a Plan",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to atleast *Group.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            postman.setEnvironmentVariable(\"TasksId\", json.id);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/planner/plans/{{PlanId}}/tasks",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"planner",
+										"plans",
+										"{{PlanId}}",
+										"tasks"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Planner Task by Id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to atleast *Group.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            postman.setEnvironmentVariable(\"PlanETag\", json[\"@odata.etag\"]);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/planner/tasks/{{TaskId}}",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"planner",
+										"tasks",
+										"{{TaskId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create a Planner Task",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to atleast *Group.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            postman.setEnvironmentVariable(\"PlanETag\", json[\"@odata.etag\"]);\r",
+											"            postman.setEnvironmentVariable(\"TaskId\", json.id);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"planId\": \"{{PlanId}}\",\n  \"title\": \"New Task\",\n  \"assignments\": {}\n}"
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/planner/tasks",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"planner",
+										"tasks"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update a Planner Task",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to atleast *Group.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            postman.setEnvironmentVariable(\"PlanETag\", json[\"@odata.etag\"]);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									},
+									{
+										"key": "If-Match",
+										"value": "{{PlanETag}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"title\": \"Updated task title\"\n}"
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/planner/tasks/{{TaskId}}",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"planner",
+										"tasks",
+										"{{TaskId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Planner Task details",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to atleast *Group.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            postman.setEnvironmentVariable(\"PlanETag\", json[\"@odata.etag\"]);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/planner/tasks/{{TaskId}}/details",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"planner",
+										"tasks",
+										"{{TaskId}}",
+										"details"
 									]
 								}
 							},
