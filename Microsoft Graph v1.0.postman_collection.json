@@ -5194,6 +5194,927 @@
 					"_postman_isSubFolder": true
 				},
 				{
+					"name": "Security",
+					"item": [
+						{
+							"name": "Get Alerts",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to atleast *SecurityEvents.Read.All, SecurityEvents.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/security/alerts",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"security",
+										"alerts"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Alerts with high severity",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to atleast *SecurityEvents.Read.All, SecurityEvents.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/security/alerts?$filter=Severity eq 'High'&$top=5",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"security",
+										"alerts"
+									],
+									"query": [
+										{
+											"key": "$filter",
+											"value": "Severity eq 'High'"
+										},
+										{
+											"key": "$top",
+											"value": "5"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Alerts from Azure Security Center",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to atleast *SecurityEvents.Read.All, SecurityEvents.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/security/alerts?$filter=vendorInformation/provider eq 'ASC'&$top=5",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"security",
+										"alerts"
+									],
+									"query": [
+										{
+											"key": "$filter",
+											"value": "vendorInformation/provider eq 'ASC'"
+										},
+										{
+											"key": "$top",
+											"value": "5"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Alerts filter by Category",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to atleast *SecurityEvents.Read.All, SecurityEvents.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/security/alerts?$filter=Category eq 'ransomware'&$top=5",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"security",
+										"alerts"
+									],
+									"query": [
+										{
+											"key": "$filter",
+											"value": "Category eq 'ransomware'"
+										},
+										{
+											"key": "$top",
+											"value": "5"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Alerts filter by destination",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to atleast *SecurityEvents.Read.All, SecurityEvents.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/security/alerts?$filter=networkConnections/any(d:d/destinationAddress eq '{destination-address}')",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"security",
+										"alerts"
+									],
+									"query": [
+										{
+											"key": "$filter",
+											"value": "networkConnections/any(d:d/destinationAddress eq '{destination-address}')"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Alerts filter by Status",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to atleast *SecurityEvents.Read.All, SecurityEvents.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/security/alerts?$filter=Status eq 'NewAlert'&$top=1",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"security",
+										"alerts"
+									],
+									"query": [
+										{
+											"key": "$filter",
+											"value": "Status eq 'NewAlert'"
+										},
+										{
+											"key": "$top",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Secure Scores",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to atleast *SecurityEvents.Read.All, SecurityEvents.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/security/secureScores?$top=5",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"security",
+										"secureScores"
+									],
+									"query": [
+										{
+											"key": "$top",
+											"value": "5"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Secure Scores Control Profiles",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to atleast *SecurityEvents.Read.All, SecurityEvents.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/beta/security/secureScoreControlProfiles?$top=5",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"beta",
+										"security",
+										"secureScoreControlProfiles"
+									],
+									"query": [
+										{
+											"key": "$top",
+											"value": "5"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get TI Indicators",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to atleast *SecurityEvents.Read.All, SecurityEvents.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            postman.setEnvironmentVariable(\"TIIndicatorId\", json.value[0].id);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/beta/security/tiIndicators",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"beta",
+										"security",
+										"tiIndicators"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get TI Indicator by Id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to atleast *SecurityEvents.Read.All, SecurityEvents.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/beta/security/tiIndicators/{{TIIndicatorId}}",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"beta",
+										"security",
+										"tiIndicators",
+										"{{TIIndicatorId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Security Actions",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to atleast *SecurityActions.Read.All, SecurityActions.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            postman.setEnvironmentVariable(\"SecurityActionsId\", json.value[0].id);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/beta/security/securityActions",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"beta",
+										"security",
+										"securityActions"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Security Actions by Id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to atleast *SecurityActions.Read.All, SecurityActions.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            postman.setEnvironmentVariable(\"SecurityActionsId\", json.value[0].id);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/beta/security/securityActions/{{SecurityActionsId}}",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"beta",
+										"security",
+										"securityActions",
+										"{{SecurityActionsId}}"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
 					"name": "SharePoint",
 					"item": [
 						{
