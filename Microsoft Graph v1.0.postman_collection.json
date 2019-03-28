@@ -998,6 +998,590 @@
 					"_postman_isSubFolder": true
 				},
 				{
+					"name": "Extensions",
+					"item": [
+						{
+							"name": "Open Extensions",
+							"item": [
+								{
+									"name": "Get an open extension",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+												"exec": [
+													"try {\r",
+													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+													"    {\r",
+													"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+													"    }\r",
+													"    else\r",
+													"    {\r",
+													"        if (pm.response.status === \"Forbidden\")\r",
+													"        {\r",
+													"            console.log(\"You need to add user delegated permissions in your application to atleast *User.Read* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+													"        }\r",
+													"        else\r",
+													"        {\r",
+													"            var json = JSON.parse(responseBody);\r",
+													"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
+													"        }\r",
+													"    }\r",
+													"}\r",
+													"catch (e) {\r",
+													"    console.log(e);\r",
+													"}\r",
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{UserAccessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [
+											{
+												"key": "SdkVersion",
+												"type": "text",
+												"value": "postman-graph/v1.0"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "https://graph.microsoft.com/v1.0/me?$select=id,displayName,mail,mobilePhone&$expand=extensions",
+											"protocol": "https",
+											"host": [
+												"graph",
+												"microsoft",
+												"com"
+											],
+											"path": [
+												"v1.0",
+												"me"
+											],
+											"query": [
+												{
+													"key": "$select",
+													"value": "id,displayName,mail,mobilePhone"
+												},
+												{
+													"key": "$expand",
+													"value": "extensions"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Create an open extension",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+												"exec": [
+													"try {\r",
+													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+													"    {\r",
+													"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+													"    }\r",
+													"    else\r",
+													"    {\r",
+													"        if (pm.response.status === \"Forbidden\")\r",
+													"        {\r",
+													"            console.log(\"You need to add user delegated permissions in your application to atleast *User.ReadWrite* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+													"        }\r",
+													"        else\r",
+													"        {\r",
+													"            var json = JSON.parse(responseBody);\r",
+													"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
+													"        }\r",
+													"    }\r",
+													"}\r",
+													"catch (e) {\r",
+													"    console.log(e);\r",
+													"}\r",
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{UserAccessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "SdkVersion",
+												"value": "postman-graph/v1.0",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"@odata.type\": \"microsoft.graph.openTypeExtension\",\n  \"extensionName\": \"com.contoso.roamingSettings\",\n  \"theme\": \"dark\",\n  \"color\": \"purple\",\n  \"lang\": \"Japanese\"\n}"
+										},
+										"url": {
+											"raw": "https://graph.microsoft.com/v1.0/me/extensions",
+											"protocol": "https",
+											"host": [
+												"graph",
+												"microsoft",
+												"com"
+											],
+											"path": [
+												"v1.0",
+												"me",
+												"extensions"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Update an open extension",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+												"exec": [
+													"try {\r",
+													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+													"    {\r",
+													"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+													"    }\r",
+													"    else\r",
+													"    {\r",
+													"        if (pm.response.status === \"Forbidden\")\r",
+													"        {\r",
+													"            console.log(\"You need to add user delegated permissions in your application to atleast *User.ReadWrite* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+													"        }\r",
+													"        else\r",
+													"        {\r",
+													"            var json = JSON.parse(responseBody);\r",
+													"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
+													"        }\r",
+													"    }\r",
+													"}\r",
+													"catch (e) {\r",
+													"    console.log(e);\r",
+													"}\r",
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{UserAccessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "SdkVersion",
+												"type": "text",
+												"value": "postman-graph/v1.0"
+											},
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"type": "text",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"theme\": \"light\",\n  \"color\": \"red\",\n  \"lang\": \"Swahili\"\n}"
+										},
+										"url": {
+											"raw": "https://graph.microsoft.com/v1.0/me/extensions/{{ExtensionId}}",
+											"protocol": "https",
+											"host": [
+												"graph",
+												"microsoft",
+												"com"
+											],
+											"path": [
+												"v1.0",
+												"me",
+												"extensions",
+												"{{ExtensionId}}"
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "Schema Extensions",
+							"item": [
+								{
+									"name": "Get avaiable schema extensions",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+												"exec": [
+													"try {\r",
+													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+													"    {\r",
+													"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+													"    }\r",
+													"    else\r",
+													"    {\r",
+													"        if (pm.response.status === \"Forbidden\")\r",
+													"        {\r",
+													"            console.log(\"You need to add user delegated permissions in your application to atleast *User.Read* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+													"        }\r",
+													"        else\r",
+													"        {\r",
+													"            var json = JSON.parse(responseBody);\r",
+													"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
+													"        }\r",
+													"    }\r",
+													"}\r",
+													"catch (e) {\r",
+													"    console.log(e);\r",
+													"}\r",
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{UserAccessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [
+											{
+												"key": "SdkVersion",
+												"type": "text",
+												"value": "postman-graph/v1.0"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "https://graph.microsoft.com/v1.0/schemaExtensions",
+											"protocol": "https",
+											"host": [
+												"graph",
+												"microsoft",
+												"com"
+											],
+											"path": [
+												"v1.0",
+												"schemaExtensions"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Create a group with extension",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+												"exec": [
+													"try {\r",
+													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+													"    {\r",
+													"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+													"    }\r",
+													"    else\r",
+													"    {\r",
+													"        if (pm.response.status === \"Forbidden\")\r",
+													"        {\r",
+													"            console.log(\"You need to add user delegated permissions in your application to atleast *Group.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+													"        }\r",
+													"        else\r",
+													"        {\r",
+													"            var json = JSON.parse(responseBody);\r",
+													"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
+													"        }\r",
+													"    }\r",
+													"}\r",
+													"catch (e) {\r",
+													"    console.log(e);\r",
+													"}\r",
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{UserAccessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "SdkVersion",
+												"type": "text",
+												"value": "postman-graph/v1.0"
+											},
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"type": "text",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"displayName\": \"Extensions sample group\",\n  \"description\": \"Extensions sample group\",\n  \"groupTypes\": [\n    \"Unified\"\n  ],\n  \"mailEnabled\": true,\n  \"mailNickname\": \"extSample123\",\n  \"securityEnabled\": false,\n  \"adatumisv_courses\": {\n    \"id\": \"123\",\n    \"name\": \"New Managers\",\n    \"type\": \"Online\"\n  }\n}"
+										},
+										"url": {
+											"raw": "https://graph.microsoft.com/v1.0/groups",
+											"protocol": "https",
+											"host": [
+												"graph",
+												"microsoft",
+												"com"
+											],
+											"path": [
+												"v1.0",
+												"groups"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Filter groups by extensions",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+												"exec": [
+													"try {\r",
+													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+													"    {\r",
+													"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+													"    }\r",
+													"    else\r",
+													"    {\r",
+													"        if (pm.response.status === \"Forbidden\")\r",
+													"        {\r",
+													"            console.log(\"You need to add user delegated permissions in your application to atleast *User.Read* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+													"        }\r",
+													"        else\r",
+													"        {\r",
+													"            var json = JSON.parse(responseBody);\r",
+													"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
+													"        }\r",
+													"    }\r",
+													"}\r",
+													"catch (e) {\r",
+													"    console.log(e);\r",
+													"}\r",
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{UserAccessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [
+											{
+												"key": "SdkVersion",
+												"type": "text",
+												"value": "postman-graph/v1.0"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "https://graph.microsoft.com/v1.0/groups?$filter=adatumisv_courses/id eq '123'&$select=id,displayName,adatumisv_courses",
+											"protocol": "https",
+											"host": [
+												"graph",
+												"microsoft",
+												"com"
+											],
+											"path": [
+												"v1.0",
+												"groups"
+											],
+											"query": [
+												{
+													"key": "$filter",
+													"value": "adatumisv_courses/id eq '123'"
+												},
+												{
+													"key": "$select",
+													"value": "id,displayName,adatumisv_courses"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Update a group with extension",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+												"exec": [
+													"try {\r",
+													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+													"    {\r",
+													"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+													"    }\r",
+													"    else\r",
+													"    {\r",
+													"        if (pm.response.status === \"Forbidden\")\r",
+													"        {\r",
+													"            console.log(\"You need to add user delegated permissions in your application to atleast *User.Read* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+													"        }\r",
+													"        else\r",
+													"        {\r",
+													"            var json = JSON.parse(responseBody);\r",
+													"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
+													"        }\r",
+													"    }\r",
+													"}\r",
+													"catch (e) {\r",
+													"    console.log(e);\r",
+													"}\r",
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{UserAccessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "SdkVersion",
+												"type": "text",
+												"value": "postman-graph/v1.0"
+											},
+											{
+												"key": "Content-Type",
+												"name": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"adatumisv_courses\": {\n    \"id\": \"123\",\n    \"name\": \"More Managers\",\n    \"type\": \"Online\"\n  }\n}"
+										},
+										"url": {
+											"raw": "https://graph.microsoft.com/v1.0/groups/{{GroupId}}",
+											"protocol": "https",
+											"host": [
+												"graph",
+												"microsoft",
+												"com"
+											],
+											"path": [
+												"v1.0",
+												"groups",
+												"{{GroupId}}"
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"_postman_isSubFolder": true
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
 					"name": "People",
 					"item": [
 						{
