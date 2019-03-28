@@ -9,6 +9,1170 @@
 			"name": "On Behalf of a User",
 			"item": [
 				{
+					"name": "Files",
+					"item": [
+						{
+							"name": "Get Drive",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "dbe5bdf1-cfe5-4842-b6f5-348e318f2c2d",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to atleast *Files.Read* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "SdkVersion",
+										"value": "postman-graph/v1.0",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/me/drive/root/children",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"me",
+										"drive",
+										"root",
+										"children"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Groups",
+					"item": [
+						{
+							"name": "Get Groups",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to atleast *Group.Read.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/groups",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"groups"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Insights",
+					"item": [
+						{
+							"name": "Items trending around me",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "23bc18b7-97ca-4d2c-8ddf-f8357b3e0460",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to atleast *Sites.Read.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "SdkVersion",
+										"value": "postman-graph/v1.0",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/beta/me/insights/trending",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"beta",
+										"me",
+										"insights",
+										"trending"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "People I'm working with",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "23bc18b7-97ca-4d2c-8ddf-f8357b3e0460",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to atleast *Sites.Read.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "SdkVersion",
+										"value": "postman-graph/v1.0",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/beta/me/workingWith",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"beta",
+										"me",
+										"workingWith"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Mail",
+					"item": [
+						{
+							"name": "Get my messages",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "9e26dfd5-49bb-4ceb-81f0-44f9d46f7237",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to atleast *Mail.Read* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            postman.setEnvironmentVariable(\"MessageId\", json.value[0].id);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "SdkVersion",
+										"value": "postman-graph/v1.0",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/me/messages",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"me",
+										"messages"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get a users message",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "a8346261-52bf-419f-a874-55fc632251d9",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to atleast *Mail.Read* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            if (pm.environment.get(\"MessageId\") === \"\")\r",
+											"            {\r",
+											"                console.log(\"You need to run *On behalf of a User | Get my messages* request first or set a MessageId environment variable.\");\r",
+											"            }\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "SdkVersion",
+										"value": "postman-graph/v1.0",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/me/messages/{{MessageId}}",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"me",
+										"messages",
+										"{{MessageId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "SendMail",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "62b77761-f24f-4b53-a30a-d97e7441dd87",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.environment.get(\"UserEmail\") === \"\")\r",
+											"        {\r",
+											"            console.log(\"You need manual set a **UserName** environment variable.\");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            if (pm.response.status === \"Forbidden\")\r",
+											"            {\r",
+											"                console.log(\"You need to add user delegated permissions in your application to atleast *Mail.Send* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"            }\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "SdkVersion",
+										"value": "postman-graph/v1.0",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"message\": {\r\n    \"subject\": \"Meet for lunch?\",\r\n    \"body\": {\r\n      \"contentType\": \"Text\",\r\n      \"content\": \"The new cafeteria is open.\"\r\n    },\r\n    \"toRecipients\": [\r\n      {\r\n        \"emailAddress\": {\r\n          \"address\": \"{{UserName}}\"\r\n        }\r\n      }\r\n    ],\r\n    \"ccRecipients\": [\r\n      {\r\n        \"emailAddress\": {\r\n          \"address\": \"{{UserName}}\"\r\n        }\r\n      }\r\n    ]\r\n  },\r\n  \"saveToSentItems\": \"false\"\r\n}"
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/me/sendMail",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"me",
+										"sendMail"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Notebooks",
+					"item": [
+						{
+							"name": "Get My Notebooks",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to atleast *Tasks.Read* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "SdkVersion",
+										"value": "postman-graph/v1.0",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/me/onenote/notebooks",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"me",
+										"onenote",
+										"notebooks"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get My Notebook Sections",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to atleast *Tasks.Read* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "SdkVersion",
+										"value": "postman-graph/v1.0",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/me/onenote/sections",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"me",
+										"onenote",
+										"sections"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get My Notebook Pages",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to atleast *Tasks.Read* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "SdkVersion",
+										"value": "postman-graph/v1.0",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/me/onenote/pages",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"me",
+										"onenote",
+										"pages"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Notebook",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to atleast *Tasks.Read* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "SdkVersion",
+										"value": "postman-graph/v1.0",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"displayName\": \"Postman Notebook\"\n}"
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/me/onenote/notebooks",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"me",
+										"onenote",
+										"notebooks"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "People",
+					"item": [
+						{
+							"name": "Get People",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to atleast *People.Read* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/me/people",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"me",
+										"people"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Subscriptions",
+					"item": [
+						{
+							"name": "Get Subscriptions",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to atleast *Group.Read.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/groups",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"groups"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Tasks",
+					"item": [
+						{
+							"name": "Get My Tasks",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to atleast *Tasks.Read* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "SdkVersion",
+										"value": "postman-graph/v1.0",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/beta/me/outlook/tasks",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"beta",
+										"me",
+										"outlook",
+										"tasks"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
 					"name": "Users",
 					"item": [
 						{
@@ -526,7 +1690,152 @@
 							"response": []
 						},
 						{
-							"name": "Get a Users Profile",
+							"name": "Get Users $filter",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "fbfb3934-5a4f-4e83-9c1e-ffc199e62a03",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to atleast User.Read.All in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/users?$filter=Department eq 'Finance'",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"users"
+									],
+									"query": [
+										{
+											"key": "$filter",
+											"value": "Department eq 'Finance'"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get User Profile by email",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "fbfb3934-5a4f-4e83-9c1e-ffc199e62a03",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to atleast User.Read.All in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/users/{{UserName}}",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"users",
+										"{{UserName}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get a User Profile by Id",
 							"event": [
 								{
 									"listen": "test",
@@ -676,914 +1985,6 @@
 					"_postman_isSubFolder": true
 				},
 				{
-					"name": "Mail",
-					"item": [
-						{
-							"name": "Get my messages",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "9e26dfd5-49bb-4ceb-81f0-44f9d46f7237",
-										"exec": [
-											"try {\r",
-											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
-											"    {\r",
-											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
-											"    }\r",
-											"    else\r",
-											"    {\r",
-											"        if (pm.response.status === \"Forbidden\")\r",
-											"        {\r",
-											"            console.log(\"You need to add user delegated permissions in your application to atleast *Mail.Read* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
-											"        }\r",
-											"        else\r",
-											"        {\r",
-											"            var json = JSON.parse(responseBody);\r",
-											"            postman.setEnvironmentVariable(\"MessageId\", json.value[0].id);\r",
-											"        }\r",
-											"    }\r",
-											"}\r",
-											"catch (e) {\r",
-											"    console.log(e);\r",
-											"}\r",
-											""
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
-							"request": {
-								"auth": {
-									"type": "bearer",
-									"bearer": [
-										{
-											"key": "token",
-											"value": "{{UserAccessToken}}",
-											"type": "string"
-										}
-									]
-								},
-								"method": "GET",
-								"header": [
-									{
-										"key": "Content-Type",
-										"type": "text",
-										"value": "application/json"
-									},
-									{
-										"key": "SdkVersion",
-										"value": "postman-graph/v1.0",
-										"type": "text"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
-								"url": {
-									"raw": "https://graph.microsoft.com/v1.0/me/messages",
-									"protocol": "https",
-									"host": [
-										"graph",
-										"microsoft",
-										"com"
-									],
-									"path": [
-										"v1.0",
-										"me",
-										"messages"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Get a users message",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "a8346261-52bf-419f-a874-55fc632251d9",
-										"exec": [
-											"try {\r",
-											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
-											"    {\r",
-											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
-											"    }\r",
-											"    else\r",
-											"    {\r",
-											"        if (pm.response.status === \"Forbidden\")\r",
-											"        {\r",
-											"            console.log(\"You need to add user delegated permissions in your application to atleast *Mail.Read* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
-											"        }\r",
-											"        else\r",
-											"        {\r",
-											"            if (pm.environment.get(\"MessageId\") === \"\")\r",
-											"            {\r",
-											"                console.log(\"You need to run *On behalf of a User | Get my messages* request first or set a MessageId environment variable.\");\r",
-											"            }\r",
-											"        }\r",
-											"    }\r",
-											"}\r",
-											"catch (e) {\r",
-											"    console.log(e);\r",
-											"}\r",
-											""
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
-							"request": {
-								"auth": {
-									"type": "bearer",
-									"bearer": [
-										{
-											"key": "token",
-											"value": "{{UserAccessToken}}",
-											"type": "string"
-										}
-									]
-								},
-								"method": "GET",
-								"header": [
-									{
-										"key": "Content-Type",
-										"type": "text",
-										"value": "application/json"
-									},
-									{
-										"key": "SdkVersion",
-										"value": "postman-graph/v1.0",
-										"type": "text"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
-								"url": {
-									"raw": "https://graph.microsoft.com/v1.0/me/messages/{{MessageId}}",
-									"protocol": "https",
-									"host": [
-										"graph",
-										"microsoft",
-										"com"
-									],
-									"path": [
-										"v1.0",
-										"me",
-										"messages",
-										"{{MessageId}}"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "SendMail",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "62b77761-f24f-4b53-a30a-d97e7441dd87",
-										"exec": [
-											"try {\r",
-											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
-											"    {\r",
-											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
-											"    }\r",
-											"    else\r",
-											"    {\r",
-											"        if (pm.environment.get(\"UserEmail\") === \"\")\r",
-											"        {\r",
-											"            console.log(\"You need manual set a **UserName** environment variable.\");\r",
-											"        }\r",
-											"        else\r",
-											"        {\r",
-											"            if (pm.response.status === \"Forbidden\")\r",
-											"            {\r",
-											"                console.log(\"You need to add user delegated permissions in your application to atleast *Mail.Send* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
-											"            }\r",
-											"        }\r",
-											"    }\r",
-											"}\r",
-											"catch (e) {\r",
-											"    console.log(e);\r",
-											"}\r",
-											""
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
-							"request": {
-								"auth": {
-									"type": "bearer",
-									"bearer": [
-										{
-											"key": "token",
-											"value": "{{UserAccessToken}}",
-											"type": "string"
-										}
-									]
-								},
-								"method": "POST",
-								"header": [
-									{
-										"key": "Content-Type",
-										"type": "text",
-										"value": "application/json"
-									},
-									{
-										"key": "SdkVersion",
-										"value": "postman-graph/v1.0",
-										"type": "text"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n  \"message\": {\r\n    \"subject\": \"Meet for lunch?\",\r\n    \"body\": {\r\n      \"contentType\": \"Text\",\r\n      \"content\": \"The new cafeteria is open.\"\r\n    },\r\n    \"toRecipients\": [\r\n      {\r\n        \"emailAddress\": {\r\n          \"address\": \"{{UserName}}\"\r\n        }\r\n      }\r\n    ],\r\n    \"ccRecipients\": [\r\n      {\r\n        \"emailAddress\": {\r\n          \"address\": \"{{UserName}}\"\r\n        }\r\n      }\r\n    ]\r\n  },\r\n  \"saveToSentItems\": \"false\"\r\n}"
-								},
-								"url": {
-									"raw": "https://graph.microsoft.com/v1.0/me/sendMail",
-									"protocol": "https",
-									"host": [
-										"graph",
-										"microsoft",
-										"com"
-									],
-									"path": [
-										"v1.0",
-										"me",
-										"sendMail"
-									]
-								}
-							},
-							"response": []
-						}
-					],
-					"_postman_isSubFolder": true
-				},
-				{
-					"name": "Files",
-					"item": [
-						{
-							"name": "Get Drive",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "dbe5bdf1-cfe5-4842-b6f5-348e318f2c2d",
-										"exec": [
-											"try {\r",
-											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
-											"    {\r",
-											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
-											"    }\r",
-											"    else\r",
-											"    {\r",
-											"        if (pm.response.status === \"Forbidden\")\r",
-											"        {\r",
-											"            console.log(\"You need to add user delegated permissions in your application to atleast *Files.Read* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
-											"        }\r",
-											"    }\r",
-											"}\r",
-											"catch (e) {\r",
-											"    console.log(e);\r",
-											"}\r",
-											""
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
-							"request": {
-								"auth": {
-									"type": "bearer",
-									"bearer": [
-										{
-											"key": "token",
-											"value": "{{UserAccessToken}}",
-											"type": "string"
-										}
-									]
-								},
-								"method": "GET",
-								"header": [
-									{
-										"key": "Content-Type",
-										"type": "text",
-										"value": "application/json"
-									},
-									{
-										"key": "SdkVersion",
-										"value": "postman-graph/v1.0",
-										"type": "text"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
-								"url": {
-									"raw": "https://graph.microsoft.com/v1.0/me/drive/root/children",
-									"protocol": "https",
-									"host": [
-										"graph",
-										"microsoft",
-										"com"
-									],
-									"path": [
-										"v1.0",
-										"me",
-										"drive",
-										"root",
-										"children"
-									]
-								}
-							},
-							"response": []
-						}
-					],
-					"_postman_isSubFolder": true
-				},
-				{
-					"name": "Insights",
-					"item": [
-						{
-							"name": "Items trending around me",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "23bc18b7-97ca-4d2c-8ddf-f8357b3e0460",
-										"exec": [
-											"try {\r",
-											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
-											"    {\r",
-											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
-											"    }\r",
-											"    else\r",
-											"    {\r",
-											"        if (pm.response.status === \"Forbidden\")\r",
-											"        {\r",
-											"            console.log(\"You need to add user delegated permissions in your application to atleast *Sites.Read.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
-											"        }\r",
-											"    }\r",
-											"}\r",
-											"catch (e) {\r",
-											"    console.log(e);\r",
-											"}\r",
-											""
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
-							"request": {
-								"auth": {
-									"type": "bearer",
-									"bearer": [
-										{
-											"key": "token",
-											"value": "{{UserAccessToken}}",
-											"type": "string"
-										}
-									]
-								},
-								"method": "GET",
-								"header": [
-									{
-										"key": "Content-Type",
-										"type": "text",
-										"value": "application/json"
-									},
-									{
-										"key": "SdkVersion",
-										"value": "postman-graph/v1.0",
-										"type": "text"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
-								"url": {
-									"raw": "https://graph.microsoft.com/beta/me/insights/trending",
-									"protocol": "https",
-									"host": [
-										"graph",
-										"microsoft",
-										"com"
-									],
-									"path": [
-										"beta",
-										"me",
-										"insights",
-										"trending"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "People I'm working with",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "23bc18b7-97ca-4d2c-8ddf-f8357b3e0460",
-										"exec": [
-											"try {\r",
-											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
-											"    {\r",
-											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
-											"    }\r",
-											"    else\r",
-											"    {\r",
-											"        if (pm.response.status === \"Forbidden\")\r",
-											"        {\r",
-											"            console.log(\"You need to add user delegated permissions in your application to atleast *Sites.Read.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
-											"        }\r",
-											"    }\r",
-											"}\r",
-											"catch (e) {\r",
-											"    console.log(e);\r",
-											"}\r",
-											""
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
-							"request": {
-								"auth": {
-									"type": "bearer",
-									"bearer": [
-										{
-											"key": "token",
-											"value": "{{UserAccessToken}}",
-											"type": "string"
-										}
-									]
-								},
-								"method": "GET",
-								"header": [
-									{
-										"key": "Content-Type",
-										"type": "text",
-										"value": "application/json"
-									},
-									{
-										"key": "SdkVersion",
-										"value": "postman-graph/v1.0",
-										"type": "text"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
-								"url": {
-									"raw": "https://graph.microsoft.com/beta/me/workingWith",
-									"protocol": "https",
-									"host": [
-										"graph",
-										"microsoft",
-										"com"
-									],
-									"path": [
-										"beta",
-										"me",
-										"workingWith"
-									]
-								}
-							},
-							"response": []
-						}
-					],
-					"_postman_isSubFolder": true
-				},
-				{
-					"name": "Tasks",
-					"item": [
-						{
-							"name": "Get My Tasks",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
-										"exec": [
-											"try {\r",
-											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
-											"    {\r",
-											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
-											"    }\r",
-											"    else\r",
-											"    {\r",
-											"        if (pm.response.status === \"Forbidden\")\r",
-											"        {\r",
-											"            console.log(\"You need to add user delegated permissions in your application to atleast *Tasks.Read* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
-											"        }\r",
-											"        else\r",
-											"        {\r",
-											"            var json = JSON.parse(responseBody);\r",
-											"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
-											"        }\r",
-											"    }\r",
-											"}\r",
-											"catch (e) {\r",
-											"    console.log(e);\r",
-											"}\r",
-											""
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
-							"request": {
-								"auth": {
-									"type": "bearer",
-									"bearer": [
-										{
-											"key": "token",
-											"value": "{{UserAccessToken}}",
-											"type": "string"
-										}
-									]
-								},
-								"method": "GET",
-								"header": [
-									{
-										"key": "Content-Type",
-										"type": "text",
-										"value": "application/json"
-									},
-									{
-										"key": "SdkVersion",
-										"value": "postman-graph/v1.0",
-										"type": "text"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
-								"url": {
-									"raw": "https://graph.microsoft.com/beta/me/outlook/tasks",
-									"protocol": "https",
-									"host": [
-										"graph",
-										"microsoft",
-										"com"
-									],
-									"path": [
-										"beta",
-										"me",
-										"outlook",
-										"tasks"
-									]
-								}
-							},
-							"response": []
-						}
-					],
-					"_postman_isSubFolder": true
-				},
-				{
-					"name": "Notebooks",
-					"item": [
-						{
-							"name": "Get My Notebooks",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
-										"exec": [
-											"try {\r",
-											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
-											"    {\r",
-											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
-											"    }\r",
-											"    else\r",
-											"    {\r",
-											"        if (pm.response.status === \"Forbidden\")\r",
-											"        {\r",
-											"            console.log(\"You need to add user delegated permissions in your application to atleast *Tasks.Read* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
-											"        }\r",
-											"        else\r",
-											"        {\r",
-											"            var json = JSON.parse(responseBody);\r",
-											"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
-											"        }\r",
-											"    }\r",
-											"}\r",
-											"catch (e) {\r",
-											"    console.log(e);\r",
-											"}\r",
-											""
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
-							"request": {
-								"auth": {
-									"type": "bearer",
-									"bearer": [
-										{
-											"key": "token",
-											"value": "{{UserAccessToken}}",
-											"type": "string"
-										}
-									]
-								},
-								"method": "GET",
-								"header": [
-									{
-										"key": "Content-Type",
-										"type": "text",
-										"value": "application/json"
-									},
-									{
-										"key": "SdkVersion",
-										"value": "postman-graph/v1.0",
-										"type": "text"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
-								"url": {
-									"raw": "https://graph.microsoft.com/v1.0/me/onenote/notebooks",
-									"protocol": "https",
-									"host": [
-										"graph",
-										"microsoft",
-										"com"
-									],
-									"path": [
-										"v1.0",
-										"me",
-										"onenote",
-										"notebooks"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Get My Notebook Sections",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
-										"exec": [
-											"try {\r",
-											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
-											"    {\r",
-											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
-											"    }\r",
-											"    else\r",
-											"    {\r",
-											"        if (pm.response.status === \"Forbidden\")\r",
-											"        {\r",
-											"            console.log(\"You need to add user delegated permissions in your application to atleast *Tasks.Read* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
-											"        }\r",
-											"        else\r",
-											"        {\r",
-											"            var json = JSON.parse(responseBody);\r",
-											"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
-											"        }\r",
-											"    }\r",
-											"}\r",
-											"catch (e) {\r",
-											"    console.log(e);\r",
-											"}\r",
-											""
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
-							"request": {
-								"auth": {
-									"type": "bearer",
-									"bearer": [
-										{
-											"key": "token",
-											"value": "{{UserAccessToken}}",
-											"type": "string"
-										}
-									]
-								},
-								"method": "GET",
-								"header": [
-									{
-										"key": "Content-Type",
-										"type": "text",
-										"value": "application/json"
-									},
-									{
-										"key": "SdkVersion",
-										"value": "postman-graph/v1.0",
-										"type": "text"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
-								"url": {
-									"raw": "https://graph.microsoft.com/v1.0/me/onenote/sections",
-									"protocol": "https",
-									"host": [
-										"graph",
-										"microsoft",
-										"com"
-									],
-									"path": [
-										"v1.0",
-										"me",
-										"onenote",
-										"sections"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Get My Notebook Pages",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
-										"exec": [
-											"try {\r",
-											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
-											"    {\r",
-											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
-											"    }\r",
-											"    else\r",
-											"    {\r",
-											"        if (pm.response.status === \"Forbidden\")\r",
-											"        {\r",
-											"            console.log(\"You need to add user delegated permissions in your application to atleast *Tasks.Read* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
-											"        }\r",
-											"        else\r",
-											"        {\r",
-											"            var json = JSON.parse(responseBody);\r",
-											"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
-											"        }\r",
-											"    }\r",
-											"}\r",
-											"catch (e) {\r",
-											"    console.log(e);\r",
-											"}\r",
-											""
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
-							"request": {
-								"auth": {
-									"type": "bearer",
-									"bearer": [
-										{
-											"key": "token",
-											"value": "{{UserAccessToken}}",
-											"type": "string"
-										}
-									]
-								},
-								"method": "GET",
-								"header": [
-									{
-										"key": "Content-Type",
-										"type": "text",
-										"value": "application/json"
-									},
-									{
-										"key": "SdkVersion",
-										"value": "postman-graph/v1.0",
-										"type": "text"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
-								"url": {
-									"raw": "https://graph.microsoft.com/v1.0/me/onenote/pages",
-									"protocol": "https",
-									"host": [
-										"graph",
-										"microsoft",
-										"com"
-									],
-									"path": [
-										"v1.0",
-										"me",
-										"onenote",
-										"pages"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Create Notebook",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
-										"exec": [
-											"try {\r",
-											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
-											"    {\r",
-											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
-											"    }\r",
-											"    else\r",
-											"    {\r",
-											"        if (pm.response.status === \"Forbidden\")\r",
-											"        {\r",
-											"            console.log(\"You need to add user delegated permissions in your application to atleast *Tasks.Read* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
-											"        }\r",
-											"        else\r",
-											"        {\r",
-											"            var json = JSON.parse(responseBody);\r",
-											"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
-											"        }\r",
-											"    }\r",
-											"}\r",
-											"catch (e) {\r",
-											"    console.log(e);\r",
-											"}\r",
-											""
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
-							"request": {
-								"auth": {
-									"type": "bearer",
-									"bearer": [
-										{
-											"key": "token",
-											"value": "{{UserAccessToken}}",
-											"type": "string"
-										}
-									]
-								},
-								"method": "POST",
-								"header": [
-									{
-										"key": "Content-Type",
-										"type": "text",
-										"value": "application/json"
-									},
-									{
-										"key": "SdkVersion",
-										"value": "postman-graph/v1.0",
-										"type": "text"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n  \"displayName\": \"Postman Notebook\"\n}"
-								},
-								"url": {
-									"raw": "https://graph.microsoft.com/v1.0/me/onenote/notebooks",
-									"protocol": "https",
-									"host": [
-										"graph",
-										"microsoft",
-										"com"
-									],
-									"path": [
-										"v1.0",
-										"me",
-										"onenote",
-										"notebooks"
-									]
-								}
-							},
-							"response": []
-						}
-					],
-					"_postman_isSubFolder": true
-				},
-				{
 					"name": "Get User Access Token",
 					"event": [
 						{
@@ -1701,96 +2102,6 @@
 		{
 			"name": "Application",
 			"item": [
-				{
-					"name": "Users",
-					"item": [
-						{
-							"name": "Get Users",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "b29689b3-d1b1-4f0b-9e6e-888053194c1a",
-										"exec": [
-											"try {\r",
-											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
-											"    {\r",
-											"        console.log(\"You need to run *Get App-Only Access Token* request first.\");\r",
-											"    }\r",
-											"    else\r",
-											"    {\r",
-											"        if (pm.response.status === \"Forbidden\")\r",
-											"        {\r",
-											"            console.log(\"You need to add user delegated permissions in your application to atleast *User.Read.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *Application | Get App-Only Access Token* request to update access token. \");\r",
-											"        }\r",
-											"        else\r",
-											"        {\r",
-											"            var json = JSON.parse(responseBody);\r",
-											"            // Get a user with a mailbox\r",
-											"            postman.setEnvironmentVariable(\"UserId\", json.value[0].id);\r",
-											"        }\r",
-											"    }\r",
-											"}\r",
-											"catch (e) {\r",
-											"    console.log(e);\r",
-											"}"
-										],
-										"type": "text/javascript"
-									}
-								},
-								{
-									"listen": "prerequest",
-									"script": {
-										"id": "969d502c-8f05-4b21-a048-a0a2c5801a72",
-										"exec": [
-											""
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
-							"request": {
-								"auth": {
-									"type": "bearer",
-									"bearer": [
-										{
-											"key": "token",
-											"value": "{{AppAccessToken}}",
-											"type": "string"
-										}
-									]
-								},
-								"method": "GET",
-								"header": [
-									{
-										"key": "SdkVersion",
-										"value": "postman-graph/v1.0",
-										"type": "text"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
-								"url": {
-									"raw": "https://graph.microsoft.com/v1.0/users",
-									"protocol": "https",
-									"host": [
-										"graph",
-										"microsoft",
-										"com"
-									],
-									"path": [
-										"v1.0",
-										"users"
-									]
-								}
-							},
-							"response": []
-						}
-					],
-					"_postman_isSubFolder": true
-				},
 				{
 					"name": "Mail",
 					"item": [
@@ -1982,6 +2293,96 @@
 										"{{UserId}}",
 										"messages",
 										"{{MessageId}}"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Users",
+					"item": [
+						{
+							"name": "Get Users",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "b29689b3-d1b1-4f0b-9e6e-888053194c1a",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *Get App-Only Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to atleast *User.Read.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *Application | Get App-Only Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            // Get a user with a mailbox\r",
+											"            postman.setEnvironmentVariable(\"UserId\", json.value[0].id);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}"
+										],
+										"type": "text/javascript"
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "969d502c-8f05-4b21-a048-a0a2c5801a72",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AppAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "SdkVersion",
+										"value": "postman-graph/v1.0",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/users",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"users"
 									]
 								}
 							},
