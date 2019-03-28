@@ -189,7 +189,7 @@
 									"bearer": [
 										{
 											"key": "token",
-											"value": "{{AccessToken}}",
+											"value": "{{AppAccessToken}}",
 											"type": "string"
 										}
 									]
