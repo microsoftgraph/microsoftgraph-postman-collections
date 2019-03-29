@@ -4,7 +4,7 @@ The Microsoft Graph Postman Collections is a community contributed open source r
 
 The collection allows you to test common Microsoft Graph APIs from within Postman. Support currently covers user delegated authorization flows for: Applications (beta), Batch, Events, Files, Groups, Insights, Mail, Notebooks, Extensions, People, Planner, Security, SharePoint, Subscriptions, Tasks, Teams and Users.
 
-![Image of Postman](https://github.com/microsoftgraph/microsoftgraph-postman-collections/images/postman.png)
+![Image of Postman](https://github.com/microsoftgraph/microsoftgraph-postman-collections/blob/master/images/postman.png?raw=true)
 
 The most up-to-date experience to explore the APIs will always be [Microsoft Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) in a web browser. This project has been created based on requests from the community. Remember the best place to understand the workings of these APIs is to read our [Microsoft Graph API documentation](https://docs.microsoft.com/en-us/graph/).
 
