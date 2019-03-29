@@ -33,7 +33,7 @@ You should now see the **Microsoft Graph v1.0** collection on the left had side 
 **8.** Enter in to the **current** (not **initial**) variables your Microsoft Identity Application: **ClientID**, **ClientSecret** ad **TenantID**. (The **AppAccessToken** and **UserAccessToken** is not required at this time). For more information on how to create a Application and to admin consent the app-only flow please read the [30 days of graph blog post series](https://developer.microsoft.com/en-us/graph/blogs/30daysmsgraph-day-13-postman-to-make-microsoft-graph-calls/).
 
 
-**9.** In the **MicrosoftGraph v1.0 | Application** collection on left hand side. Click on the **Get App-only Access Token**. Then click **Send** button on right hand side.
+**9.** Select **Update**. Close the **Manage Environments** dialog. In the **MicrosoftGraph v1.0 | Application** collection on left hand side. Click on the **Get App-only Access Token**. Then click **Send** button on right hand side.
 
 **Optional** You can also provide a **UserName** and **UserPassword** in the environment settings and use **On Behalf of a User | Get User Access Token** instead.
 
