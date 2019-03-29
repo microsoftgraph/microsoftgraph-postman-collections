@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "6d641c9c-f6e6-4910-8dde-7e8f5f30074a",
+		"_postman_id": "e3692bb3-0fe2-46d7-9ffe-5860ebcd0b50",
 		"name": "Microsoft Graph v1.0",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -1704,7 +1704,7 @@
 											"        else\r",
 											"        {\r",
 											"            var json = JSON.parse(responseBody);\r",
-											"            postman.setEnvironmentVariable(\"MessageId\", json[0].id);\r",
+											"            postman.setEnvironmentVariable(\"MessageId\", json.value[0].id);\r",
 											"        }\r",
 											"    }\r",
 											"}\r",
@@ -2516,7 +2516,7 @@
 											"    {\r",
 											"        if (pm.response.status === \"Forbidden\")\r",
 											"        {\r",
-											"            console.log(\"You need to add user delegated permissions in your application to atleast *Tasks.Read* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"            console.log(\"You need to add user delegated permissions in your application to atleast *Notes.Read* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
 											"        }\r",
 											"        else\r",
 											"        {\r",
@@ -2597,7 +2597,7 @@
 											"    {\r",
 											"        if (pm.response.status === \"Forbidden\")\r",
 											"        {\r",
-											"            console.log(\"You need to add user delegated permissions in your application to atleast *Tasks.Read* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"            console.log(\"You need to add user delegated permissions in your application to atleast *Notes.Read* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
 											"        }\r",
 											"        else\r",
 											"        {\r",
@@ -2678,7 +2678,7 @@
 											"    {\r",
 											"        if (pm.response.status === \"Forbidden\")\r",
 											"        {\r",
-											"            console.log(\"You need to add user delegated permissions in your application to atleast *Tasks.Read* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"            console.log(\"You need to add user delegated permissions in your application to atleast *Notes.Read* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
 											"        }\r",
 											"        else\r",
 											"        {\r",
@@ -2759,7 +2759,7 @@
 											"    {\r",
 											"        if (pm.response.status === \"Forbidden\")\r",
 											"        {\r",
-											"            console.log(\"You need to add user delegated permissions in your application to atleast *Tasks.Read* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"            console.log(\"You need to add user delegated permissions in your application to atleast *Notes.ReadWrite* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
 											"        }\r",
 											"        else\r",
 											"        {\r",
@@ -2803,7 +2803,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"displayName\": \"Postman Notebook\"\n}"
+									"raw": "{\n  \"displayName\": \"Postman Notebook 1\"\n}"
 								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/me/onenote/notebooks",
@@ -2840,7 +2840,7 @@
 											"    {\r",
 											"        if (pm.response.status === \"Forbidden\")\r",
 											"        {\r",
-											"            console.log(\"You need to add user delegated permissions in your application to atleast *Tasks.Read* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"            console.log(\"You need to add user delegated permissions in your application to atleast *Notes.ReadWrite* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
 											"        }\r",
 											"        else\r",
 											"        {\r",
