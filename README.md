@@ -10,6 +10,9 @@ The most up-to-date experience to explore the APIs will always be [Microsoft Gra
 
 ## Setup
 
+You can watch this video to setup:
+[![Image of Postman](https://github.com/microsoftgraph/microsoftgraph-postman-collections/blob/master/images/video.png?raw=true)](https://www.youtube.com/watch?v=4tg-OBdv_8o)
+
 To setup the Postman collections follow these steps:
 
 **1.** Download and register for [Postman](https://www.getpostman.com/).
