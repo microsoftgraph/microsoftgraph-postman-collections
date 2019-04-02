@@ -9192,7 +9192,7 @@
 					"response": []
 				},
 				{
-					"name": "Get Access Token using Postan OAuth2",
+					"name": "Get Access Token using Postman OAuth2",
 					"event": [
 						{
 							"listen": "test",
