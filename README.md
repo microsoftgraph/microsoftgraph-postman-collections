@@ -61,17 +61,17 @@ For those those that do not want to store user names and passwords in environmen
 
 - Callback URL: https://www.getpostman.com/oauth2/callback
 
-- Auth URL: https://login.microsoftonline.com/**<<TENANTID>>**/oauth2/v2.0/authorize
+- Auth URL: https://login.microsoftonline.com/**TENANTID**/oauth2/v2.0/authorize
 
-- Access Token URL: https://login.microsoftonline.com/**<<TENANTID>>**/oauth2/v2.0/token
+- Access Token URL: https://login.microsoftonline.com/**TENANTID**/oauth2/v2.0/token
 
-- Client ID: <<CLIENTID>>
+- Client ID: **CLIENTID**
 
-- Client Secret: <<CLIENTSECRET>>
+- Client Secret: **CLIENTSECRET**
 
 - Scope: https://graph.microsoft.com/.default
 
-- State: <<RANDOMSTRING>>
+- State: **RANDOMSTRING**
 
  
 **5.** Click Request Token and you should see a UI prompt to sign in and consent permissions.
