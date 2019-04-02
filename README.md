@@ -52,19 +52,30 @@ The simplest way of doing this is providing a **UserName** and **UserPassword** 
 For those those that do not want to store user names and passwords in environment variables in postman that get synced to your postman cloud account. You can use the native Postman **Get New Access Token** capability to obtain a token without leaving postman.
 
 **1.** Select **On behalf of a User | Get Access Token using Postman**.
+
 **2.** Click on the Authorization tab (besides Params).
+
 **3.** Click get access token button.
+
 **4.** Fill out the following boxes with your real tenant and application values. Note that you cannot use the environment variables here, it has to be the actual values. These can be found by clicking **EndPoints** in the application blade in portal.azure.com.
 
-Callback URL: https://www.getpostman.com/oauth2/callback
-Auth URL: https://login.microsoftonline.com/**<<TENANTID>>**/oauth2/v2.0/authorize
-Access Token URL: https://login.microsoftonline.com/**<<TENANTID>>**/oauth2/v2.0/token
-Client ID: <<CLIENTID>>
-Client Secret: <<CLIENTSECRET>>
-Scope: https://graph.microsoft.com/.default
-State: <<RANDOMSTRING>>
+- Callback URL: https://www.getpostman.com/oauth2/callback
+
+- Auth URL: https://login.microsoftonline.com/**<<TENANTID>>**/oauth2/v2.0/authorize
+
+- Access Token URL: https://login.microsoftonline.com/**<<TENANTID>>**/oauth2/v2.0/token
+
+- Client ID: <<CLIENTID>>
+
+- Client Secret: <<CLIENTSECRET>>
+
+- Scope: https://graph.microsoft.com/.default
+
+- State: <<RANDOMSTRING>>
+
  
 **5.** Click Request Token and you should see a UI prompt to sign in and consent permissions.
+
 **6.** Then take the entire Access Token and open up your environment variables and paste it into the UserAccessToken.
 
 Now all your requests will work.
