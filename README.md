@@ -59,7 +59,7 @@ For those those that do not want to store user names and passwords in environmen
 
 **4.** Fill out the following boxes with your real tenant and application values. Note that you cannot use the environment variables here, it has to be the actual values. These can be found by clicking **EndPoints** in the application blade in portal.azure.com.
 
-- Callback URL: https://www.getpostman.com/oauth2/callback
+- Callback URL: https://app.getpostman.com/oauth2/callback
 
 - Auth URL: https://login.microsoftonline.com/**TENANTID**/oauth2/v2.0/authorize
 
