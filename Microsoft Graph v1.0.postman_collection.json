@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "e3692bb3-0fe2-46d7-9ffe-5860ebcd0b50",
+		"_postman_id": "ff3703ab-a91c-43d4-9e14-4fba520b4bb7",
 		"name": "Microsoft Graph v1.0",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -59,10 +59,6 @@
 								},
 								"method": "GET",
 								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/beta/applications",
 									"protocol": "https",
@@ -204,10 +200,6 @@
 										"value": "application/json"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/beta/applications/{{ApplicationId}}",
 									"protocol": "https",
@@ -275,10 +267,6 @@
 										"value": "application/json"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/beta/applications/{{ApplicationId}}/owners",
 									"protocol": "https",
@@ -660,10 +648,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/beta/me/findRooms",
 									"protocol": "https",
@@ -751,10 +735,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/me/calendarview?startdatetime={{Today}}&enddatetime={{NextWeek}}",
 									"protocol": "https",
@@ -841,10 +821,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/me/calendars",
 									"protocol": "https",
@@ -1012,10 +988,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/me/events?$filter=subject eq 'Microsoft Graph Community call'",
 									"protocol": "https",
@@ -1099,10 +1071,6 @@
 										"type": "text"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/me/drive/root/children",
 									"protocol": "https",
@@ -1176,10 +1144,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/me/drive/recent",
 									"protocol": "https",
@@ -1252,10 +1216,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/me/drive/sharedWithMe",
 									"protocol": "https",
@@ -1328,10 +1288,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/me/drive/root/search(q='finance')?select=name,id,webUrl",
 									"protocol": "https",
@@ -1499,10 +1455,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/groups",
 									"protocol": "https",
@@ -1579,10 +1531,6 @@
 										"type": "text"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/beta/me/insights/trending",
 									"protocol": "https",
@@ -1655,10 +1603,6 @@
 										"type": "text"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/beta/me/workingWith",
 									"protocol": "https",
@@ -1741,10 +1685,6 @@
 										"type": "text"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/me/messages",
 									"protocol": "https",
@@ -1816,10 +1756,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/me/messages?$filter=importance eq 'high'",
 									"protocol": "https",
@@ -1897,10 +1833,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/me/messages?$filter=(from/emailAddress/address) eq '{{UserName}}'",
 									"protocol": "https",
@@ -1978,10 +1910,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/me/messages?$search=\"Weekly Digest\"",
 									"protocol": "https",
@@ -2059,10 +1987,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/beta/me/messages?$filter=mentionsPreview/isMentioned eq true&$select=subject,sender,receivedDateTime",
 									"protocol": "https",
@@ -2151,10 +2075,6 @@
 										"type": "text"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/me/messages/{{MessageId}}",
 									"protocol": "https",
@@ -2227,10 +2147,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messagerules",
 									"protocol": "https",
@@ -2304,10 +2220,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/me/outlook/masterCategories",
 									"protocol": "https",
@@ -2380,10 +2292,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/me/messages?$select=internetMessageHeaders&$top=1",
 									"protocol": "https",
@@ -2492,6 +2400,153 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "Get mailbox settings",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "9e26dfd5-49bb-4ceb-81f0-44f9d46f7237",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to at least *MailboxSettings.ReadWrite* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/me/mailboxSettings",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"me",
+										"mailboxSettings"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Set automatic replies",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "9e26dfd5-49bb-4ceb-81f0-44f9d46f7237",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to at least *MailboxSettings.ReadWrite* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"@odata.context\": \"https://graph.microsoft.com/v1.0/$metadata#Me/mailboxSettings\",\r\n\"automaticRepliesSetting\": {\r\n        \"status\": \"scheduled\",\r\n        \"externalAudience\": \"contactsOnly\",\r\n        \"internalReplyMessage\": \"<html>\\n<body>\\n<div>I'm on vacation!</div>\\n<div><br>\\n</div>\\n<div>Kindly regards</div>\\n<div></div>\\n</body>\\n</html>\\n\",\r\n        \"externalReplyMessage\": \"<html>\\n<body>\\n<div></div>\\n<div>I'm on vacation.</div>\\n<div><br>\\n</div>\\n<div>Kindly regards</div>\\n</body>\\n</html>\\n\",\r\n        \"scheduledStartDateTime\": {\r\n            \"dateTime\": \"2019-07-15T08:00:00.0000000\",\r\n            \"timeZone\": \"Europe/Berlin\"\r\n        },\r\n        \"scheduledEndDateTime\": {\r\n            \"dateTime\": \"2019-08-09T16:00:00.0000000\",\r\n            \"timeZone\": \"Europe/Berlin\"\r\n        }\r\n    }\r\n}"
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/me/mailboxSettings",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"me",
+										"mailboxSettings"
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"_postman_isSubFolder": true
@@ -2558,10 +2613,6 @@
 										"type": "text"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/me/onenote/notebooks",
 									"protocol": "https",
@@ -2639,10 +2690,6 @@
 										"type": "text"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/me/onenote/sections",
 									"protocol": "https",
@@ -2720,10 +2767,6 @@
 										"type": "text"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/me/onenote/pages",
 									"protocol": "https",
@@ -2964,10 +3007,6 @@
 												"value": "postman-graph/v1.0"
 											}
 										],
-										"body": {
-											"mode": "raw",
-											"raw": ""
-										},
 										"url": {
 											"raw": "https://graph.microsoft.com/v1.0/me?$select=id,displayName,mail,mobilePhone&$expand=extensions",
 											"protocol": "https",
@@ -3202,10 +3241,6 @@
 												"value": "postman-graph/v1.0"
 											}
 										],
-										"body": {
-											"mode": "raw",
-											"raw": ""
-										},
 										"url": {
 											"raw": "https://graph.microsoft.com/v1.0/schemaExtensions",
 											"protocol": "https",
@@ -3346,10 +3381,6 @@
 												"value": "postman-graph/v1.0"
 											}
 										],
-										"body": {
-											"mode": "raw",
-											"raw": ""
-										},
 										"url": {
 											"raw": "https://graph.microsoft.com/v1.0/groups?$filter=adatumisv_courses/id eq '123'&$select=id,displayName,adatumisv_courses",
 											"protocol": "https",
@@ -3515,10 +3546,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/me/people",
 									"protocol": "https",
@@ -3590,10 +3617,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/me/people?$top=10&$skip=10",
 									"protocol": "https",
@@ -3675,10 +3698,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/me/people/?$orderby=DisplayName",
 									"protocol": "https",
@@ -3757,10 +3776,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/me/people/?$select=DisplayName,scoredEmailAddresses&$filter=DisplayName eq 'New Hires'",
 									"protocol": "https",
@@ -3843,10 +3858,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/me/people/?$search=j",
 									"protocol": "https",
@@ -3925,10 +3936,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/me/people/?$search=\"ma topic: feature planning\"",
 									"protocol": "https",
@@ -4007,10 +4014,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/me/people/?$search=\"John\"",
 									"protocol": "https",
@@ -4089,10 +4092,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/users('{{UserName}}')/people/",
 									"protocol": "https",
@@ -4176,10 +4175,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/me/planner/tasks",
 									"protocol": "https",
@@ -4257,10 +4252,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/users/{{UserName}}/planner/tasks",
 									"protocol": "https",
@@ -4339,10 +4330,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/groups/{{GroupId}}/planner/plans",
 									"protocol": "https",
@@ -4421,10 +4408,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/planner/plans/{{PlanId}}",
 									"protocol": "https",
@@ -4588,10 +4571,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/planner/plans/{{PlanId}}/buckets",
 									"protocol": "https",
@@ -4837,10 +4816,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/planner/plans/{{PlanId}}/tasks",
 									"protocol": "https",
@@ -4919,10 +4894,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/planner/tasks/{{TaskId}}",
 									"protocol": "https",
@@ -5167,10 +5138,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/planner/tasks/{{TaskId}}/details",
 									"protocol": "https",
@@ -5245,10 +5212,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/security/alerts",
 									"protocol": "https",
@@ -5315,10 +5278,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/security/alerts?$filter=Severity eq 'High'&$top=5",
 									"protocol": "https",
@@ -5395,10 +5354,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/security/alerts?$filter=vendorInformation/provider eq 'ASC'&$top=5",
 									"protocol": "https",
@@ -5475,10 +5430,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/security/alerts?$filter=Category eq 'ransomware'&$top=5",
 									"protocol": "https",
@@ -5555,10 +5506,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/security/alerts?$filter=networkConnections/any(d:d/destinationAddress eq '{destination-address}')",
 									"protocol": "https",
@@ -5631,10 +5578,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/security/alerts?$filter=Status eq 'NewAlert'&$top=1",
 									"protocol": "https",
@@ -5711,10 +5654,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/security/secureScores?$top=5",
 									"protocol": "https",
@@ -5787,10 +5726,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/beta/security/secureScoreControlProfiles?$top=5",
 									"protocol": "https",
@@ -5868,10 +5803,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/beta/security/tiIndicators",
 									"protocol": "https",
@@ -5938,10 +5869,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/beta/security/tiIndicators/{{TIIndicatorId}}",
 									"protocol": "https",
@@ -6014,10 +5941,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/beta/security/securityActions",
 									"protocol": "https",
@@ -6089,10 +6012,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/beta/security/securityActions/{{SecurityActionsId}}",
 									"protocol": "https",
@@ -6176,10 +6095,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/sites/root",
 									"protocol": "https",
@@ -6256,10 +6171,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/sites/root/drives",
 									"protocol": "https",
@@ -6332,10 +6243,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/sites?search=contoso",
 									"protocol": "https",
@@ -6412,10 +6319,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/sites/root/sites",
 									"protocol": "https",
@@ -6488,10 +6391,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/sites/root/columns",
 									"protocol": "https",
@@ -6564,10 +6463,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/sites/root/contentTypes",
 									"protocol": "https",
@@ -6645,10 +6540,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/sites/root/lists",
 									"protocol": "https",
@@ -6721,10 +6612,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/sites/root/lists/{{ListId}}/columns",
 									"protocol": "https",
@@ -6799,10 +6686,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/sites/root/lists/{{ListId}}/contentTypes",
 									"protocol": "https",
@@ -6877,10 +6760,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/sites/root/lists/{{ListId}}/items",
 									"protocol": "https",
@@ -6960,10 +6839,6 @@
 										"type": "text"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/sites/root/lists/{{ListId}}/items?$filter=fields/Title eq 'Contoso Home'",
 									"protocol": "https",
@@ -7050,10 +6925,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/subscriptions",
 									"protocol": "https",
@@ -7135,10 +7006,6 @@
 										"type": "text"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/beta/me/outlook/tasks",
 									"protocol": "https",
@@ -7217,10 +7084,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/me/joinedTeams",
 									"protocol": "https",
@@ -7287,10 +7150,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/groups/{{TeamId}}/members",
 									"protocol": "https",
@@ -7363,10 +7222,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/teams/{{TeamId}}/channels",
 									"protocol": "https",
@@ -7439,10 +7294,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/teams/{{TeamId}}/channels/{{ChannelId}}",
 									"protocol": "https",
@@ -7604,10 +7455,6 @@
 										"value": "application/json"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/teams/{{TeamId}}/installedApps?$expand=teamsAppDefinition",
 									"protocol": "https",
@@ -7687,10 +7534,6 @@
 										"value": "application/json"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/teams/{{TeamId}}/channels/{{ChannelId}}/tabs?$expand=teamsApp",
 									"protocol": "https",
@@ -7772,10 +7615,6 @@
 										"value": "application/json"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/groups/{{TeamId}}/drive/root/children",
 									"protocol": "https",
@@ -7856,10 +7695,6 @@
 										"value": "application/json"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/beta/teams/{{TeamId}}/channels/{{ChannelId}}/messages",
 									"protocol": "https",
@@ -7935,10 +7770,6 @@
 										"value": "application/json"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/beta/teams/{{TeamId}}/channels/{{ChannelId}}/messages/{{MessageId}}",
 									"protocol": "https",
@@ -8020,10 +7851,6 @@
 										"value": "application/json"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/beta/teams/{{TeamId}}/channels/{{ChannelId}}/messages/{{MessageId}}/replies",
 									"protocol": "https",
@@ -8101,10 +7928,6 @@
 										"value": "application/json"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/beta/teams/{{TeamId}}/channels/{{ChannelId}}/messages/{{MessageId}}/replies/{{ReplyId}}",
 									"protocol": "https",
@@ -8272,10 +8095,6 @@
 										"type": "text"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/me",
 									"protocol": "https",
@@ -8341,10 +8160,6 @@
 										"type": "text"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/me/aboutMe",
 									"protocol": "https",
@@ -8411,10 +8226,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/me/?$select=displayName,skills",
 									"protocol": "https",
@@ -8487,10 +8298,6 @@
 										"type": "text"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/me/manager",
 									"protocol": "https",
@@ -8557,10 +8364,6 @@
 										"type": "text"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/me/directReports",
 									"protocol": "https",
@@ -8627,10 +8430,6 @@
 										"type": "text"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/me/memberOf",
 									"protocol": "https",
@@ -8697,10 +8496,6 @@
 										"type": "text"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/me/photo/$value",
 									"protocol": "https",
@@ -8768,10 +8563,6 @@
 										"type": "text"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/users",
 									"protocol": "https",
@@ -8837,10 +8628,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/users?$filter=Department eq 'Finance'",
 									"protocol": "https",
@@ -8912,10 +8699,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/users/{{UserName}}",
 									"protocol": "https",
@@ -8982,10 +8765,6 @@
 										"type": "text"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/users/{{UserId}}",
 									"protocol": "https",
@@ -9052,10 +8831,6 @@
 										"type": "text"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/users/{{UserId}}/photo/$value",
 									"protocol": "https",
@@ -9255,10 +9030,6 @@
 								"type": "text"
 							}
 						],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
 						"url": {
 							"raw": "https://graph.microsoft.com/v1.0/me",
 							"protocol": "https",
@@ -9357,10 +9128,6 @@
 										"type": "text"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/users/{{UserId}}/messages",
 									"protocol": "https",
@@ -9453,10 +9220,6 @@
 										"type": "text"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/users/{{UserId}}/messages/{{MessageId}}",
 									"protocol": "https",
@@ -9536,10 +9299,6 @@
 										"value": "postman-graph/v1.0"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/users/{{UserId}}/joinedTeams",
 									"protocol": "https",
@@ -9628,10 +9387,6 @@
 										"type": "text"
 									}
 								],
-								"body": {
-									"mode": "raw",
-									"raw": ""
-								},
 								"url": {
 									"raw": "https://graph.microsoft.com/v1.0/users",
 									"protocol": "https",
@@ -9763,10 +9518,6 @@
 						"type": "text"
 					}
 				],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
 				"url": {
 					"raw": "https://graph.microsoft.com/v1.0/$metadata",
 					"protocol": "https",
@@ -9798,10 +9549,6 @@
 						"type": "text"
 					}
 				],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
 				"url": {
 					"raw": "https://graph.microsoft.com/beta/$metadata",
 					"protocol": "https",
