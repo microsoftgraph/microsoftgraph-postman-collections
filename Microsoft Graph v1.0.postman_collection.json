@@ -8849,6 +8849,93 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "Invite Guest User",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to at least *User.Invite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            // Get invited user id\r",
+											"            postman.setEnvironmentVariable(\"UserId\", json.invitedUser.id);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{ \r\n    \"invitedUserDisplayName\": \"<Display Name of Invited User>\", \r\n    \"invitedUserEmailAddress\": \"<Email Address of Invited User>, \r\n    \"invitedUserMessageInfo\": {\r\n        \"messageLanguage\": \"en-US\",\r\n        \"ccRecipients\": [\r\n             {\r\n                \"emailAddress\": {\r\n                    \"name\": \"<Optional CC for Invitation>\",\r\n                    \"address\": \"<Optional CC Email Address for Invitation>\"\r\n                 }\r\n             }\r\n        ],\r\n        \"customizedMessageBody\": \"Hi, you have just been invited to Azure AD with Postman using Microsoft Graph!\"\r\n     },\r\n    \"sendInvitationMessage\": true, \r\n    \"inviteRedirectUrl\": \"https://myapps.microsoft.com\" \r\n} ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/invitations",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"invitations"
+									]
+								},
+								"description": "Invite Azure AD B2B Guest User using Delegated Permission"
+							},
+							"response": []
 						}
 					],
 					"_postman_isSubFolder": true
@@ -9007,7 +9094,7 @@
 							"oauth2": [
 								{
 									"key": "accessToken",
-									"value": "",
+									"value": "eyJ0eXAiOiJKV1QiLCJub25jZSI6IkxkbFg2dXBnTExadmZjQTlHdnJJTVFZUHRRRW1CX1BJeFhRVXZwcHltXzQiLCJhbGciOiJSUzI1NiIsIng1dCI6ImllX3FXQ1hoWHh0MXpJRXN1NGM3YWNRVkduNCIsImtpZCI6ImllX3FXQ1hoWHh0MXpJRXN1NGM3YWNRVkduNCJ9.eyJhdWQiOiIwMDAwMDAwMy0wMDAwLTAwMDAtYzAwMC0wMDAwMDAwMDAwMDAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC8xMDQ3NDJmYi02MjI1LTQzOWYtOTU0MC02MGRhNWYwMzE3ZGMvIiwiaWF0IjoxNTY4ODQwNTM3LCJuYmYiOjE1Njg4NDA1MzcsImV4cCI6MTU2ODg0NDQzNywiYWNjdCI6MCwiYWNyIjoiMSIsImFpbyI6IjQyRmdZTGhldktIbjV6N2x2TE5jODI3cjFPL3F5R052bkJoOVNzOWl2ZEd1cUlLZ1M0MEEiLCJhbXIiOlsicHdkIl0sImFwcF9kaXNwbGF5bmFtZSI6Ik1TR3JhcGggSWRlbnRpdHkgQXV0b21hdGlvbiIsImFwcGlkIjoiYzlhNDIwNjAtM2M1ZC00NmFhLWFmZmYtZDIwYjE2YjdiMjg5IiwiYXBwaWRhY3IiOiIxIiwiZmFtaWx5X25hbWUiOiJFbHZlbiIsImdpdmVuX25hbWUiOiJKYW4gVmlkYXIiLCJpcGFkZHIiOiI5NS4zNC4xMTQuMTg4IiwibmFtZSI6IkphbiBWaWRhciBFbHZlbiIsIm9pZCI6IjBmMzdkZTk1LWE2YjQtNDkxZC04NDI1LTMyYTM3MGVkN2I1ZCIsIm9ucHJlbV9zaWQiOiJTLTEtNS0yMS01NTE4ODc2OTYtMzI0MDAyOTgxMy0zOTUxMjM2NTExLTExMjgiLCJwbGF0ZiI6IjMiLCJwdWlkIjoiMTAwMzAwMDA5QTI5RkRDQyIsInNjcCI6IlVzZXIuUmVhZCBVc2VyLlJlYWRCYXNpYy5BbGwgcHJvZmlsZSBvcGVuaWQgZW1haWwiLCJzdWIiOiJXOVo2bmJ0RzhQYmhCVXZ0OVlhdDk4d0lDbEZBc09LTmg0dmRONVh6ZjNjIiwidGlkIjoiMTA0NzQyZmItNjIyNS00MzlmLTk1NDAtNjBkYTVmMDMxN2RjIiwidW5pcXVlX25hbWUiOiJqYW4udmlkYXJAZWx2ZW4ubm8iLCJ1cG4iOiJqYW4udmlkYXJAZWx2ZW4ubm8iLCJ1dGkiOiI0OFhyYlpnT3BrR2RZMGVKSGJ3d0FBIiwidmVyIjoiMS4wIiwid2lkcyI6WyI5NWU3OTEwOS05NWMwLTRkOGUtYWVlMy1kMDFhY2NmMmQ0N2IiXSwieG1zX3N0Ijp7InN1YiI6ImEtSG5HaWZlSmx1YUdlWU5CUWVMYk54UTB4YVhCMUc2Z0xQVGIwQ0ZzVGMifSwieG1zX3RjZHQiOjE0MTEzMDExMDF9.eTka30KOLfDrewyaUM03Ft7jKLqb4rlsqtduHLP8a4bWVfTQGus-8IFKqe1d-zgQtGP0xfeV0W3Rcmk9YL0f1_t3Gr7OP1JKD0WEdXwyv4YSVCVtcSIceefdBuydcOlyHydZVfMsVsNEyecB83RATMteZ_9glSMcq8sGhlJxVK8CuKb52pTYT04MxSuUoA01txyp4zPCHN8OdFXplRSihjsVnsYK99O4oQR40y9Bp-dP5x2OElPQ0zmmFmV_GDl42zP_5QhHWLpCEB8OB35MGwh6cq1Ge-ztM6-SllCy7hWBuPYsmNQYUEprUQhVHuKbhksN5olDaB9wuj9tGBRRDQ",
 									"type": "string"
 								},
 								{
@@ -9400,6 +9487,102 @@
 										"users"
 									]
 								}
+							},
+							"response": []
+						},
+						{
+							"name": "Invite Guest User",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "b29689b3-d1b1-4f0b-9e6e-888053194c1a",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *Get App-Only Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user application permissions in your application to at least *User.Invite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *Application | Get App-Only Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            // Get invited user id\r",
+											"            postman.setEnvironmentVariable(\"UserId\", json.invitedUser.id);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}"
+										],
+										"type": "text/javascript"
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "969d502c-8f05-4b21-a048-a0a2c5801a72",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AppAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{ \r\n    \"invitedUserDisplayName\": \"<Display Name of Invited User>\", \r\n    \"invitedUserEmailAddress\": \"<Email Address of Invited User>, \r\n    \"invitedUserMessageInfo\": {\r\n        \"messageLanguage\": \"en-US\",\r\n        \"ccRecipients\": [\r\n             {\r\n                \"emailAddress\": {\r\n                    \"name\": \"<Optional CC for Invitation>\",\r\n                    \"address\": \"<Optional CC Email Address for Invitation>\"\r\n                 }\r\n             }\r\n        ],\r\n        \"customizedMessageBody\": \"Hi, you have just been invited to Azure AD with Postman using Microsoft Graph!\"\r\n     },\r\n    \"sendInvitationMessage\": true, \r\n    \"inviteRedirectUrl\": \"https://myapps.microsoft.com\" \r\n} ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/invitations",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"invitations"
+									]
+								},
+								"description": "Invite Azure AD B2B Guest User using Application Permission"
 							},
 							"response": []
 						}
