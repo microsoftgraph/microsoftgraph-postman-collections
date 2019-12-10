@@ -28,8 +28,7 @@
 			"folders_order": [
 				"5ccca700-7420-4f9c-896b-ccf8da529745",
 				"a1911d53-034e-450d-9aa5-ec58bac47cf4",
-				"cd1d768f-f4d1-4c7d-86c5-436a777aabdd",
-				"86ab1e2f-607d-428e-8d03-f891a04ce756"
+				"cd1d768f-f4d1-4c7d-86c5-436a777aabdd"
 			]
 		},
 		{
@@ -223,7 +222,8 @@
 				"1512c376-a539-4cc9-afb3-d2d3847fee49",
 				"2ce7fb7d-9c6e-471a-ae24-7f8e813fbdb6",
 				"25aaf4ce-b570-48ff-89b0-3271cd8c90b1",
-				"25f3c22b-4cee-4b28-9d1c-9d05be6dcc8e"
+				"25f3c22b-4cee-4b28-9d1c-9d05be6dcc8e",
+				"86ab1e2f-607d-428e-8d03-f891a04ce756"
 			]
 		},
 		{
@@ -309,7 +309,7 @@
 			"auth": null,
 			"events": null,
 			"collection": "34aea7b9-f216-4ac7-89ab-5c3f1d7edbb1",
-			"folder": "2ccd93d1-2d1e-441b-9115-50ccf400571e",
+			"folder": "693eb0c1-c28c-4492-a43b-95c7bf5fec7b",
 			"order": [
 				"a3cb6435-d469-4461-af55-6c2d8f7e7fb7",
 				"7bf70a97-6c72-4d8b-911d-92c3991aea55",
