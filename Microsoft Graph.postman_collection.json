@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "ff3703ab-a91c-43d4-9e14-4fba520b4bb7",
-		"name": "Microsoft Graph v1.0",
+		"_postman_id": "fe719afc-e2ea-4450-bd7c-0b7837488fa5",
+		"name": "Microsoft Graph",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -433,6 +433,7 @@
 							"response": []
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -589,6 +590,7 @@
 							"response": []
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -1012,6 +1014,7 @@
 							"response": []
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -1391,6 +1394,7 @@
 							"response": []
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -1472,6 +1476,7 @@
 							"response": []
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -1621,6 +1626,7 @@
 							"response": []
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -2549,6 +2555,7 @@
 							"response": []
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -2950,6 +2957,7 @@
 							"response": []
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -3187,6 +3195,7 @@
 									"response": []
 								}
 							],
+							"protocolProfileBehavior": {},
 							"_postman_isSubFolder": true
 						},
 						{
@@ -3484,9 +3493,11 @@
 									"response": []
 								}
 							],
+							"protocolProfileBehavior": {},
 							"_postman_isSubFolder": true
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -4111,6 +4122,7 @@
 							"response": []
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -5158,6 +5170,229 @@
 							"response": []
 						}
 					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Search",
+					"item": [
+						{
+							"name": "Search Messages",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"requests\": [\n    {\n      \"entityTypes\": [\n        \"microsoft.graph.message\"\n      ],\n      \"query\": {\n        \"query_string\": {\n          \"query\": \"test\"\n        }\n      },\n      \"from\": 0,\n      \"size\": 5\n    }\n  ]\n}"
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/beta/search/query",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"beta",
+										"search",
+										"query"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Search Events",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"requests\": [\n    {\n      \"entityTypes\": [\n        \"microsoft.graph.event\"\n      ],\n      \"query\": {\n        \"query_string\": {\n          \"query\": \"test\"\n        }\n      },\n      \"from\": 0,\n      \"size\": 5\n    }\n  ]\n}"
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/beta/search/query",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"beta",
+										"search",
+										"query"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Search DriveItems",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"requests\": [\n    {\n      \"entityTypes\": [\n        \"microsoft.graph.driveItem\"\n      ],\n      \"query\": {\n        \"query_string\": {\n          \"query\": \"test\"\n        }\n      },\n      \"from\": 0,\n      \"size\": 25\n    }\n  ]\n}"
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/beta/search/query",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"beta",
+										"search",
+										"query"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Search External Files",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"requests\": [\n    {\n      \"entityTypes\": [\n        \"microsoft.graph.externalFile\"\n      ],\n      \"query\": {\n        \"query_string\": {\n          \"query\": \"test\"\n        }\n      },\n      \"from\": 0,\n      \"size\": 25\n    }\n  ]\n}"
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/beta/search/query",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"beta",
+										"search",
+										"query"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Search External Items",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"requests\": [\n    {\n      \"entityTypes\": [\n        \"microsoft.graph.externalItem\"\n      ],\n      \"contentSources\": [\n        \"/external/connections/connection_friendly_name\"\n      ],\n      \"query\": {\n        \"query_string\": {\n          \"query\": \"test\"\n        }\n      },\n      \"from\": 0,\n      \"size\": 25,\n      \"stored_fields\": [\n        \"number\",\n        \"shortdescription\"\n      ]\n    }\n  ]\n}"
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/beta/search/query",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"beta",
+										"search",
+										"query"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -6031,6 +6266,7 @@
 							"response": []
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -6866,6 +7102,7 @@
 							"response": []
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -6942,6 +7179,7 @@
 							"response": []
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -7025,6 +7263,7 @@
 							"response": []
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -8036,6 +8275,7 @@
 							"response": []
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -8938,6 +9178,7 @@
 							"response": []
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -9133,7 +9374,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"protocolProfileBehavior": {}
 		},
 		{
 			"name": "Application",
@@ -9327,6 +9569,301 @@
 							"response": []
 						}
 					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "SharePoint",
+					"item": [
+						{
+							"name": "Get Sites",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "e2944f52-d640-47a7-a805-55eff5bf0690",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *Get App-Only Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.environment.get(\"UserId\") === \"\")\r",
+											"        {\r",
+											"            console.log(\"You need to run *Application | Get Users* request first or set a UserId environment variable.\");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            if (pm.response.status === \"Forbidden\")\r",
+											"            {\r",
+											"                console.log(\"You need to add user delegated permissions in your application to atleast *Mail.Read.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *Application | Get App-Only Access Token* request to update access token. \");\r",
+											"            }\r",
+											"            else\r",
+											"            {\r",
+											"                if (responseBody.indexOf(\"ResourceNotFound\") !== -1)\r",
+											"                {\r",
+											"                    console.log(\"You need to pick a UserId who has a license for a mailbox.\");\r",
+											"                }\r",
+											"                else\r",
+											"                {\r",
+											"                    var json = JSON.parse(responseBody);\r",
+											"                    postman.setEnvironmentVariable(\"MessageId\", json.value[0].id);\r",
+											"                }\r",
+											"            }\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AppAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									},
+									{
+										"key": "Prefer",
+										"value": "apiversion=2.1",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://graph.microsoft.com/beta/sites",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"beta",
+										"sites"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Subscriptions",
+					"item": [
+						{
+							"name": "Get Subscriptions",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "e2944f52-d640-47a7-a805-55eff5bf0690",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *Get App-Only Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.environment.get(\"UserId\") === \"\")\r",
+											"        {\r",
+											"            console.log(\"You need to run *Application | Get Users* request first or set a UserId environment variable.\");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            if (pm.response.status === \"Forbidden\")\r",
+											"            {\r",
+											"                console.log(\"You need to add user delegated permissions in your application to atleast *Mail.Read.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *Application | Get App-Only Access Token* request to update access token. \");\r",
+											"            }\r",
+											"            else\r",
+											"            {\r",
+											"                if (responseBody.indexOf(\"ResourceNotFound\") !== -1)\r",
+											"                {\r",
+											"                    console.log(\"You need to pick a UserId who has a license for a mailbox.\");\r",
+											"                }\r",
+											"                else\r",
+											"                {\r",
+											"                    var json = JSON.parse(responseBody);\r",
+											"                    postman.setEnvironmentVariable(\"MessageId\", json.value[0].id);\r",
+											"                }\r",
+											"            }\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AppAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "SdkVersion",
+										"value": "postman-graph/v1.0",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/subscriptions",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"subscriptions"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Subscription",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "e2944f52-d640-47a7-a805-55eff5bf0690",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *Get App-Only Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.environment.get(\"UserId\") === \"\")\r",
+											"        {\r",
+											"            console.log(\"You need to run *Application | Get Users* request first or set a UserId environment variable.\");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            if (pm.response.status === \"Forbidden\")\r",
+											"            {\r",
+											"                console.log(\"You need to add user delegated permissions in your application to atleast *Mail.Read.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *Application | Get App-Only Access Token* request to update access token. \");\r",
+											"            }\r",
+											"            else\r",
+											"            {\r",
+											"                if (responseBody.indexOf(\"ResourceNotFound\") !== -1)\r",
+											"                {\r",
+											"                    console.log(\"You need to pick a UserId who has a license for a mailbox.\");\r",
+											"                }\r",
+											"                else\r",
+											"                {\r",
+											"                    var json = JSON.parse(responseBody);\r",
+											"                    postman.setEnvironmentVariable(\"MessageId\", json.value[0].id);\r",
+											"                }\r",
+											"            }\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AppAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"expirationDateTime\":\"2019-05-19T12:41:53.2962802Z\"\r\n}"
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/subscriptions/{{SubscriptionId}}",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"subscriptions",
+										"{{SubscriptionId}}"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -9405,6 +9942,7 @@
 							"response": []
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -9587,6 +10125,7 @@
 							"response": []
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
@@ -9684,7 +10223,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"protocolProfileBehavior": {}
 		},
 		{
 			"name": "v1.0 $metadata",
@@ -9748,5 +10288,6 @@
 			},
 			"response": []
 		}
-	]
+	],
+	"protocolProfileBehavior": {}
 }
