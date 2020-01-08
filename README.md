@@ -22,9 +22,9 @@ To setup the Postman collections follow these steps:
 
 **4.** Paste the following two URLs and click Import after each.
 
-`https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph%20.postman_collection.json`
+`https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph.postman_collection.json`
 
-`https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph%20.postman_environment.json`
+`https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph.postman_environment.json`
 
 You should now see the **Microsoft Graph** collection on the left had side Collections pane.
 
