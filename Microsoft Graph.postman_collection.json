@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "fe719afc-e2ea-4450-bd7c-0b7837488fa5",
+		"_postman_id": "ae1f1cba-3e85-4b56-9109-7f68de21eaf4",
 		"name": "Microsoft Graph",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -1470,6 +1470,379 @@
 									"path": [
 										"v1.0",
 										"groups"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Identity and access (beta)",
+					"item": [
+						{
+							"name": "List conditionalAccessPolicies",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "c2200860-88b8-4d9f-9b9b-e693b6610dc6",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to at least *Policy.Read.All* and *Policy.ReadWrite.ConditionalAccess* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://graph.microsoft.com/beta/conditionalAccess/policies",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"beta",
+										"conditionalAccess",
+										"policies"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create conditionalAccessPolicy",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "0ab63815-e49a-422d-b3e5-712280601438",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to at least *Policy.Read.All* and *Policy.ReadWrite.ConditionalAccess* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"displayName\": \"<OrgName> baseline policy: Require MFA for admins\",\r\n    \"state\": \"disabled\",\r\n    \"sessionControls\": null,\r\n    \"conditions\": {\r\n        \"signInRiskLevels\": [],\r\n        \"clientAppTypes\": [],\r\n        \"platforms\": null,\r\n        \"locations\": null,\r\n        \"deviceStates\": null,\r\n        \"applications\": {\r\n            \"includeApplications\": [\r\n                \"All\"\r\n            ],\r\n            \"excludeApplications\": [],\r\n            \"includeUserActions\": []\r\n        },\r\n        \"users\": {\r\n            \"includeUsers\": [],\r\n            \"excludeUsers\": [\r\n                \"<object-id-break-glass-admin>\",\r\n                \"<object-id-on-premises-sync-account>\"\r\n            ],\r\n            \"includeGroups\": [],\r\n            \"excludeGroups\": [],\r\n            \"includeRoles\": [\r\n                \"b0f54661-2d74-4c50-afa3-1ec803f12efe\",\r\n                \"b1be1c3e-b65d-4f19-8427-f6fa0d97feb9\",\r\n                \"29232cdf-9323-42fd-ade2-1d097af3e4de\",\r\n                \"62e90394-69f5-4237-9190-012177145e10\",\r\n                \"729827e3-9c14-49f7-bb1b-9608f156bbb8\",\r\n                \"966707d0-3269-4727-9be2-8c3a10f19b9d\",\r\n                \"194ae4cb-b126-40b2-bd5b-6091b380977d\",\r\n                \"f28a1f50-f6e7-4571-818b-6a12f2af6b6c\",\r\n                \"fe930be7-5e62-47db-91af-98c3a49a38b1\"\r\n            ],\r\n            \"excludeRoles\": []\r\n        }\r\n    },\r\n    \"grantControls\": {\r\n        \"operator\": \"OR\",\r\n        \"builtInControls\": [\r\n            \"mfa\"\r\n        ],\r\n        \"customAuthenticationFactors\": [],\r\n        \"termsOfUse\": []\r\n    }\r\n}"
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/beta/conditionalAccess/policies",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"beta",
+										"conditionalAccess",
+										"policies"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get conditionalAccessPolicy",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "3574ad9a-0bb1-4d89-8365-7a9e6207c00b",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to at least *Policy.Read.All* and *Policy.ReadWrite.ConditionalAccess* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://graph.microsoft.com/beta/conditionalAccess/policies/{id}",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"beta",
+										"conditionalAccess",
+										"policies",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update conditionalAccessPolicy",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "db0a8cf7-ad91-4b03-9046-eb2cf5c2a587",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to at least *Policy.Read.All* and *Policy.ReadWrite.ConditionalAccess* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"displayName\": \"<OrgName> baseline policy: Require MFA for admins\",\r\n    \"state\": \"disabled\",\r\n    \"sessionControls\": null,\r\n    \"conditions\": {\r\n        \"signInRiskLevels\": [],\r\n        \"clientAppTypes\": [],\r\n        \"platforms\": null,\r\n        \"locations\": null,\r\n        \"deviceStates\": null,\r\n        \"applications\": {\r\n            \"includeApplications\": [\r\n                \"All\"\r\n            ],\r\n            \"excludeApplications\": [],\r\n            \"includeUserActions\": []\r\n        },\r\n        \"users\": {\r\n            \"includeUsers\": [],\r\n            \"excludeUsers\": [\r\n                \"<object-id-break-glass-admin>\",\r\n                \"<object-id-on-premises-sync-account>\"\r\n            ],\r\n            \"includeGroups\": [],\r\n            \"excludeGroups\": [],\r\n            \"includeRoles\": [\r\n                \"b0f54661-2d74-4c50-afa3-1ec803f12efe\",\r\n                \"b1be1c3e-b65d-4f19-8427-f6fa0d97feb9\",\r\n                \"29232cdf-9323-42fd-ade2-1d097af3e4de\",\r\n                \"62e90394-69f5-4237-9190-012177145e10\",\r\n                \"729827e3-9c14-49f7-bb1b-9608f156bbb8\",\r\n                \"966707d0-3269-4727-9be2-8c3a10f19b9d\",\r\n                \"194ae4cb-b126-40b2-bd5b-6091b380977d\",\r\n                \"f28a1f50-f6e7-4571-818b-6a12f2af6b6c\",\r\n                \"fe930be7-5e62-47db-91af-98c3a49a38b1\"\r\n            ],\r\n            \"excludeRoles\": []\r\n        }\r\n    },\r\n    \"grantControls\": {\r\n        \"operator\": \"OR\",\r\n        \"builtInControls\": [\r\n            \"mfa\"\r\n        ],\r\n        \"customAuthenticationFactors\": [],\r\n        \"termsOfUse\": []\r\n    }\r\n}"
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/beta/conditionalAccess/policies/{id}",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"beta",
+										"conditionalAccess",
+										"policies",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete conditionalAccessPolicy",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "5ad0e612-e626-4666-89ab-9f880ede596e",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to at least *Policy.Read.All* and *Policy.ReadWrite.ConditionalAccess* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://graph.microsoft.com/beta/conditionalAccess/policies/{id}",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"beta",
+										"conditionalAccess",
+										"policies",
+										"{id}"
 									]
 								}
 							},
@@ -9380,6 +9753,369 @@
 		{
 			"name": "Application",
 			"item": [
+				{
+					"name": "Identity and access (beta)",
+					"item": [
+						{
+							"name": "List conditionalAccessPolicies",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "c2200860-88b8-4d9f-9b9b-e693b6610dc6",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *Get App-Only Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user application permissions in your application to at least *Policy.Read.All* and *Policy.ReadWrite.ConditionalAccess* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *Application | Get App-Only Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AppAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://graph.microsoft.com/beta/conditionalAccess/policies",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"beta",
+										"conditionalAccess",
+										"policies"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create conditionalAccessPolicy",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "0ab63815-e49a-422d-b3e5-712280601438",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *Get App-Only Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user application permissions in your application to at least *Policy.Read.All* and *Policy.ReadWrite.ConditionalAccess* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *Application | Get App-Only Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AppAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"displayName\": \"<OrgName> baseline policy: Require MFA for admins\",\r\n    \"state\": \"disabled\",\r\n    \"sessionControls\": null,\r\n    \"conditions\": {\r\n        \"signInRiskLevels\": [],\r\n        \"clientAppTypes\": [],\r\n        \"platforms\": null,\r\n        \"locations\": null,\r\n        \"deviceStates\": null,\r\n        \"applications\": {\r\n            \"includeApplications\": [\r\n                \"All\"\r\n            ],\r\n            \"excludeApplications\": [],\r\n            \"includeUserActions\": []\r\n        },\r\n        \"users\": {\r\n            \"includeUsers\": [],\r\n            \"excludeUsers\": [\r\n                \"<object-id-break-glass-admin>\",\r\n                \"<object-id-on-premises-sync-account>\"\r\n            ],\r\n            \"includeGroups\": [],\r\n            \"excludeGroups\": [],\r\n            \"includeRoles\": [\r\n                \"b0f54661-2d74-4c50-afa3-1ec803f12efe\",\r\n                \"b1be1c3e-b65d-4f19-8427-f6fa0d97feb9\",\r\n                \"29232cdf-9323-42fd-ade2-1d097af3e4de\",\r\n                \"62e90394-69f5-4237-9190-012177145e10\",\r\n                \"729827e3-9c14-49f7-bb1b-9608f156bbb8\",\r\n                \"966707d0-3269-4727-9be2-8c3a10f19b9d\",\r\n                \"194ae4cb-b126-40b2-bd5b-6091b380977d\",\r\n                \"f28a1f50-f6e7-4571-818b-6a12f2af6b6c\",\r\n                \"fe930be7-5e62-47db-91af-98c3a49a38b1\"\r\n            ],\r\n            \"excludeRoles\": []\r\n        }\r\n    },\r\n    \"grantControls\": {\r\n        \"operator\": \"OR\",\r\n        \"builtInControls\": [\r\n            \"mfa\"\r\n        ],\r\n        \"customAuthenticationFactors\": [],\r\n        \"termsOfUse\": []\r\n    }\r\n}"
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/beta/conditionalAccess/policies",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"beta",
+										"conditionalAccess",
+										"policies"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get conditionalAccessPolicy",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "3574ad9a-0bb1-4d89-8365-7a9e6207c00b",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *Get App-Only Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user application permissions in your application to at least *Policy.Read.All* and *Policy.ReadWrite.ConditionalAccess* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *Application | Get App-Only Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AppAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://graph.microsoft.com/beta/conditionalAccess/policies/{id}",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"beta",
+										"conditionalAccess",
+										"policies",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update conditionalAccessPolicy",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "db0a8cf7-ad91-4b03-9046-eb2cf5c2a587",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *Get App-Only Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user application permissions in your application to at least *Policy.Read.All* and *Policy.ReadWrite.ConditionalAccess* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *Application | Get App-Only Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AppAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"displayName\": \"<OrgName> baseline policy: Require MFA for admins\",\r\n    \"state\": \"disabled\",\r\n    \"sessionControls\": null,\r\n    \"conditions\": {\r\n        \"signInRiskLevels\": [],\r\n        \"clientAppTypes\": [],\r\n        \"platforms\": null,\r\n        \"locations\": null,\r\n        \"deviceStates\": null,\r\n        \"applications\": {\r\n            \"includeApplications\": [\r\n                \"All\"\r\n            ],\r\n            \"excludeApplications\": [],\r\n            \"includeUserActions\": []\r\n        },\r\n        \"users\": {\r\n            \"includeUsers\": [],\r\n            \"excludeUsers\": [\r\n                \"<object-id-break-glass-admin>\",\r\n                \"<object-id-on-premises-sync-account>\"\r\n            ],\r\n            \"includeGroups\": [],\r\n            \"excludeGroups\": [],\r\n            \"includeRoles\": [\r\n                \"b0f54661-2d74-4c50-afa3-1ec803f12efe\",\r\n                \"b1be1c3e-b65d-4f19-8427-f6fa0d97feb9\",\r\n                \"29232cdf-9323-42fd-ade2-1d097af3e4de\",\r\n                \"62e90394-69f5-4237-9190-012177145e10\",\r\n                \"729827e3-9c14-49f7-bb1b-9608f156bbb8\",\r\n                \"966707d0-3269-4727-9be2-8c3a10f19b9d\",\r\n                \"194ae4cb-b126-40b2-bd5b-6091b380977d\",\r\n                \"f28a1f50-f6e7-4571-818b-6a12f2af6b6c\",\r\n                \"fe930be7-5e62-47db-91af-98c3a49a38b1\"\r\n            ],\r\n            \"excludeRoles\": []\r\n        }\r\n    },\r\n    \"grantControls\": {\r\n        \"operator\": \"OR\",\r\n        \"builtInControls\": [\r\n            \"mfa\"\r\n        ],\r\n        \"customAuthenticationFactors\": [],\r\n        \"termsOfUse\": []\r\n    }\r\n}"
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/beta/conditionalAccess/policies/{id}",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"beta",
+										"conditionalAccess",
+										"policies",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete conditionalAccessPolicy",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "5ad0e612-e626-4666-89ab-9f880ede596e",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *Get App-Only Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user application permissions in your application to at least *Policy.Read.All* and *Policy.ReadWrite.ConditionalAccess* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *Application | Get App-Only Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AppAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://graph.microsoft.com/beta/conditionalAccess/policies/{id}",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"beta",
+										"conditionalAccess",
+										"policies",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
 				{
 					"name": "Mail",
 					"item": [
