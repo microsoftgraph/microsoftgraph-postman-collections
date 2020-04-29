@@ -9655,7 +9655,7 @@
 									}
 								],
 								"url": {
-									"raw": "https://graph.microsoft.com/beta/sites",
+									"raw": "https://graph.microsoft.com/v1.0/sites",
 									"protocol": "https",
 									"host": [
 										"graph",
@@ -9663,7 +9663,7 @@
 										"com"
 									],
 									"path": [
-										"beta",
+										"v1.0",
 										"sites"
 									]
 								}
