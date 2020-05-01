@@ -9926,7 +9926,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"changeType\": \"created,updated\",\r\n  \"notificationUrl\": \"{{notificationUrl}}\",\r\n  \"resource\": \"{{resourcePath}}\",\r\n  \"expirationDateTime\": \"2020-04-24T13:30:00.0000000Z\",\r\n  \"clientState\": \"secretClientState\"\r\n}",
+									"raw": "{\r\n  \"changeType\": \"updated\",\r\n  \"notificationUrl\": \"https://replacewith.your/notificationURL\",\r\n  \"resource\": \"/users\",\r\n  \"expirationDateTime\": \"2020-04-24T13:30:00.0000000Z\",\r\n  \"clientState\": \"secretClientState\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
