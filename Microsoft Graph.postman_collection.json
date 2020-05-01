@@ -9926,7 +9926,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n  \"changeType\": \"created,updated\",\r\n  \"notificationUrl\": \"{{notificationUrl}}\",\r\n  \"resource\": \"{{resourcePath}}\",\r\n  \"expirationDateTime\": \"2020-04-24T13:30:00.0000000Z\",\r\n  \"clientState\": \"secretClientState\"\r\n}",
+									"raw": "{\r\n  \"changeType\": \"created,updated\",\r\n  \"notificationUrl\": \"{{notificationUrl}}\",\r\n  \"resource\": \"{{resourcePath}}\",\r\n  \"expirationDateTime\": \"{{expirationDateTime}}\",\r\n  \"clientState\": \"secretClientState\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -9934,7 +9934,7 @@
 									}
 								},
 								"url": {
-									"raw": "https://graph.microsoft.com/beta/subscriptions",
+									"raw": "https://graph.microsoft.com/v1.0/subscriptions",
 									"protocol": "https",
 									"host": [
 										"graph",
