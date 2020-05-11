@@ -1,0 +1,14 @@
+name: Ask Jeremy to review PR
+on:
+  pull_request:
+    types: [opened]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: "Send Review Request"
+      if: github.actor != 'jthake-msft'
+      uses: kunihiko-t/review-request-action@v0.1.3
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        reviewers: "jthake-msft"

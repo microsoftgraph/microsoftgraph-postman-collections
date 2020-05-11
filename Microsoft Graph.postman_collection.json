@@ -9655,7 +9655,7 @@
 									}
 								],
 								"url": {
-									"raw": "https://graph.microsoft.com/beta/sites",
+									"raw": "https://graph.microsoft.com/v1.0/sites",
 									"protocol": "https",
 									"host": [
 										"graph",
@@ -9663,7 +9663,7 @@
 										"com"
 									],
 									"path": [
-										"beta",
+										"v1.0",
 										"sites"
 									]
 								}
@@ -9857,6 +9857,93 @@
 										"v1.0",
 										"subscriptions",
 										"{{SubscriptionId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Subscription",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "4fa9cecd-99b3-42ee-8006-cd6100e2bdc1",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *Get App-Only Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.environment.get(\"UserId\") === \"\")\r",
+											"        {\r",
+											"            console.log(\"You need to run *Application | Get Users* request first or set a UserId environment variable.\");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            if (pm.response.status === \"Forbidden\")\r",
+											"            {\r",
+											"                console.log(\"You need to add user delegated permissions in your application to atleast *Mail.Read.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *Application | Get App-Only Access Token* request to update access token. \");\r",
+											"            }\r",
+											"            else\r",
+											"            {\r",
+											"                if (responseBody.indexOf(\"ResourceNotFound\") !== -1)\r",
+											"                {\r",
+											"                    console.log(\"You need to pick a UserId who has a license for a mailbox.\");\r",
+											"                }\r",
+											"                else\r",
+											"                {\r",
+											"                    var json = JSON.parse(responseBody);\r",
+											"                    postman.setEnvironmentVariable(\"MessageId\", json.value[0].id);\r",
+											"                }\r",
+											"            }\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AppAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"changeType\": \"created,updated\",\r\n  \"notificationUrl\": \"{{notificationUrl}}\",\r\n  \"resource\": \"{{resourcePath}}\",\r\n  \"expirationDateTime\": \"{{expirationDateTime}}\",\r\n  \"clientState\": \"secretClientState\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/subscriptions",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"beta",
+										"subscriptions"
 									]
 								}
 							},
