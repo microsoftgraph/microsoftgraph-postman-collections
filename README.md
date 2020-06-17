@@ -14,7 +14,7 @@ The most up-to-date experience to explore the APIs will always be [Microsoft Gra
 
 To setup the Postman collections follow these steps:
 
-**1.** Download and register for [Postman](https://www.getpostman.com/. Note: Make sure to install the latest version).
+**1.** Download and register for [Postman](https://www.getpostman.com/). Note: Make sure to install the latest version).
 
 **2.** Click **File | Import ...**.
 
