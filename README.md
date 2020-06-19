@@ -26,21 +26,21 @@ To setup the Postman collections follow these steps:
 
 `https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph.postman_environment.json`
 
-You should now see the **Microsoft Graph** collection on the left had side Collections pane.
+You should now see the **Microsoft Graph** collection on the left hand side Collections pane.
 
-**5.** Click on the **No environment** drop down in top right hand corner.
+**5.** Click on the **No environment** drop down in the top right hand corner.
 
 **6.** Select **Microsoft Graph environment**.
 
 **7.** Click the **eye** icon to the the right and then click **Edit**.
 
-**8.** Enter in to the **current** (not **initial**) variables your Microsoft Identity Application: **ClientID**, **ClientSecret** ad **TenantID**. 
+**8.** Enter in to the **current** (not **initial**) variables your Microsoft Identity Application: **ClientID**, **ClientSecret** and **TenantID**. 
 
-For more information on how to create a Application and to admin consent the app-only flow please read the [30 days of graph blog post series](https://developer.microsoft.com/en-us/graph/blogs/30daysmsgraph-day-13-postman-to-make-microsoft-graph-calls/).
+For more information on how to create an Application and to admin consent the app-only flow please read the [30 days of graph blog post series](https://developer.microsoft.com/en-us/graph/blogs/30daysmsgraph-day-13-postman-to-make-microsoft-graph-calls/).
 
-**9.** Select **Update**. Close the **Manage Environments** dialog. In the **MicrosoftGraph | Application** collection on left hand side. Click on the **Get App-only Access Token**. Then click **Send** button on right hand side.
+**9.** Select **Update**. Close the **Manage Environments** dialog. In the **MicrosoftGraph | Application** collection on the left hand side, click on the **Get App-only Access Token**. Then click the **Send** button on right hand side.
 
-**10.** Expand the **Application | Users** folder and click on **Get Users**. Then Click the **Send** button.
+**10.** Expand the **Application | Users** folder and click on **Get Users**. Then click the **Send** button.
 
 You are now up and running with Microsoft Graph collections.
 
@@ -49,13 +49,13 @@ You are now up and running with Microsoft Graph collections.
 ## Setting up on behalf of delegated access
 The simplest way of doing this is providing a **UserName** and **UserPassword** in the environment settings and use **On Behalf of a User | Get User Access Token** instead. **IMPORTANT:** It is not recommended to use production user accounts as this information is stored directly in Postman. This is also not a recommended approach for obtaining access tokens in production and should only be used for testing purposes.
 
-For those those that do not want to store user names and passwords in environment variables in postman that get synced to your postman cloud account. You can use the native Postman **Get New Access Token** capability to obtain a token without leaving postman.
+For those those that do not want to store user names and passwords in environment variables in Postman that get synced to your Postman cloud account. You can use the native Postman **Get New Access Token** capability to obtain a token without leaving Postman.
 
 **1.** Select **On behalf of a User | Get Access Token using Postman**.
 
 **2.** Click on the Authorization tab (besides Params).
 
-**3.** Click get access token button.
+**3.** Click on the get access token button.
 
 **4.** Fill out the following boxes with your real tenant and application values. Note that you cannot use the environment variables here, it has to be the actual values. These can be found by clicking **EndPoints** in the application blade in portal.azure.com.
 
