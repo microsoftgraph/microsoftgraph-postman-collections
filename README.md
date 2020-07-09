@@ -34,7 +34,7 @@ You should now see the **Microsoft Graph** collection on the left hand side Coll
 
 **7.** Click the **eye** icon to the the right and then click **Edit**.
 
-**8.** Enter in to the **current** (not **initial**) variables your Microsoft Identity Application: **ClientID**, **ClientSecret** and **TenantID**. 
+**8.** Enter into the **current** (not **initial**) variables your Microsoft Identity Application: **ClientID**, **ClientSecret** and **TenantID**. 
 
 For more information on how to create an Application and to admin consent the app-only flow please read the [30 days of graph blog post series](https://developer.microsoft.com/en-us/graph/blogs/30daysmsgraph-day-13-postman-to-make-microsoft-graph-calls/).
 
@@ -47,9 +47,9 @@ You are now up and running with Microsoft Graph collections.
 **NOTE:** that if you wish to run other APIs in the collection, you will need to consent the required permissions for your application.
 
 ## Setting up on behalf of delegated access
-The simplest way of doing this is providing a **UserName** and **UserPassword** in the environment settings and use **On Behalf of a User | Get User Access Token** instead. **IMPORTANT:** It is not recommended to use production user accounts as this information is stored directly in Postman. This is also not a recommended approach for obtaining access tokens in production and should only be used for testing purposes.
+The simplest way of doing this is by providing a **UserName** and **UserPassword** in the environment settings and use **On Behalf of a User | Get User Access Token** instead. **IMPORTANT:** It is not recommended to use production user accounts as this information is stored directly in Postman. This is also not a recommended approach for obtaining access tokens in production and should only be used for testing purposes.
 
-For those those that do not want to store user names and passwords in environment variables in Postman that get synced to your Postman cloud account. You can use the native Postman **Get New Access Token** capability to obtain a token without leaving Postman.
+For those that do not want to store user names and passwords in environment variables in Postman that get synced to your Postman cloud account. You can use the native Postman **Get New Access Token** capability to obtain a token without leaving Postman.
 
 **1.** Select **On behalf of a User | Get Access Token using Postman**.
 
