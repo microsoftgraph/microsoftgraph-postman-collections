@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "fe719afc-e2ea-4450-bd7c-0b7837488fa5",
+		"_postman_id": "199774fd-b5d5-4c58-ac54-9810152695a4",
 		"name": "Microsoft Graph",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -17,7 +17,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "53dccd13-aca3-4a16-a409-53ed0f676c09",
+										"id": "885b04f9-5f5b-4010-b06f-f3854ba0f327",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -81,7 +81,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "53dccd13-aca3-4a16-a409-53ed0f676c09",
+										"id": "ce06bc84-3400-40d3-b19d-4a4400845f9a",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -156,7 +156,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "53dccd13-aca3-4a16-a409-53ed0f676c09",
+										"id": "44bdb0f1-4749-4548-80c8-69258cb2bb08",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -223,7 +223,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "53dccd13-aca3-4a16-a409-53ed0f676c09",
+										"id": "57543b11-c357-4e14-b540-ad584e513faf",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -291,7 +291,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "53dccd13-aca3-4a16-a409-53ed0f676c09",
+										"id": "e667fb94-dcc2-48ab-b065-97e82882ea36",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -362,7 +362,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "53dccd13-aca3-4a16-a409-53ed0f676c09",
+										"id": "4655975c-ff95-4f9d-aabe-cf7f23de1fe4",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -445,7 +445,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "8eae8cca-644c-4978-ac37-e81f049af855",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -520,7 +520,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "0fd19b79-3968-4aa5-a2f6-22eaf1d575be",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -602,7 +602,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "9e26dfd5-49bb-4ceb-81f0-44f9d46f7237",
+										"id": "394e5527-3b50-4157-af38-38be9b883206",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -673,7 +673,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "9e26dfd5-49bb-4ceb-81f0-44f9d46f7237",
+										"id": "93d5e996-1970-4087-aba4-25933677b84e",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -704,7 +704,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "ba433fb0-069d-44a3-80b8-43e8c3f8e87b",
+										"id": "ed108941-3073-4000-9b08-5a52a789aeeb",
 										"exec": [
 											"postman.setEnvironmentVariable('Today',(new Date()).toISOString());",
 											"postman.setEnvironmentVariable('NextWeek',(new Date().addDays(7)).toISOString());"
@@ -770,7 +770,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "9e26dfd5-49bb-4ceb-81f0-44f9d46f7237",
+										"id": "e7251ee1-cee0-4ee3-b450-5140e49f20ea",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -846,7 +846,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "9e26dfd5-49bb-4ceb-81f0-44f9d46f7237",
+										"id": "a5cb97fb-29ad-405b-bb8a-01ca3ab053e2",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -926,7 +926,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "9e26dfd5-49bb-4ceb-81f0-44f9d46f7237",
+										"id": "508b7620-2233-49f5-81ef-eb25a80fb1af",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -957,7 +957,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "ba433fb0-069d-44a3-80b8-43e8c3f8e87b",
+										"id": "bd3f9e38-9f8b-4fc4-872f-7f279ae0db8d",
 										"exec": [
 											"postman.setEnvironmentVariable('Today',(new Date()).toISOString());",
 											"postman.setEnvironmentVariable('NextWeek',(new Date()).toISOString());"
@@ -1026,7 +1026,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "dbe5bdf1-cfe5-4842-b6f5-348e318f2c2d",
+										"id": "6fd7ba57-bf5f-4b57-aa0d-d23ad98f13aa",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -1099,7 +1099,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "dbe5bdf1-cfe5-4842-b6f5-348e318f2c2d",
+										"id": "951850fc-880e-4f6d-9321-30e264b5e9e7",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -1171,7 +1171,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "dbe5bdf1-cfe5-4842-b6f5-348e318f2c2d",
+										"id": "36c8a878-1001-4990-90a7-86b390921c00",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -1243,7 +1243,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "dbe5bdf1-cfe5-4842-b6f5-348e318f2c2d",
+										"id": "59d8e739-8208-4740-943c-8447c04fbb10",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -1322,7 +1322,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "dbe5bdf1-cfe5-4842-b6f5-348e318f2c2d",
+										"id": "24999de3-67e9-4ef5-befe-641caaf07399",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -1406,7 +1406,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "1f2e7e9a-f018-4f66-ba73-bf8516875723",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -1488,7 +1488,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "23bc18b7-97ca-4d2c-8ddf-f8357b3e0460",
+										"id": "a358045b-58bc-48f8-9276-7333e1f008a5",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -1560,7 +1560,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "23bc18b7-97ca-4d2c-8ddf-f8357b3e0460",
+										"id": "b2352dd2-b254-4d1e-8bc5-b84f4d887178",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -1638,7 +1638,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "9e26dfd5-49bb-4ceb-81f0-44f9d46f7237",
+										"id": "a958b7bc-84f3-475b-861b-6f20fcbd7a8e",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -1714,7 +1714,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "9e26dfd5-49bb-4ceb-81f0-44f9d46f7237",
+										"id": "12713728-62ca-4f09-83aa-dab7b8f63e1d",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -1791,7 +1791,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "9e26dfd5-49bb-4ceb-81f0-44f9d46f7237",
+										"id": "6b0d620b-539f-4c3d-8492-f07684ff0506",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -1868,7 +1868,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "9e26dfd5-49bb-4ceb-81f0-44f9d46f7237",
+										"id": "e408c3f8-7260-4bf7-843f-a94b35ec1cc0",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -1945,7 +1945,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "9e26dfd5-49bb-4ceb-81f0-44f9d46f7237",
+										"id": "36d7a9dc-6ad1-4aba-98ec-9a2e3dcd7327",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -2026,7 +2026,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "a8346261-52bf-419f-a874-55fc632251d9",
+										"id": "f9b93625-df21-4ef9-a875-396eafd95f5d",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -2105,7 +2105,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "9e26dfd5-49bb-4ceb-81f0-44f9d46f7237",
+										"id": "3a2ff85d-fa1d-46a6-96b2-d3c5c08cb6e9",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -2178,7 +2178,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "9e26dfd5-49bb-4ceb-81f0-44f9d46f7237",
+										"id": "95f5b354-9cb5-4135-8e66-430ae65aa6e3",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -2250,7 +2250,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "9e26dfd5-49bb-4ceb-81f0-44f9d46f7237",
+										"id": "b7db1933-2c65-4e48-83ec-18b505b01755",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -2331,7 +2331,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "62b77761-f24f-4b53-a30a-d97e7441dd87",
+										"id": "8edb3885-5359-4212-8354-d5aac9ddc20a",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -2413,7 +2413,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "9e26dfd5-49bb-4ceb-81f0-44f9d46f7237",
+										"id": "14f60220-2e75-45af-8684-51d941080397",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -2484,7 +2484,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "9e26dfd5-49bb-4ceb-81f0-44f9d46f7237",
+										"id": "0bb0fb50-5841-4a5d-9748-0bc75aa96def",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -2567,7 +2567,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "8443f54a-89c6-48c5-8b31-73dd96fd072a",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -2644,7 +2644,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "31bffac8-202f-47e7-b906-5c68082c0540",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -2721,7 +2721,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "12a37a0e-7d8d-44f9-a490-94f9327d8c76",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -2798,7 +2798,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "c19810dd-7a57-4157-9b9e-4ce284255040",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -2879,7 +2879,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "c7cc034a-788a-44d3-b395-59d76f7dad97",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -2972,7 +2972,7 @@
 										{
 											"listen": "test",
 											"script": {
-												"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+												"id": "13431a00-47b7-4846-b917-7819b11cdd42",
 												"exec": [
 													"try {\r",
 													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -3047,7 +3047,7 @@
 										{
 											"listen": "test",
 											"script": {
-												"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+												"id": "a0bf25ff-2a70-43d2-94a9-4c9486238e15",
 												"exec": [
 													"try {\r",
 													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -3123,7 +3123,7 @@
 										{
 											"listen": "test",
 											"script": {
-												"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+												"id": "70369384-100e-4786-b03c-fdca410bb73d",
 												"exec": [
 													"try {\r",
 													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -3207,7 +3207,7 @@
 										{
 											"listen": "test",
 											"script": {
-												"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+												"id": "cbfdbaeb-ecfe-48a8-ad1f-9e22c3a0e4ac",
 												"exec": [
 													"try {\r",
 													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -3272,7 +3272,7 @@
 										{
 											"listen": "test",
 											"script": {
-												"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+												"id": "8b6343d5-c486-4975-9ead-e93462fc284d",
 												"exec": [
 													"try {\r",
 													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -3347,7 +3347,7 @@
 										{
 											"listen": "test",
 											"script": {
-												"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+												"id": "309a1122-1fb6-43e7-b6a9-0b60e317c7bd",
 												"exec": [
 													"try {\r",
 													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -3422,7 +3422,7 @@
 										{
 											"listen": "test",
 											"script": {
-												"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+												"id": "5f7faf42-9863-4beb-9d9e-0c93a2d0b649",
 												"exec": [
 													"try {\r",
 													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -3509,7 +3509,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "a1d00e51-eff2-4f4e-8627-ebf589af6e51",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -3580,7 +3580,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "4ec40f3d-33cb-4ef8-85d2-03573b3520f3",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -3661,7 +3661,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "c191589d-307d-4d25-b78f-154f478e9e62",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -3739,7 +3739,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "76404ecc-a236-4a8a-af71-d46ae43169fd",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -3821,7 +3821,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "b760f3eb-88bf-4300-9b29-e44c5e00b6b1",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -3899,7 +3899,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "21d0ac16-c1f2-4351-9c93-9eb0e1b9df60",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -3977,7 +3977,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "a33f247e-d8a5-410a-a6fb-b65b82cdedf7",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -4055,7 +4055,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "aafc88a9-d829-4d3c-ab46-c42ac8b1207b",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -4134,7 +4134,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "dd917def-f137-4811-a892-54ffd1050238",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -4211,7 +4211,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "6d9b2569-75ad-416e-9a71-a78fe894d6cd",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -4289,7 +4289,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "2f6d1c0f-ca59-4005-a8b7-f58f630fb361",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -4367,7 +4367,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "46037a8e-82e5-4f31-a472-90677a2e3e52",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -4444,7 +4444,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "efd55e89-1a12-432b-be23-46d150a1cd8d",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -4530,7 +4530,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "8f106a0a-f763-45ac-84d2-392200290ca6",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -4608,7 +4608,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "75bb9d01-f613-4b38-8cfd-8bb31970ba70",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -4694,7 +4694,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "235caf40-9713-4890-9231-276e30eea98d",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -4775,7 +4775,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "9c786455-86b6-4d8b-a67d-07ae6bd4e2c5",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -4853,7 +4853,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "3d0f4110-36ff-4b32-a79a-6e0376cf4f35",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -4930,7 +4930,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "994998f1-e7d1-4831-b5d7-478d3c283093",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -5011,7 +5011,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "142d6419-2c84-4e8d-8d06-15b3f4b92b6f",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -5097,7 +5097,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "3406187c-edfc-4b59-b3b8-d56c7d5b6550",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -5200,7 +5200,82 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"requests\": [\n    {\n      \"entityTypes\": [\n        \"microsoft.graph.message\"\n      ],\n      \"query\": {\n        \"query_string\": {\n          \"query\": \"test\"\n        }\n      },\n      \"from\": 0,\n      \"size\": 5\n    }\n  ]\n}"
+									"raw": "{\n    \"requests\": [\n        {\n            \"entityTypes\": [\n                \"message\"\n            ],\n            \"query\": {\n                \"queryString\": \"contoso\"\n            }\n        }\n    ]\n}"
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/beta/search/query",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"beta",
+										"search",
+										"query"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Search Messages Top Results",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "b1b21d1b-690e-460a-b3c1-a79b29e803d1",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to at least *Files.ReadWrite* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"requests\": [\r\n        {\r\n            \"entityTypes\": [\r\n                \"message\"\r\n            ],\r\n            \"query\": {\r\n                \"queryString\": \"contoso\"\r\n            },\r\n            \"enableTopResults\": true\r\n        }\r\n    ]\r\n}"
 								},
 								"url": {
 									"raw": "https://graph.microsoft.com/beta/search/query",
@@ -5243,7 +5318,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"requests\": [\n    {\n      \"entityTypes\": [\n        \"microsoft.graph.event\"\n      ],\n      \"query\": {\n        \"query_string\": {\n          \"query\": \"test\"\n        }\n      },\n      \"from\": 0,\n      \"size\": 5\n    }\n  ]\n}"
+									"raw": "{\n    \"requests\": [\n        {\n            \"entityTypes\": [\n                \"microsoft.graph.event\"\n            ],\n            \"query\": {\n                \"queryString\": \"contoso\"\n            }\n        }\n    ]\n}"
 								},
 								"url": {
 									"raw": "https://graph.microsoft.com/beta/search/query",
@@ -5286,7 +5361,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"requests\": [\n    {\n      \"entityTypes\": [\n        \"microsoft.graph.driveItem\"\n      ],\n      \"query\": {\n        \"query_string\": {\n          \"query\": \"test\"\n        }\n      },\n      \"from\": 0,\n      \"size\": 25\n    }\n  ]\n}"
+									"raw": "{\n    \"requests\": [\n        {\n            \"entityTypes\": [\n                \"driveItem\"\n            ],\n            \"query\": {\n                \"queryString\": \"contoso\"\n                //\"queryString\": \"contoso filetype:pdf OR filetype:docx\"\n                //\"queryString\": \"contoso path:\\\"https://contoso.sharepoint.com/sites/Team Site/Documents/\\\\\"\"                              \n            }\n        }\n    ]\n}"
 								},
 								"url": {
 									"raw": "https://graph.microsoft.com/beta/search/query",
@@ -5306,7 +5381,7 @@
 							"response": []
 						},
 						{
-							"name": "Search External Files",
+							"name": "Search Lists",
 							"request": {
 								"auth": {
 									"type": "bearer",
@@ -5323,13 +5398,185 @@
 									{
 										"key": "Content-Type",
 										"name": "Content-Type",
-										"value": "application/json",
-										"type": "text"
+										"type": "text",
+										"value": "application/json"
 									}
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"requests\": [\n    {\n      \"entityTypes\": [\n        \"microsoft.graph.externalFile\"\n      ],\n      \"query\": {\n        \"query_string\": {\n          \"query\": \"test\"\n        }\n      },\n      \"from\": 0,\n      \"size\": 25\n    }\n  ]\n}"
+									"raw": "{\n    \"requests\": [\n        {\n            \"entityTypes\": [\n                \"list\"\n            ],\n            \"query\": {\n                \"queryString\": \"*\"\n            }\n        }\n    ]\n}"
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/beta/search/query",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"beta",
+										"search",
+										"query"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Search ListItems",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"requests\": [\n        {\n            \"entityTypes\": [\n                \"listItem\"\n            ],\n            \"query\": {\n                \"queryString\": \"contoso\"\n            }\n        }\n    ]\n}"
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/beta/search/query",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"beta",
+										"search",
+										"query"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Search ListItems with Properties selection",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"requests\": [\n        {\n            \"entityTypes\": [\n                \"listItem\"\n            ],\n            \"query\": {\n                \"queryString\": \"issue\"\n            },\n            \"stored_fields\": [\n                \"id\",\n                \"name\",                \n                \"contentclass\",\n                \"title\",\n                \"fooCustomProperty\"\n            ]\n        }\n    ]\n}"
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/beta/search/query",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"beta",
+										"search",
+										"query"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Search Sites",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"requests\": [\n        {\n            \"entityTypes\": [\n                \"site\"\n            ],\n            \"query\": {\n                \"queryString\": \"contoso\"\n            }\n        }\n    ]\n}"
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/beta/search/query",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"beta",
+										"search",
+										"query"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Search Drives",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"requests\": [\n        {\n            \"entityTypes\": [\n                \"drive\"\n            ],\n            \"query\": {\n                \"queryString\": \"*\"\n                //Note that personal OneDrive is not returned in this query\n            }\n        }\n    ]\n}"
 								},
 								"url": {
 									"raw": "https://graph.microsoft.com/beta/search/query",
@@ -5372,7 +5619,382 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"requests\": [\n    {\n      \"entityTypes\": [\n        \"microsoft.graph.externalItem\"\n      ],\n      \"contentSources\": [\n        \"/external/connections/connection_friendly_name\"\n      ],\n      \"query\": {\n        \"query_string\": {\n          \"query\": \"test\"\n        }\n      },\n      \"from\": 0,\n      \"size\": 25,\n      \"stored_fields\": [\n        \"number\",\n        \"shortdescription\"\n      ]\n    }\n  ]\n}"
+									"raw": "{\n    \"requests\": [\n        {\n            \"entityTypes\": [\n                \"microsoft.graph.externalItem\"\n            ],\n            \"contentSources\": [\n                \"/external/connections/connection_friendly_name\"\n                //\"/external/connections/azuresqconnection_friendly_name1\", \"/external/connections/connection_friendly_name2\"\n            ],\n            \"query\": {\n                \"queryString\": \"contoso\"\n            },\n            \"stored_fields\": [\n                \"number\",\n                \"shortdescription\"\n            ]\n        }\n    ]\n}"
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/beta/search/query",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"beta",
+										"search",
+										"query"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Page Search results",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "81fb8b64-cb56-4de3-9cad-fb1e56d5cdba",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to at least *Files.ReadWrite* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"requests\": [\n        {\n            \"entityTypes\": [\n                \"driveItem\"\n            ],\n            \"query\": {\n                \"queryString\": \"contoso\"\n            },\n            \"from\": 0,\n            \"size\": 15\n        }\n    ]\n}"
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/beta/search/query",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"beta",
+										"search",
+										"query"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Sort Search results",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "dac56b00-97a5-4072-a3fe-56750819f28d",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to at least *Files.ReadWrite* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"requests\": [\n        {\n            \"entityTypes\": [\n                \"driveItem\"\n            ],\n            \"query\": {\n                \"queryString\": \"contoso\"\n            },\n            \"sortProperties\": [\n                {\n                    \"name\": \"lastModifiedDateTime\",\n                    \"isDescending\": \"true\" // default is false\n                }\n            ]\n        }\n    ]\n}"
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/beta/search/query",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"beta",
+										"search",
+										"query"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Refine results with String aggregations",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "6e0a3dec-0fb4-4a53-a3cd-6062511e244a",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to at least *Files.ReadWrite* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"requests\": [\n        {\n            \"entityTypes\": [\n                \"listItem\"\n            ],\n            \"query\": {\n                \"queryString\": \"contoso\"\n            },\n            \"aggregations\": [\n                {\n                    \"field\": \"FileType\",\n                    \"size\": 20,\n                    \"bucketDefinition\": {\n                        \"sortBy\": \"count\",\n                        \"isDescending\": \"true\",\n                        \"minimumCount\": 0\n                    }\n                },\n                {\n                    \"field\": \"contentclass\",\n                    \"size\": 20,\n                    \"bucketDefinition\": {\n                        \"sortBy\": \"keyAsString\",\n                        \"isDescending\": \"true\",\n                        \"minimumCount\": 0\n                    }\n                }\n            ]\n        }\n    ]\n}"
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/beta/search/query",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"beta",
+										"search",
+										"query"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Refine results with Numeric aggregations",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "3fcfed04-55b0-4946-87e5-a9c725c97fc7",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to at least *Files.ReadWrite* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"Requests\": [\n        {\n            \"entityTypes\": [\n                \"listItem\"\n            ],\n            \"query\": {\n                \"queryString\": \"contoso\"\n            },\n            \"aggregations\": [\n                {\n                    \"field\": \"Size\",\n                    \"size\": 15,\n                    \"bucketDefinition\": {\n                        \"sortBy\": \"keyAsNumber\",\n                        \"isDescending\": \"true\",\n                        \"minimumCount\": 0,\n                        \"ranges\": [\n                            {\n                                \"to\": \"100\"\n                            },\n                            {\n                                \"from\": \"100\",\n                                \"to\": \"1000\"\n                            },\n                            {\n                                \"from\": \"1000\"\n                            }\n                        ]\n                    }\n                }\n            ]\n        }\n    ]\n}"
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/beta/search/query",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"beta",
+										"search",
+										"query"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Apply refined query passing the aggregationToken",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "7434ca1b-8fd1-463f-8940-81a8e729e257",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to at least *Files.ReadWrite* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"Requests\": [\n        {\n            \"entityTypes\": [\n                \"driveItem\"\n            ],\n            \"query\": {\n                \"queryString\": \"contoso\"\n            },\n            \"aggregationFilters\": [\n                \"contentclass:\\\"ǂǂ5354535f4c6973744974656d5f446f63756d656e744c696272617279\\\"\",\n                \"FileType:\\\"ǂǂ646f6378\\\"\"                \n            ],\n            \"aggregations\": [\n                {\n                    \"field\": \"FileType\",\n                    \"size\": 20,\n                    \"bucketDefinition\": {\n                        \"sortBy\": \"count\",\n                        \"isDescending\": \"true\",\n                        \"minimumCount\": 0\n                    }\n                },\n                {\n                    \"field\": \"contentclass\",\n                    \"size\": 15,\n                    \"bucketDefinition\": {\n                        \"sortBy\": \"keyAsString\",\n                        \"isDescending\": \"true\",\n                        \"minimumCount\": 0\n                    }\n                }\n            ]\n        }\n    ]\n}"
 								},
 								"url": {
 									"raw": "https://graph.microsoft.com/beta/search/query",
@@ -5404,7 +6026,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "d913516c-5879-4bd4-b16a-de89b124d867",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -5470,7 +6092,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "b94f6549-561d-4bf5-887e-3a776ca779c4",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -5546,7 +6168,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "893d3ca0-3b5e-499e-8a29-bce22180d390",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -5622,7 +6244,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "b9dc200e-d36a-4087-b9c1-a83218ad10fe",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -5698,7 +6320,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "ef509304-cb00-4910-846e-9a4085d1bbc3",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -5770,7 +6392,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "f2a3f606-7ca6-4de4-962f-bfa15ee894c1",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -5846,7 +6468,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "8a8f656f-ea44-430b-aa03-288db25b9d49",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -5918,7 +6540,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "bcd24852-6f20-4674-a953-74d69b1df9a8",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -5990,7 +6612,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "0253a897-7775-4fff-b010-34029a5e1f02",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -6061,7 +6683,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "7a1f7bd2-9bdb-439e-8051-a2b1d1319e3e",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -6128,7 +6750,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "578b38fc-365d-495e-9628-705cdc244fa9",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -6199,7 +6821,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "edf0e129-a76f-41a4-b094-9d0fdc40f115",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -6278,7 +6900,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "dbe5bdf1-cfe5-4842-b6f5-348e318f2c2d",
+										"id": "29bffef1-3e2e-456a-b77a-103eab46e4c7",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -6354,7 +6976,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "dbe5bdf1-cfe5-4842-b6f5-348e318f2c2d",
+										"id": "1cb8ff07-3dd6-4325-abc3-09c5e2ecc06a",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -6431,7 +7053,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "dbe5bdf1-cfe5-4842-b6f5-348e318f2c2d",
+										"id": "9d297c78-bff0-4cf2-9424-c92265dc726e",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -6507,7 +7129,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "dbe5bdf1-cfe5-4842-b6f5-348e318f2c2d",
+										"id": "47df9fb8-860a-43a7-a002-1b48d2b26c3f",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -6579,7 +7201,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "dbe5bdf1-cfe5-4842-b6f5-348e318f2c2d",
+										"id": "6d940664-efdf-4ec7-b181-0fdbba119062",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -6651,7 +7273,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "dbe5bdf1-cfe5-4842-b6f5-348e318f2c2d",
+										"id": "a77fc28b-cafc-46fe-b909-922a29df662e",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -6723,7 +7345,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "dbe5bdf1-cfe5-4842-b6f5-348e318f2c2d",
+										"id": "7b713d72-bd47-41d0-95a5-0566f0f9bc60",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -6800,7 +7422,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "dbe5bdf1-cfe5-4842-b6f5-348e318f2c2d",
+										"id": "ced06dd3-54fc-40dd-a091-90ed4d2e8d2a",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -6874,7 +7496,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "dbe5bdf1-cfe5-4842-b6f5-348e318f2c2d",
+										"id": "60a6ca24-48f8-4dce-ae96-45c7bcce9eb4",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -6948,7 +7570,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "dbe5bdf1-cfe5-4842-b6f5-348e318f2c2d",
+										"id": "c6573c57-da64-47c9-93c8-bd43144fdea0",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -7022,7 +7644,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "dbe5bdf1-cfe5-4842-b6f5-348e318f2c2d",
+										"id": "6cc9fbf0-cd22-4d40-87a2-f3eca7459d86",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -7114,7 +7736,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "d9272894-e9ea-4800-b407-b2446f0dc9cf",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -7191,7 +7813,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "18486fe4-9305-4358-8671-cff76e47fdc3",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -7275,7 +7897,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "fb7beff0-30df-42f4-8e61-26addf7f3c33",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -7346,7 +7968,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "b3da781f-61bb-4e18-8422-9c4a7e215d72",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -7413,7 +8035,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "297a765c-9d8f-44e7-aa11-10ca6f1bf671",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -7485,7 +8107,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "d1dd9540-07e3-4325-842f-c38ee0ff8e2c",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -7558,7 +8180,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "4288d877-5772-48a9-b814-c6160278f2a9",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -7640,7 +8262,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "16d9cc09-9bd1-45a0-9a9c-3358c1ab89a0",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -7724,7 +8346,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "8ef99e73-c6e9-4be3-9612-6b4b3a798544",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -7805,7 +8427,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "15cec044-7e86-4b21-a3fa-fc2e9d657ab4",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -7880,7 +8502,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "f614719b-d2a6-4b99-8eff-81de1b70fca9",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -7960,7 +8582,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "3b555218-22a3-471e-b172-be7db7fb0e90",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -8036,7 +8658,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "9e3c4a85-01bf-4eff-94ac-8ca13e6d3426",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -8118,7 +8740,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "1a01ce07-f778-46b8-9185-68c32db590cb",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -8196,7 +8818,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "5bef50e8-303c-4e38-af1f-2bf55eaf37e9",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -8287,7 +8909,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "f010c696-b9bd-4227-973b-1e0ce1440fce",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -8357,7 +8979,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "729572b3-3ce0-40a6-83a5-4242a6f1b843",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -8423,7 +9045,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "3c8a3dc2-b209-4c3e-b2c1-d95760d72643",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -8495,7 +9117,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "5632a5c4-e1a4-44ee-9f1c-65e81b22679b",
+										"id": "09ea96fe-183f-4093-9467-7b57371964f4",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -8561,7 +9183,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "5632a5c4-e1a4-44ee-9f1c-65e81b22679b",
+										"id": "bab67896-8d76-4b27-8c3e-0298ead4fc18",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -8627,7 +9249,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "5632a5c4-e1a4-44ee-9f1c-65e81b22679b",
+										"id": "5b80e2fb-1f9d-40fc-aff0-2877da198ffd",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -8693,7 +9315,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "a97f50cf-b53a-44fd-b8eb-22f3c2d4324e",
+										"id": "f1ff5d6b-c62c-4df6-ab5e-deb41ca945d3",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -8760,7 +9382,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "fbfb3934-5a4f-4e83-9c1e-ffc199e62a03",
+										"id": "c29224b5-1e19-4d5d-8c45-516edbd5dadc",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -8825,7 +9447,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "fbfb3934-5a4f-4e83-9c1e-ffc199e62a03",
+										"id": "16872530-6374-42da-b479-e62e673c3d28",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -8896,7 +9518,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "fbfb3934-5a4f-4e83-9c1e-ffc199e62a03",
+										"id": "15dd8e28-d4e1-4d6a-b205-508452342108",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -8962,7 +9584,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "e64eec65-3abc-4ca1-b917-b49d1235a25b",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -9028,7 +9650,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "a97f50cf-b53a-44fd-b8eb-22f3c2d4324e",
+										"id": "6d693436-4b0f-41c1-979c-dcfee1556d48",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -9096,7 +9718,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "ca4d18b4-d205-4a1e-92de-62da2f1eecb7",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -9187,7 +9809,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "a9ee25f8-890e-499d-9b0a-63df29cf3673",
+								"id": "cfc71c59-a3f9-4c31-97f0-b9e57fc5b380",
 								"exec": [
 									"try {\r",
 									"    if (pm.environment.get(\"ClientID\") === \"\")\r",
@@ -9300,7 +9922,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+								"id": "11921be8-edce-4b36-aedb-b83faf5dccb2",
 								"exec": [
 									"try {\r",
 									"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -9389,7 +10011,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "e2944f52-d640-47a7-a805-55eff5bf0690",
+										"id": "674edefb-fa2b-4e11-a779-255086cedde2",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -9481,7 +10103,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "e2bc29a2-fbed-4e5f-95bc-31150649eb81",
+										"id": "2072b8bc-d3fa-42b8-83a8-73e2645b423e",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -9581,7 +10203,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "e2944f52-d640-47a7-a805-55eff5bf0690",
+										"id": "816701d7-0a0d-4fc6-9955-37c2c1237384",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -9683,7 +10305,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "e2944f52-d640-47a7-a805-55eff5bf0690",
+										"id": "11311207-2825-4fe3-9fe2-6c8a7c835e5c",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -9773,7 +10395,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "e2944f52-d640-47a7-a805-55eff5bf0690",
+										"id": "3448f5ea-ae77-45de-9349-624877f3a907",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -9868,7 +10490,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "4fa9cecd-99b3-42ee-8006-cd6100e2bdc1",
+										"id": "1e39f74b-eb6d-4677-8658-6bcb876f2e10",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -9934,7 +10556,7 @@
 									}
 								},
 								"url": {
-									"raw": "https://graph.microsoft.com/v1.0/subscriptions",
+									"raw": "https://graph.microsoft.com/beta/subscriptions",
 									"protocol": "https",
 									"host": [
 										"graph",
@@ -9962,7 +10584,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "ebbf83bd-bd90-439b-b75f-b3d1a69d99fb",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -10041,7 +10663,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "b29689b3-d1b1-4f0b-9e6e-888053194c1a",
+										"id": "6896b07c-ceb3-4f28-a259-f586dfee3782",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -10072,7 +10694,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "969d502c-8f05-4b21-a048-a0a2c5801a72",
+										"id": "5e51df9c-02c8-428e-b144-0dcaa5da03ae",
 										"exec": [
 											""
 										],
@@ -10121,7 +10743,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "b29689b3-d1b1-4f0b-9e6e-888053194c1a",
+										"id": "1f678103-2760-43d1-a0af-9e0425872803",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -10152,7 +10774,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "969d502c-8f05-4b21-a048-a0a2c5801a72",
+										"id": "712e4feb-48c2-4278-b944-9b3315f02f43",
 										"exec": [
 											""
 										],
@@ -10221,7 +10843,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "a9ee25f8-890e-499d-9b0a-63df29cf3673",
+								"id": "5fc0423c-e7a0-4fca-93aa-65a269e9eb91",
 								"exec": [
 									"try {\r",
 									"    if (pm.environment.get(\"ClientID\") === \"\")\r",
@@ -10322,7 +10944,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "7319dee9-ea3c-4f32-bdf4-150fa6e9ec0e",
+								"id": "eb32a3fe-8e69-4a36-a866-6c8c7d37cfd6",
 								"exec": [
 									"pm.test(\"Status test\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
