@@ -10579,6 +10579,715 @@
 					"name": "Teams",
 					"item": [
 						{
+							"name": "Memberships",
+							"item": [
+								{
+									"name": "Get Team Members",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "faf5c088-723f-4e90-9ec7-836b20fdcd97",
+												"exec": [
+													"try {\r",
+													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+													"    {\r",
+													"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+													"    }\r",
+													"    else\r",
+													"    {\r",
+													"        if (pm.response.status === \"Forbidden\")\r",
+													"        {\r",
+													"            console.log(\"You need to add user delegated permissions in your application to at least *Group.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+													"        }\r",
+													"        else\r",
+													"        {\r",
+													"            var json = JSON.parse(responseBody);\r",
+													"            postman.setEnvironmentVariable(\"TeamId\", json.value[0].id);\r",
+													"        }\r",
+													"    }\r",
+													"}\r",
+													"catch (e) {\r",
+													"    console.log(e);\r",
+													"}\r",
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{AppAccessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [
+											{
+												"key": "SdkVersion",
+												"type": "text",
+												"value": "postman-graph/v1.0"
+											}
+										],
+										"url": {
+											"raw": "https://graph.microsoft.com/v1.0/teams/{{GroupId}}/members",
+											"protocol": "https",
+											"host": [
+												"graph",
+												"microsoft",
+												"com"
+											],
+											"path": [
+												"v1.0",
+												"teams",
+												"{{GroupId}}",
+												"members"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Get Single Team Member",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "f28c974d-8d0d-46b8-9249-a42cf29b062e",
+												"exec": [
+													"try {\r",
+													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+													"    {\r",
+													"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+													"    }\r",
+													"    else\r",
+													"    {\r",
+													"        if (pm.response.status === \"Forbidden\")\r",
+													"        {\r",
+													"            console.log(\"You need to add user delegated permissions in your application to at least *Group.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+													"        }\r",
+													"        else\r",
+													"        {\r",
+													"            var json = JSON.parse(responseBody);\r",
+													"            postman.setEnvironmentVariable(\"TeamId\", json.value[0].id);\r",
+													"        }\r",
+													"    }\r",
+													"}\r",
+													"catch (e) {\r",
+													"    console.log(e);\r",
+													"}\r",
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{AppAccessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [
+											{
+												"key": "SdkVersion",
+												"type": "text",
+												"value": "postman-graph/v1.0"
+											}
+										],
+										"url": {
+											"raw": "https://graph.microsoft.com/v1.0/teams/{{GroupId}}/members/{{UserId}}",
+											"protocol": "https",
+											"host": [
+												"graph",
+												"microsoft",
+												"com"
+											],
+											"path": [
+												"v1.0",
+												"teams",
+												"{{GroupId}}",
+												"members",
+												"{{UserId}}"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Get Channel Members",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "15682f19-c01f-415c-a96a-75e657e92cd1",
+												"exec": [
+													"try {\r",
+													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+													"    {\r",
+													"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+													"    }\r",
+													"    else\r",
+													"    {\r",
+													"        if (pm.response.status === \"Forbidden\")\r",
+													"        {\r",
+													"            console.log(\"You need to add user delegated permissions in your application to at least *Group.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+													"        }\r",
+													"        else\r",
+													"        {\r",
+													"            var json = JSON.parse(responseBody);\r",
+													"            postman.setEnvironmentVariable(\"TeamId\", json.value[0].id);\r",
+													"        }\r",
+													"    }\r",
+													"}\r",
+													"catch (e) {\r",
+													"    console.log(e);\r",
+													"}\r",
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{AppAccessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [
+											{
+												"key": "SdkVersion",
+												"type": "text",
+												"value": "postman-graph/v1.0"
+											}
+										],
+										"url": {
+											"raw": "https://graph.microsoft.com/v1.0/teams/{{GroupId}}/channels/{{ChannelId}}/members",
+											"protocol": "https",
+											"host": [
+												"graph",
+												"microsoft",
+												"com"
+											],
+											"path": [
+												"v1.0",
+												"teams",
+												"{{GroupId}}",
+												"channels",
+												"{{ChannelId}}",
+												"members"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Add Channel Member",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "39873379-3c25-4663-a133-1d78facda4d5",
+												"exec": [
+													"try {\r",
+													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+													"    {\r",
+													"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+													"    }\r",
+													"    else\r",
+													"    {\r",
+													"        if (pm.response.status === \"Forbidden\")\r",
+													"        {\r",
+													"            console.log(\"You need to add user delegated permissions in your application to at least *Group.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+													"        }\r",
+													"        else\r",
+													"        {\r",
+													"            var json = JSON.parse(responseBody);\r",
+													"            postman.setEnvironmentVariable(\"TeamId\", json.value[0].id);\r",
+													"        }\r",
+													"    }\r",
+													"}\r",
+													"catch (e) {\r",
+													"    console.log(e);\r",
+													"}\r",
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{AppAccessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "SdkVersion",
+												"type": "text",
+												"value": "postman-graph/v1.0"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"@odata.type\": \"#microsoft.graph.aadUserConversationMember\",\r\n    \"roles\": [\"owner\"],\r\n    \"user@odata.bind\": \"https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://graph.microsoft.com/v1.0/teams/{{TeamId}}/channels/{{ChannelId}}/members",
+											"protocol": "https",
+											"host": [
+												"graph",
+												"microsoft",
+												"com"
+											],
+											"path": [
+												"v1.0",
+												"teams",
+												"{{TeamId}}",
+												"channels",
+												"{{ChannelId}}",
+												"members"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Remove Team Member",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "fb76b3de-c3a1-4687-80d4-d57a1ed9e404",
+												"exec": [
+													"try {\r",
+													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+													"    {\r",
+													"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+													"    }\r",
+													"    else\r",
+													"    {\r",
+													"        if (pm.response.status === \"Forbidden\")\r",
+													"        {\r",
+													"            console.log(\"You need to add user delegated permissions in your application to at least *Group.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+													"        }\r",
+													"        else\r",
+													"        {\r",
+													"            var json = JSON.parse(responseBody);\r",
+													"            postman.setEnvironmentVariable(\"TeamId\", json.value[0].id);\r",
+													"        }\r",
+													"    }\r",
+													"}\r",
+													"catch (e) {\r",
+													"    console.log(e);\r",
+													"}\r",
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"protocolProfileBehavior": {
+										"disabledSystemHeaders": {}
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{AppAccessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "SdkVersion",
+												"type": "text",
+												"value": "postman-graph/v1.0"
+											}
+										],
+										"url": {
+											"raw": "https://graph.microsoft.com/v1.0/teams/{{TeamId}}/members/{{UserId}}",
+											"protocol": "https",
+											"host": [
+												"graph",
+												"microsoft",
+												"com"
+											],
+											"path": [
+												"v1.0",
+												"teams",
+												"{{TeamId}}",
+												"members",
+												"{{UserId}}"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Remove Channel Member",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "3890ad38-58fd-467b-94e7-44b91473aec5",
+												"exec": [
+													"try {\r",
+													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+													"    {\r",
+													"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+													"    }\r",
+													"    else\r",
+													"    {\r",
+													"        if (pm.response.status === \"Forbidden\")\r",
+													"        {\r",
+													"            console.log(\"You need to add user delegated permissions in your application to at least *Group.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+													"        }\r",
+													"        else\r",
+													"        {\r",
+													"            var json = JSON.parse(responseBody);\r",
+													"            postman.setEnvironmentVariable(\"TeamId\", json.value[0].id);\r",
+													"        }\r",
+													"    }\r",
+													"}\r",
+													"catch (e) {\r",
+													"    console.log(e);\r",
+													"}\r",
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"protocolProfileBehavior": {
+										"disabledSystemHeaders": {}
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{AppAccessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "SdkVersion",
+												"type": "text",
+												"value": "postman-graph/v1.0"
+											}
+										],
+										"url": {
+											"raw": "https://graph.microsoft.com/v1.0/teams/{{TeamId}}/channels/{{ChannelId}}members/{{UserId}}",
+											"protocol": "https",
+											"host": [
+												"graph",
+												"microsoft",
+												"com"
+											],
+											"path": [
+												"v1.0",
+												"teams",
+												"{{TeamId}}",
+												"channels",
+												"{{ChannelId}}members",
+												"{{UserId}}"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Update Team Member",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "ebc586f5-30a3-40a0-b218-a1570ccd1e48",
+												"exec": [
+													"try {\r",
+													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+													"    {\r",
+													"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+													"    }\r",
+													"    else\r",
+													"    {\r",
+													"        if (pm.response.status === \"Forbidden\")\r",
+													"        {\r",
+													"            console.log(\"You need to add user delegated permissions in your application to at least *Group.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+													"        }\r",
+													"        else\r",
+													"        {\r",
+													"            var json = JSON.parse(responseBody);\r",
+													"            postman.setEnvironmentVariable(\"TeamId\", json.value[0].id);\r",
+													"        }\r",
+													"    }\r",
+													"}\r",
+													"catch (e) {\r",
+													"    console.log(e);\r",
+													"}\r",
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{AppAccessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "SdkVersion",
+												"type": "text",
+												"value": "postman-graph/v1.0"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"@odata.type\":\"#microsoft.graph.aadUserConversationMember\",\r\n  \"roles\": [\"owner\"]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://graph.microsoft.com/v1.0/teams/{{GroupId}}/members/{{UserId}}",
+											"protocol": "https",
+											"host": [
+												"graph",
+												"microsoft",
+												"com"
+											],
+											"path": [
+												"v1.0",
+												"teams",
+												"{{GroupId}}",
+												"members",
+												"{{UserId}}"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Update Channel Member",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "2d9654c9-59d1-4543-a8be-e8f66fc00861",
+												"exec": [
+													"try {\r",
+													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+													"    {\r",
+													"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+													"    }\r",
+													"    else\r",
+													"    {\r",
+													"        if (pm.response.status === \"Forbidden\")\r",
+													"        {\r",
+													"            console.log(\"You need to add user delegated permissions in your application to at least *Group.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+													"        }\r",
+													"        else\r",
+													"        {\r",
+													"            var json = JSON.parse(responseBody);\r",
+													"            postman.setEnvironmentVariable(\"TeamId\", json.value[0].id);\r",
+													"        }\r",
+													"    }\r",
+													"}\r",
+													"catch (e) {\r",
+													"    console.log(e);\r",
+													"}\r",
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{AppAccessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "SdkVersion",
+												"type": "text",
+												"value": "postman-graph/v1.0"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"@odata.type\":\"#microsoft.graph.aadUserConversationMember\",\r\n  \"roles\": [\"owner\"]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://graph.microsoft.com/v1.0/teams/{{GroupId}}/channels/{{ChannelId}}/members/{{UserId}}",
+											"protocol": "https",
+											"host": [
+												"graph",
+												"microsoft",
+												"com"
+											],
+											"path": [
+												"v1.0",
+												"teams",
+												"{{GroupId}}",
+												"channels",
+												"{{ChannelId}}",
+												"members",
+												"{{UserId}}"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Add Team Member",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "63d95342-c3cb-40ca-bef2-a4dddb5d9132",
+												"exec": [
+													"try {\r",
+													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+													"    {\r",
+													"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+													"    }\r",
+													"    else\r",
+													"    {\r",
+													"        if (pm.response.status === \"Forbidden\")\r",
+													"        {\r",
+													"            console.log(\"You need to add user delegated permissions in your application to at least *Group.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+													"        }\r",
+													"        else\r",
+													"        {\r",
+													"            var json = JSON.parse(responseBody);\r",
+													"            postman.setEnvironmentVariable(\"TeamId\", json.value[0].id);\r",
+													"        }\r",
+													"    }\r",
+													"}\r",
+													"catch (e) {\r",
+													"    console.log(e);\r",
+													"}\r",
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{AppAccessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "SdkVersion",
+												"type": "text",
+												"value": "postman-graph/v1.0"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"@odata.type\": \"#microsoft.graph.aadUserConversationMember\",\r\n    \"roles\": [\"owner\"],\r\n    \"user@odata.bind\": \"https://graph.microsoft.com/v1.0/users/a82083e7-cc7c-48a4-9ed1-ce70e42f7453\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://graph.microsoft.com/v1.0/teams/{{GroupId}}/members",
+											"protocol": "https",
+											"host": [
+												"graph",
+												"microsoft",
+												"com"
+											],
+											"path": [
+												"v1.0",
+												"teams",
+												"{{GroupId}}",
+												"members"
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"protocolProfileBehavior": {},
+							"_postman_isSubFolder": true
+						},
+						{
 							"name": "Users Joined Teams",
 							"event": [
 								{
@@ -10645,6 +11354,773 @@
 										"users",
 										"{{UserId}}",
 										"joinedTeams"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Primary Channel",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "f326091a-baa4-49a8-be26-1e24abcd60f0",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to at least *Group.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            postman.setEnvironmentVariable(\"TeamId\", json.value[0].id);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AppAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/teams/{{GroupId}}/primaryChannel",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"teams",
+										"{{GroupId}}",
+										"primaryChannel"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Team Channels",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "51963cac-e4e5-4be3-97c8-d442ce02dd34",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to at least *Group.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            postman.setEnvironmentVariable(\"TeamId\", json.value[0].id);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AppAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/teams/{{GroupId}}/channels",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"teams",
+										"{{GroupId}}",
+										"channels"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Team",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "20143d4e-9147-4ae3-9d61-e465012b37ac",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to at least *Group.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            postman.setEnvironmentVariable(\"TeamId\", json.value[0].id);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AppAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/teams/{{TeamId}}",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"teams",
+										"{{TeamId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Team",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "ae71f17a-0e50-4069-b99d-2df328bd9487",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to at least *Group.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            postman.setEnvironmentVariable(\"TeamId\", json.value[0].id);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AppAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/groups/{{GroupId}}",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"groups",
+										"{{GroupId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Team From Group",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "689791b1-8eee-43c2-a5e2-8e308a4d3ff7",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to at least *Group.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            postman.setEnvironmentVariable(\"TeamId\", json.value[0].id);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AppAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{  \r\n  \"memberSettings\": {\r\n    \"allowCreatePrivateChannels\": true,\r\n    \"allowCreateUpdateChannels\": true\r\n  },\r\n  \"messagingSettings\": {\r\n    \"allowUserEditMessages\": true,\r\n    \"allowUserDeleteMessages\": true\r\n  },\r\n  \"funSettings\": {\r\n    \"allowGiphy\": true,\r\n    \"giphyContentRating\": \"strict\"\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/groups/{{GroupId}}/team",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"groups",
+										"{{GroupId}}",
+										"team"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Team",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "49f50ace-be1e-4a30-b575-560b3cfd49f4",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to at least *Group.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            postman.setEnvironmentVariable(\"TeamId\", json.value[0].id);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AppAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{  \r\n  \"memberSettings\": {\r\n    \"allowCreateUpdateChannels\": true\r\n  },\r\n  \"messagingSettings\": {\r\n    \"allowUserEditMessages\": true,\r\n    \"allowUserDeleteMessages\": true\r\n  },\r\n  \"funSettings\": {\r\n    \"allowGiphy\": true,\r\n    \"giphyContentRating\": \"strict\"\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/teams/{{TeamId}}",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"teams",
+										"{{TeamId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Team",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "c32f983d-f6b1-4a64-b170-8fa8c4eaa5e9",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to at least *Group.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            postman.setEnvironmentVariable(\"TeamId\", json.value[0].id);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AppAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"template@odata.bind\": \"https://graph.microsoft.com/v1.0/teamsTemplates('standard')\",\r\n  \"displayName\": \"My Sample Team\",\r\n  \"description\": \"My Sample Team’s Description\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/teams/{{TeamId}}/channels/{{ChannelId}}/members",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"teams",
+										"{{TeamId}}",
+										"channels",
+										"{{ChannelId}}",
+										"members"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Archive Team",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "56d23f64-c75d-4e03-a704-1396a611fd5c",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to at least *Group.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            postman.setEnvironmentVariable(\"TeamId\", json.value[0].id);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AppAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"shouldSetSpoSiteReadOnlyForMembers\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/teams/{{TeamId}}/archive",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"teams",
+										"{{TeamId}}",
+										"archive"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Clone Team",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "b7d56bde-6da5-43f0-889d-32e989840c4a",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to at least *Group.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            postman.setEnvironmentVariable(\"TeamId\", json.value[0].id);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AppAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{  \r\n     \"displayName\": \"Library Assist\",\r\n     \"description\": \"Self help community for library\",\r\n     \"mailNickname\": \"libassist\",\r\n     \"partsToClone\": \"apps,tabs,settings,channels,members\",\r\n     \"visibility\": \"public\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/teams/{{TeamId}}/clone",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"teams",
+										"{{TeamId}}",
+										"clone"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UnArchive Team",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "39efb1fd-0f85-43ef-9997-aa534d7d9f88",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to at least *Group.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            postman.setEnvironmentVariable(\"TeamId\", json.value[0].id);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AppAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/teams/{{TeamId}}/unarchive",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"teams",
+										"{{TeamId}}",
+										"unarchive"
 									]
 								}
 							},
