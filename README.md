@@ -51,11 +51,11 @@ The simplest way of doing this is by providing a **UserName** and **UserPassword
 
 For those that do not want to store user names and passwords in environment variables in Postman that get synced to your Postman cloud account. You can use the native Postman **Get New Access Token** capability to obtain a token without leaving Postman.
 
-**1.** Select **On behalf of a User | Get Access Token using Postman**.
+**1.** Select **On behalf of a User | Get Access Token using Postman OAuth2**.
 
 **2.** Click on the Authorization tab (besides Params).
 
-**3.** Click on the get access token button.
+**3.** Click on the `Get New Access Token` button.
 
 **4.** Fill out the following boxes with your real tenant and application values. Note that you cannot use the environment variables here, it has to be the actual values. These can be found by clicking **EndPoints** in the application blade in portal.azure.com.
 
