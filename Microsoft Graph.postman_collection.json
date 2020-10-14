@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "ae1f1cba-3e85-4b56-9109-7f68de21eaf4",
+		"_postman_id": "3bf84d7a-45be-4a29-9dfb-9dff835f0808",
 		"name": "Microsoft Graph",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -17,7 +17,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "53dccd13-aca3-4a16-a409-53ed0f676c09",
+										"id": "6bcd9f2f-9208-4476-b38f-813c8d2a8722",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -81,7 +81,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "53dccd13-aca3-4a16-a409-53ed0f676c09",
+										"id": "20c492ac-6541-49a1-8604-6d8702e7b8d7",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -156,7 +156,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "53dccd13-aca3-4a16-a409-53ed0f676c09",
+										"id": "7d661d0e-a86e-41e9-8f97-84525e78cbcb",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -223,7 +223,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "53dccd13-aca3-4a16-a409-53ed0f676c09",
+										"id": "5eb2aea9-621d-4d05-a2f0-63b55d08320c",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -291,7 +291,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "53dccd13-aca3-4a16-a409-53ed0f676c09",
+										"id": "3129c627-677d-47e1-bdfe-ccac5010332a",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -362,7 +362,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "53dccd13-aca3-4a16-a409-53ed0f676c09",
+										"id": "2c6813c3-24da-4c2e-ba30-bb96cdcbe85d",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -445,7 +445,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "755d189f-9c05-44be-83b3-3cdd6e84fe3a",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -520,7 +520,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "3d86b739-4bdd-4027-94e3-6a26ae773932",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -602,7 +602,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "9e26dfd5-49bb-4ceb-81f0-44f9d46f7237",
+										"id": "56289db1-a743-44af-a21f-52f3a0834a7b",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -673,7 +673,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "9e26dfd5-49bb-4ceb-81f0-44f9d46f7237",
+										"id": "bc068a05-5c39-45a8-b5fc-188b186dd32c",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -704,7 +704,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "ba433fb0-069d-44a3-80b8-43e8c3f8e87b",
+										"id": "744e7f38-8559-45b3-ae40-07368239fde8",
 										"exec": [
 											"postman.setEnvironmentVariable('Today',(new Date()).toISOString());",
 											"postman.setEnvironmentVariable('NextWeek',(new Date().addDays(7)).toISOString());"
@@ -770,7 +770,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "9e26dfd5-49bb-4ceb-81f0-44f9d46f7237",
+										"id": "fdf4ffb4-94b7-4e30-9233-fd4ed5bc811e",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -846,7 +846,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "9e26dfd5-49bb-4ceb-81f0-44f9d46f7237",
+										"id": "6ba8ab12-6c2f-4a9e-9eae-11a4911a740d",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -926,7 +926,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "9e26dfd5-49bb-4ceb-81f0-44f9d46f7237",
+										"id": "5e080bdc-e552-47e1-aa23-e38a8e00e688",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -957,7 +957,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "ba433fb0-069d-44a3-80b8-43e8c3f8e87b",
+										"id": "20aadf51-87f6-4914-8522-eafb2852ecd0",
 										"exec": [
 											"postman.setEnvironmentVariable('Today',(new Date()).toISOString());",
 											"postman.setEnvironmentVariable('NextWeek',(new Date()).toISOString());"
@@ -1026,7 +1026,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "dbe5bdf1-cfe5-4842-b6f5-348e318f2c2d",
+										"id": "279a1368-738a-4490-b3f6-6faa7f6fb165",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -1099,7 +1099,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "dbe5bdf1-cfe5-4842-b6f5-348e318f2c2d",
+										"id": "016b32b5-0382-41e2-8848-46229c123cca",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -1171,7 +1171,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "dbe5bdf1-cfe5-4842-b6f5-348e318f2c2d",
+										"id": "fa1caae2-840f-4da3-b67a-16b30a60c369",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -1243,7 +1243,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "dbe5bdf1-cfe5-4842-b6f5-348e318f2c2d",
+										"id": "3a9d9f74-3cbf-4c94-b491-d72e8dad7237",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -1322,7 +1322,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "dbe5bdf1-cfe5-4842-b6f5-348e318f2c2d",
+										"id": "6c36e2fb-edb0-4d68-a67c-847725de911a",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -1406,7 +1406,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "2d4dbc7e-ac86-47ea-aafa-7f2e88418412",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -1480,379 +1480,6 @@
 					"_postman_isSubFolder": true
 				},
 				{
-					"name": "Identity and access (beta)",
-					"item": [
-						{
-							"name": "List conditionalAccessPolicies",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "c2200860-88b8-4d9f-9b9b-e693b6610dc6",
-										"exec": [
-											"try {\r",
-											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
-											"    {\r",
-											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
-											"    }\r",
-											"    else\r",
-											"    {\r",
-											"        if (pm.response.status === \"Forbidden\")\r",
-											"        {\r",
-											"            console.log(\"You need to add user delegated permissions in your application to at least *Policy.Read.All* and *Policy.ReadWrite.ConditionalAccess* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
-											"        }\r",
-											"        else\r",
-											"        {\r",
-											"            var json = JSON.parse(responseBody);\r",
-											"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
-											"        }\r",
-											"    }\r",
-											"}\r",
-											"catch (e) {\r",
-											"    console.log(e);\r",
-											"}\r",
-											""
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
-							"request": {
-								"auth": {
-									"type": "bearer",
-									"bearer": [
-										{
-											"key": "token",
-											"value": "{{UserAccessToken}}",
-											"type": "string"
-										}
-									]
-								},
-								"method": "GET",
-								"header": [
-									{
-										"key": "Content-Type",
-										"value": "application/json",
-										"type": "text"
-									}
-								],
-								"url": {
-									"raw": "https://graph.microsoft.com/beta/conditionalAccess/policies",
-									"protocol": "https",
-									"host": [
-										"graph",
-										"microsoft",
-										"com"
-									],
-									"path": [
-										"beta",
-										"conditionalAccess",
-										"policies"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Create conditionalAccessPolicy",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "0ab63815-e49a-422d-b3e5-712280601438",
-										"exec": [
-											"try {\r",
-											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
-											"    {\r",
-											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
-											"    }\r",
-											"    else\r",
-											"    {\r",
-											"        if (pm.response.status === \"Forbidden\")\r",
-											"        {\r",
-											"            console.log(\"You need to add user delegated permissions in your application to at least *Policy.Read.All* and *Policy.ReadWrite.ConditionalAccess* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
-											"        }\r",
-											"        else\r",
-											"        {\r",
-											"            var json = JSON.parse(responseBody);\r",
-											"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
-											"        }\r",
-											"    }\r",
-											"}\r",
-											"catch (e) {\r",
-											"    console.log(e);\r",
-											"}\r",
-											""
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
-							"request": {
-								"auth": {
-									"type": "bearer",
-									"bearer": [
-										{
-											"key": "token",
-											"value": "{{UserAccessToken}}",
-											"type": "string"
-										}
-									]
-								},
-								"method": "POST",
-								"header": [
-									{
-										"key": "Content-Type",
-										"value": "application/json",
-										"type": "text"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"displayName\": \"<OrgName> baseline policy: Require MFA for admins\",\r\n    \"state\": \"disabled\",\r\n    \"sessionControls\": null,\r\n    \"conditions\": {\r\n        \"signInRiskLevels\": [],\r\n        \"clientAppTypes\": [],\r\n        \"platforms\": null,\r\n        \"locations\": null,\r\n        \"deviceStates\": null,\r\n        \"applications\": {\r\n            \"includeApplications\": [\r\n                \"All\"\r\n            ],\r\n            \"excludeApplications\": [],\r\n            \"includeUserActions\": []\r\n        },\r\n        \"users\": {\r\n            \"includeUsers\": [],\r\n            \"excludeUsers\": [\r\n                \"<object-id-break-glass-admin>\",\r\n                \"<object-id-on-premises-sync-account>\"\r\n            ],\r\n            \"includeGroups\": [],\r\n            \"excludeGroups\": [],\r\n            \"includeRoles\": [\r\n                \"b0f54661-2d74-4c50-afa3-1ec803f12efe\",\r\n                \"b1be1c3e-b65d-4f19-8427-f6fa0d97feb9\",\r\n                \"29232cdf-9323-42fd-ade2-1d097af3e4de\",\r\n                \"62e90394-69f5-4237-9190-012177145e10\",\r\n                \"729827e3-9c14-49f7-bb1b-9608f156bbb8\",\r\n                \"966707d0-3269-4727-9be2-8c3a10f19b9d\",\r\n                \"194ae4cb-b126-40b2-bd5b-6091b380977d\",\r\n                \"f28a1f50-f6e7-4571-818b-6a12f2af6b6c\",\r\n                \"fe930be7-5e62-47db-91af-98c3a49a38b1\"\r\n            ],\r\n            \"excludeRoles\": []\r\n        }\r\n    },\r\n    \"grantControls\": {\r\n        \"operator\": \"OR\",\r\n        \"builtInControls\": [\r\n            \"mfa\"\r\n        ],\r\n        \"customAuthenticationFactors\": [],\r\n        \"termsOfUse\": []\r\n    }\r\n}"
-								},
-								"url": {
-									"raw": "https://graph.microsoft.com/beta/conditionalAccess/policies",
-									"protocol": "https",
-									"host": [
-										"graph",
-										"microsoft",
-										"com"
-									],
-									"path": [
-										"beta",
-										"conditionalAccess",
-										"policies"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Get conditionalAccessPolicy",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "3574ad9a-0bb1-4d89-8365-7a9e6207c00b",
-										"exec": [
-											"try {\r",
-											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
-											"    {\r",
-											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
-											"    }\r",
-											"    else\r",
-											"    {\r",
-											"        if (pm.response.status === \"Forbidden\")\r",
-											"        {\r",
-											"            console.log(\"You need to add user delegated permissions in your application to at least *Policy.Read.All* and *Policy.ReadWrite.ConditionalAccess* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
-											"        }\r",
-											"        else\r",
-											"        {\r",
-											"            var json = JSON.parse(responseBody);\r",
-											"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
-											"        }\r",
-											"    }\r",
-											"}\r",
-											"catch (e) {\r",
-											"    console.log(e);\r",
-											"}\r",
-											""
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
-							"request": {
-								"auth": {
-									"type": "bearer",
-									"bearer": [
-										{
-											"key": "token",
-											"value": "{{UserAccessToken}}",
-											"type": "string"
-										}
-									]
-								},
-								"method": "GET",
-								"header": [
-									{
-										"key": "Content-Type",
-										"value": "application/json",
-										"type": "text"
-									}
-								],
-								"url": {
-									"raw": "https://graph.microsoft.com/beta/conditionalAccess/policies/{id}",
-									"protocol": "https",
-									"host": [
-										"graph",
-										"microsoft",
-										"com"
-									],
-									"path": [
-										"beta",
-										"conditionalAccess",
-										"policies",
-										"{id}"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Update conditionalAccessPolicy",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "db0a8cf7-ad91-4b03-9046-eb2cf5c2a587",
-										"exec": [
-											"try {\r",
-											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
-											"    {\r",
-											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
-											"    }\r",
-											"    else\r",
-											"    {\r",
-											"        if (pm.response.status === \"Forbidden\")\r",
-											"        {\r",
-											"            console.log(\"You need to add user delegated permissions in your application to at least *Policy.Read.All* and *Policy.ReadWrite.ConditionalAccess* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
-											"        }\r",
-											"        else\r",
-											"        {\r",
-											"            var json = JSON.parse(responseBody);\r",
-											"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
-											"        }\r",
-											"    }\r",
-											"}\r",
-											"catch (e) {\r",
-											"    console.log(e);\r",
-											"}\r",
-											""
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
-							"request": {
-								"auth": {
-									"type": "bearer",
-									"bearer": [
-										{
-											"key": "token",
-											"value": "{{UserAccessToken}}",
-											"type": "string"
-										}
-									]
-								},
-								"method": "PATCH",
-								"header": [
-									{
-										"key": "Content-Type",
-										"value": "application/json",
-										"type": "text"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"displayName\": \"<OrgName> baseline policy: Require MFA for admins\",\r\n    \"state\": \"disabled\",\r\n    \"sessionControls\": null,\r\n    \"conditions\": {\r\n        \"signInRiskLevels\": [],\r\n        \"clientAppTypes\": [],\r\n        \"platforms\": null,\r\n        \"locations\": null,\r\n        \"deviceStates\": null,\r\n        \"applications\": {\r\n            \"includeApplications\": [\r\n                \"All\"\r\n            ],\r\n            \"excludeApplications\": [],\r\n            \"includeUserActions\": []\r\n        },\r\n        \"users\": {\r\n            \"includeUsers\": [],\r\n            \"excludeUsers\": [\r\n                \"<object-id-break-glass-admin>\",\r\n                \"<object-id-on-premises-sync-account>\"\r\n            ],\r\n            \"includeGroups\": [],\r\n            \"excludeGroups\": [],\r\n            \"includeRoles\": [\r\n                \"b0f54661-2d74-4c50-afa3-1ec803f12efe\",\r\n                \"b1be1c3e-b65d-4f19-8427-f6fa0d97feb9\",\r\n                \"29232cdf-9323-42fd-ade2-1d097af3e4de\",\r\n                \"62e90394-69f5-4237-9190-012177145e10\",\r\n                \"729827e3-9c14-49f7-bb1b-9608f156bbb8\",\r\n                \"966707d0-3269-4727-9be2-8c3a10f19b9d\",\r\n                \"194ae4cb-b126-40b2-bd5b-6091b380977d\",\r\n                \"f28a1f50-f6e7-4571-818b-6a12f2af6b6c\",\r\n                \"fe930be7-5e62-47db-91af-98c3a49a38b1\"\r\n            ],\r\n            \"excludeRoles\": []\r\n        }\r\n    },\r\n    \"grantControls\": {\r\n        \"operator\": \"OR\",\r\n        \"builtInControls\": [\r\n            \"mfa\"\r\n        ],\r\n        \"customAuthenticationFactors\": [],\r\n        \"termsOfUse\": []\r\n    }\r\n}"
-								},
-								"url": {
-									"raw": "https://graph.microsoft.com/beta/conditionalAccess/policies/{id}",
-									"protocol": "https",
-									"host": [
-										"graph",
-										"microsoft",
-										"com"
-									],
-									"path": [
-										"beta",
-										"conditionalAccess",
-										"policies",
-										"{id}"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Delete conditionalAccessPolicy",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "5ad0e612-e626-4666-89ab-9f880ede596e",
-										"exec": [
-											"try {\r",
-											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
-											"    {\r",
-											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
-											"    }\r",
-											"    else\r",
-											"    {\r",
-											"        if (pm.response.status === \"Forbidden\")\r",
-											"        {\r",
-											"            console.log(\"You need to add user delegated permissions in your application to at least *Policy.Read.All* and *Policy.ReadWrite.ConditionalAccess* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
-											"        }\r",
-											"        else\r",
-											"        {\r",
-											"            var json = JSON.parse(responseBody);\r",
-											"            postman.setEnvironmentVariable(\"UserId\", json.id);\r",
-											"        }\r",
-											"    }\r",
-											"}\r",
-											"catch (e) {\r",
-											"    console.log(e);\r",
-											"}\r",
-											""
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
-							"request": {
-								"auth": {
-									"type": "bearer",
-									"bearer": [
-										{
-											"key": "token",
-											"value": "{{UserAccessToken}}",
-											"type": "string"
-										}
-									]
-								},
-								"method": "DELETE",
-								"header": [
-									{
-										"key": "Content-Type",
-										"value": "application/json",
-										"type": "text"
-									}
-								],
-								"url": {
-									"raw": "https://graph.microsoft.com/beta/conditionalAccess/policies/{id}",
-									"protocol": "https",
-									"host": [
-										"graph",
-										"microsoft",
-										"com"
-									],
-									"path": [
-										"beta",
-										"conditionalAccess",
-										"policies",
-										"{id}"
-									]
-								}
-							},
-							"response": []
-						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
-				},
-				{
 					"name": "Insights",
 					"item": [
 						{
@@ -1861,7 +1488,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "23bc18b7-97ca-4d2c-8ddf-f8357b3e0460",
+										"id": "cc3f8487-48ae-436d-afcb-81e43a59ae34",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -1933,7 +1560,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "23bc18b7-97ca-4d2c-8ddf-f8357b3e0460",
+										"id": "f549ef0e-f88c-4c1d-b980-1febdd00cc26",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -2011,7 +1638,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "9e26dfd5-49bb-4ceb-81f0-44f9d46f7237",
+										"id": "cd97c7a0-6e30-4188-ae45-12203824d38f",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -2087,7 +1714,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "9e26dfd5-49bb-4ceb-81f0-44f9d46f7237",
+										"id": "bbdde697-50a9-4643-aff6-d81c5a2b9fd4",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -2164,7 +1791,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "9e26dfd5-49bb-4ceb-81f0-44f9d46f7237",
+										"id": "96427de4-b44e-4cac-ad31-76f4f5ea764d",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -2241,7 +1868,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "9e26dfd5-49bb-4ceb-81f0-44f9d46f7237",
+										"id": "645b3659-601d-46e4-81d3-c66720597ff7",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -2318,7 +1945,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "9e26dfd5-49bb-4ceb-81f0-44f9d46f7237",
+										"id": "a4190c81-7ff3-4501-87fd-75acc69a250d",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -2399,7 +2026,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "a8346261-52bf-419f-a874-55fc632251d9",
+										"id": "c430e688-2b99-4eef-a17c-4a0bd923efd8",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -2478,7 +2105,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "9e26dfd5-49bb-4ceb-81f0-44f9d46f7237",
+										"id": "80304916-131a-414e-967e-8e385d87f98e",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -2551,7 +2178,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "9e26dfd5-49bb-4ceb-81f0-44f9d46f7237",
+										"id": "58452f38-231e-4830-a9ae-f0e6813460f9",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -2623,7 +2250,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "9e26dfd5-49bb-4ceb-81f0-44f9d46f7237",
+										"id": "e4a202f7-ae87-4acf-a2f2-bffcc8bc2ef0",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -2704,7 +2331,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "62b77761-f24f-4b53-a30a-d97e7441dd87",
+										"id": "d12bb957-37a9-4023-9adc-8e5387f87b2e",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -2786,7 +2413,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "9e26dfd5-49bb-4ceb-81f0-44f9d46f7237",
+										"id": "c8c0a0c8-82ee-46c4-8015-3e1fffb81840",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -2857,7 +2484,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "9e26dfd5-49bb-4ceb-81f0-44f9d46f7237",
+										"id": "b904fd56-d165-4463-9b57-ee5ce78124a9",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -2940,7 +2567,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "1ac0485a-bc71-493b-911f-d02b47078810",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -3017,7 +2644,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "890a3c08-37d1-40df-8df6-037ef377afe6",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -3094,7 +2721,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "38ea34c1-e94d-44dc-a9a2-8abb75ba0903",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -3171,7 +2798,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "c35db53d-1ca2-4757-8279-e1cd023bdb0f",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -3252,7 +2879,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "48ad4f29-678c-4fbd-a41a-d80f758065d7",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -3345,7 +2972,7 @@
 										{
 											"listen": "test",
 											"script": {
-												"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+												"id": "8aef00fa-e755-4945-869d-7e42e6231e78",
 												"exec": [
 													"try {\r",
 													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -3420,7 +3047,7 @@
 										{
 											"listen": "test",
 											"script": {
-												"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+												"id": "4799bebd-9bda-4a7b-af96-59d0d843a5e7",
 												"exec": [
 													"try {\r",
 													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -3496,7 +3123,7 @@
 										{
 											"listen": "test",
 											"script": {
-												"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+												"id": "35f4c2e9-aa47-4a14-86f6-4522bcb498d3",
 												"exec": [
 													"try {\r",
 													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -3580,7 +3207,7 @@
 										{
 											"listen": "test",
 											"script": {
-												"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+												"id": "98a1cfb5-9583-4991-9fc9-3450e93d7ec0",
 												"exec": [
 													"try {\r",
 													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -3645,7 +3272,7 @@
 										{
 											"listen": "test",
 											"script": {
-												"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+												"id": "87ae6b13-78bc-44ec-a468-42920237a15b",
 												"exec": [
 													"try {\r",
 													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -3720,7 +3347,7 @@
 										{
 											"listen": "test",
 											"script": {
-												"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+												"id": "f8049ca4-1e29-456e-836d-f3ac396ab1dd",
 												"exec": [
 													"try {\r",
 													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -3795,7 +3422,7 @@
 										{
 											"listen": "test",
 											"script": {
-												"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+												"id": "da5a7aa7-b2bb-4bbe-9111-ed9dd73b1824",
 												"exec": [
 													"try {\r",
 													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -3882,7 +3509,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "16a13585-269d-41aa-b4d9-7b11ae4bbf7e",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -3953,7 +3580,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "5fd4408e-5ef6-41a2-8014-11320634eb0f",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -4034,7 +3661,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "cc2e0bb3-ffcd-4c4e-acfe-e6c62e4c769f",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -4112,7 +3739,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "b1501b8e-2371-48ad-bd2e-7d0e1ffa6e61",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -4194,7 +3821,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "0cecfa05-2380-4567-8102-b79c1b4d5f1e",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -4272,7 +3899,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "d0a4b46b-9aba-4011-b800-a52ec5d14b00",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -4350,7 +3977,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "904b9408-9a7d-4fec-9dd0-37cdd5ba1a45",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -4428,7 +4055,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "a4d4831d-5fb5-453e-8014-8a7a84a7bdbf",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -4507,7 +4134,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "774733ff-100a-4297-aefd-2ffe5b03079c",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -4584,7 +4211,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "1b505eab-cbfd-4604-9dc4-7712e24da4c2",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -4662,7 +4289,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "a89720a1-dd4b-4cb8-a9df-40079e0d38f3",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -4740,7 +4367,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "d0b2f3b9-abf0-405f-809b-d16966f29f82",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -4817,7 +4444,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "0b45a07f-4a6b-4597-a3f6-6ebd6bbdaccd",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -4903,7 +4530,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "de623d69-a0a8-4bab-afef-176edcbaa03a",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -4981,7 +4608,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "6a69dec1-f670-4ea9-879f-077970183a18",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -5067,7 +4694,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "1e87c704-fe80-4113-918b-a62ae5e23905",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -5148,7 +4775,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "a45420ff-57e5-46b6-b2f0-67eaabde2969",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -5226,7 +4853,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "ddb48a58-288a-442d-b8b1-32cb8be63adc",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -5303,7 +4930,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "74b88048-63d6-4b58-9e35-7365dc408a53",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -5384,7 +5011,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "bcc1d93a-30ee-478e-84a5-8df16a1f4aa5",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -5470,7 +5097,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "693c1f68-aeb8-4d71-8700-aa1a16aff6ad",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -5573,7 +5200,82 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"requests\": [\n    {\n      \"entityTypes\": [\n        \"microsoft.graph.message\"\n      ],\n      \"query\": {\n        \"query_string\": {\n          \"query\": \"test\"\n        }\n      },\n      \"from\": 0,\n      \"size\": 5\n    }\n  ]\n}"
+									"raw": "{\n    \"requests\": [\n        {\n            \"entityTypes\": [\n                \"message\"\n            ],\n            \"query\": {\n                \"queryString\": \"contoso\"\n            }\n        }\n    ]\n}"
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/beta/search/query",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"beta",
+										"search",
+										"query"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Search Messages Top Results",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "ed36cdd4-1989-4bcb-9690-9e8369ca44ba",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to at least *Files.ReadWrite* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"requests\": [\r\n        {\r\n            \"entityTypes\": [\r\n                \"message\"\r\n            ],\r\n            \"query\": {\r\n                \"queryString\": \"contoso\"\r\n            },\r\n            \"enableTopResults\": true\r\n        }\r\n    ]\r\n}"
 								},
 								"url": {
 									"raw": "https://graph.microsoft.com/beta/search/query",
@@ -5616,7 +5318,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"requests\": [\n    {\n      \"entityTypes\": [\n        \"microsoft.graph.event\"\n      ],\n      \"query\": {\n        \"query_string\": {\n          \"query\": \"test\"\n        }\n      },\n      \"from\": 0,\n      \"size\": 5\n    }\n  ]\n}"
+									"raw": "{\n    \"requests\": [\n        {\n            \"entityTypes\": [\n                \"event\"\n            ],\n            \"query\": {\n                \"queryString\": \"contoso\"\n            }\n        }\n    ]\n}"
 								},
 								"url": {
 									"raw": "https://graph.microsoft.com/beta/search/query",
@@ -5659,7 +5361,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"requests\": [\n    {\n      \"entityTypes\": [\n        \"microsoft.graph.driveItem\"\n      ],\n      \"query\": {\n        \"query_string\": {\n          \"query\": \"test\"\n        }\n      },\n      \"from\": 0,\n      \"size\": 25\n    }\n  ]\n}"
+									"raw": "{\n    \"requests\": [\n        {\n            \"entityTypes\": [\n                \"driveItem\"\n            ],\n            \"query\": {\n                \"queryString\": \"contoso\"\n                //\"queryString\": \"contoso filetype:pdf OR filetype:docx\"\n                //\"queryString\": \"contoso path:\\\"https://contoso.sharepoint.com/sites/Team Site/Documents/\\\\\"\"                              \n            }\n        }\n    ]\n}"
 								},
 								"url": {
 									"raw": "https://graph.microsoft.com/beta/search/query",
@@ -5679,7 +5381,7 @@
 							"response": []
 						},
 						{
-							"name": "Search External Files",
+							"name": "Search Lists",
 							"request": {
 								"auth": {
 									"type": "bearer",
@@ -5696,13 +5398,185 @@
 									{
 										"key": "Content-Type",
 										"name": "Content-Type",
-										"value": "application/json",
-										"type": "text"
+										"type": "text",
+										"value": "application/json"
 									}
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"requests\": [\n    {\n      \"entityTypes\": [\n        \"microsoft.graph.externalFile\"\n      ],\n      \"query\": {\n        \"query_string\": {\n          \"query\": \"test\"\n        }\n      },\n      \"from\": 0,\n      \"size\": 25\n    }\n  ]\n}"
+									"raw": "{\n    \"requests\": [\n        {\n            \"entityTypes\": [\n                \"list\"\n            ],\n            \"query\": {\n                \"queryString\": \"*\"\n            }\n        }\n    ]\n}"
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/beta/search/query",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"beta",
+										"search",
+										"query"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Search ListItems",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"requests\": [\n        {\n            \"entityTypes\": [\n                \"listItem\"\n            ],\n            \"query\": {\n                \"queryString\": \"contoso\"\n            }\n        }\n    ]\n}"
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/beta/search/query",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"beta",
+										"search",
+										"query"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Search ListItems with Properties selection",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"requests\": [\n        {\n            \"entityTypes\": [\n                \"listItem\"\n            ],\n            \"query\": {\n                \"queryString\": \"issue\"\n            },\n            \"fields\": [\n                \"id\",\n                \"name\",                \n                \"contentclass\",\n                \"title\",\n                \"fooCustomProperty\"\n            ]\n        }\n    ]\n}"
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/beta/search/query",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"beta",
+										"search",
+										"query"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Search Sites",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"requests\": [\n        {\n            \"entityTypes\": [\n                \"site\"\n            ],\n            \"query\": {\n                \"queryString\": \"contoso\"\n            }\n        }\n    ]\n}"
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/beta/search/query",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"beta",
+										"search",
+										"query"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Search Drives",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"requests\": [\n        {\n            \"entityTypes\": [\n                \"drive\"\n            ],\n            \"query\": {\n                \"queryString\": \"*\"\n                //Note that personal OneDrive is not returned in this query\n            }\n        }\n    ]\n}"
 								},
 								"url": {
 									"raw": "https://graph.microsoft.com/beta/search/query",
@@ -5745,7 +5619,382 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"requests\": [\n    {\n      \"entityTypes\": [\n        \"microsoft.graph.externalItem\"\n      ],\n      \"contentSources\": [\n        \"/external/connections/connection_friendly_name\"\n      ],\n      \"query\": {\n        \"query_string\": {\n          \"query\": \"test\"\n        }\n      },\n      \"from\": 0,\n      \"size\": 25,\n      \"stored_fields\": [\n        \"number\",\n        \"shortdescription\"\n      ]\n    }\n  ]\n}"
+									"raw": "{\n    \"requests\": [\n        {\n            \"entityTypes\": [\n                \"externalItem\"\n            ],\n            \"contentSources\": [\n                \"/external/connections/connection_friendly_name\"\n                //\"/external/connections/azuresqconnection_friendly_name1\", \"/external/connections/connection_friendly_name2\"\n            ],\n            \"query\": {\n                \"queryString\": \"contoso\"\n            },\n            \"fields\": [\n                \"number\",\n                \"shortdescription\"\n            ]\n        }\n    ]\n}"
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/beta/search/query",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"beta",
+										"search",
+										"query"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Page Search results",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "1be65218-37ec-44e3-a090-136299f39eae",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to at least *Files.ReadWrite* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"requests\": [\n        {\n            \"entityTypes\": [\n                \"driveItem\"\n            ],\n            \"query\": {\n                \"queryString\": \"contoso\"\n            },\n            \"from\": 0,\n            \"size\": 15\n        }\n    ]\n}"
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/beta/search/query",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"beta",
+										"search",
+										"query"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Sort Search results",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "12f79e6d-390f-43a8-a42d-2f9e01f3837d",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to at least *Files.ReadWrite* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"requests\": [\n        {\n            \"entityTypes\": [\n                \"driveItem\"\n            ],\n            \"query\": {\n                \"queryString\": \"contoso\"\n            },\n            \"sortProperties\": [\n                {\n                    \"name\": \"lastModifiedDateTime\",\n                    \"isDescending\": \"true\" // default is false\n                }\n            ]\n        }\n    ]\n}"
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/beta/search/query",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"beta",
+										"search",
+										"query"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Refine results with String aggregations",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "da85a3a0-434d-499c-be81-99fa970ebd64",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to at least *Files.ReadWrite* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"requests\": [\n        {\n            \"entityTypes\": [\n                \"listItem\"\n            ],\n            \"query\": {\n                \"queryString\": \"contoso\"\n            },\n            \"aggregations\": [\n                {\n                    \"field\": \"FileType\",\n                    \"size\": 20,\n                    \"bucketDefinition\": {\n                        \"sortBy\": \"count\",\n                        \"isDescending\": \"true\",\n                        \"minimumCount\": 0\n                    }\n                },\n                {\n                    \"field\": \"contentclass\",\n                    \"size\": 20,\n                    \"bucketDefinition\": {\n                        \"sortBy\": \"keyAsString\",\n                        \"isDescending\": \"true\",\n                        \"minimumCount\": 0\n                    }\n                }\n            ]\n        }\n    ]\n}"
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/beta/search/query",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"beta",
+										"search",
+										"query"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Refine results with Numeric aggregations",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "5f660039-1307-480c-a497-3e8cba25c1d2",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to at least *Files.ReadWrite* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"Requests\": [\n        {\n            \"entityTypes\": [\n                \"listItem\"\n            ],\n            \"query\": {\n                \"queryString\": \"contoso\"\n            },\n            \"aggregations\": [\n                {\n                    \"field\": \"Size\",\n                    \"size\": 15,\n                    \"bucketDefinition\": {\n                        \"sortBy\": \"keyAsNumber\",\n                        \"isDescending\": \"true\",\n                        \"minimumCount\": 0,\n                        \"ranges\": [\n                            {\n                                \"to\": \"100\"\n                            },\n                            {\n                                \"from\": \"100\",\n                                \"to\": \"1000\"\n                            },\n                            {\n                                \"from\": \"1000\"\n                            }\n                        ]\n                    }\n                }\n            ]\n        }\n    ]\n}"
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/beta/search/query",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"beta",
+										"search",
+										"query"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Apply refined query passing the aggregationToken",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "24889225-6c30-4bb8-b34c-71fca06bcf26",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to at least *Files.ReadWrite* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"Requests\": [\n        {\n            \"entityTypes\": [\n                \"driveItem\"\n            ],\n            \"query\": {\n                \"queryString\": \"contoso\"\n            },\n            \"aggregationFilters\": [\n                \"contentclass:\\\"ǂǂ5354535f4c6973744974656d5f446f63756d656e744c696272617279\\\"\",\n                \"FileType:\\\"ǂǂ646f6378\\\"\"                \n            ],\n            \"aggregations\": [\n                {\n                    \"field\": \"FileType\",\n                    \"size\": 20,\n                    \"bucketDefinition\": {\n                        \"sortBy\": \"count\",\n                        \"isDescending\": \"true\",\n                        \"minimumCount\": 0\n                    }\n                },\n                {\n                    \"field\": \"contentclass\",\n                    \"size\": 15,\n                    \"bucketDefinition\": {\n                        \"sortBy\": \"keyAsString\",\n                        \"isDescending\": \"true\",\n                        \"minimumCount\": 0\n                    }\n                }\n            ]\n        }\n    ]\n}"
 								},
 								"url": {
 									"raw": "https://graph.microsoft.com/beta/search/query",
@@ -5777,7 +6026,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "bdcaf622-2576-488b-9939-406319042876",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -5843,7 +6092,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "85a0d8d2-a300-49d2-91ec-61d33d89d65e",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -5919,7 +6168,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "128a3c1d-f311-4e1f-a0fc-b1a053b83d7f",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -5995,7 +6244,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "960c9479-22a5-4081-be8e-be8130b9642f",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -6071,7 +6320,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "794a89f3-fc34-4757-9608-7d69201ba1d4",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -6143,7 +6392,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "5a30426f-adb5-4160-b54b-31a878f670b2",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -6219,7 +6468,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "ff8d6c0f-942e-4866-9dc7-59e504ada018",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -6291,7 +6540,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "b80cc709-1d58-4ec8-ad72-453007cfc73c",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -6363,7 +6612,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "791dd3c3-b158-4625-a54d-a1c52dfc7453",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -6434,7 +6683,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "c82fa32d-fcd2-4454-b645-c7058f8ce258",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -6501,7 +6750,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "3e27255b-e743-49f1-9130-e4dbb5be413a",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -6572,7 +6821,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "74c1374b-be9c-48cf-9035-24014c3ead0d",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -6651,7 +6900,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "dbe5bdf1-cfe5-4842-b6f5-348e318f2c2d",
+										"id": "5fcdc46d-4deb-43d5-8569-33c51b27b309",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -6727,7 +6976,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "dbe5bdf1-cfe5-4842-b6f5-348e318f2c2d",
+										"id": "d8025ca7-c5b4-4701-9dde-e0b66f4a3ba0",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -6804,7 +7053,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "dbe5bdf1-cfe5-4842-b6f5-348e318f2c2d",
+										"id": "5494de48-73e8-46d6-a137-37704bc43cd5",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -6880,7 +7129,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "dbe5bdf1-cfe5-4842-b6f5-348e318f2c2d",
+										"id": "df1936b7-5524-41c0-92ab-323498aeda76",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -6952,7 +7201,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "dbe5bdf1-cfe5-4842-b6f5-348e318f2c2d",
+										"id": "bed356e0-adf1-429e-8d35-0bc6fcd8f505",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -7024,7 +7273,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "dbe5bdf1-cfe5-4842-b6f5-348e318f2c2d",
+										"id": "4f89d000-350b-49fa-ba7b-620e559d233f",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -7096,7 +7345,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "dbe5bdf1-cfe5-4842-b6f5-348e318f2c2d",
+										"id": "b9e76cde-584c-4e07-b1aa-0f2c6cabcc07",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -7173,7 +7422,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "dbe5bdf1-cfe5-4842-b6f5-348e318f2c2d",
+										"id": "755136fc-9a70-4a0a-b437-3f7a62d7cfea",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -7247,7 +7496,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "dbe5bdf1-cfe5-4842-b6f5-348e318f2c2d",
+										"id": "00659b80-890e-4626-bf86-5dfcbe43579d",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -7321,7 +7570,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "dbe5bdf1-cfe5-4842-b6f5-348e318f2c2d",
+										"id": "215ea8c5-bc99-4c63-ad8e-1436e41c826e",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -7395,7 +7644,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "dbe5bdf1-cfe5-4842-b6f5-348e318f2c2d",
+										"id": "f01ffd14-a5d6-405f-afcf-6655923698b5",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -7487,7 +7736,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "07a76d60-5384-4aef-87c3-6171cdce94f1",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -7564,7 +7813,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "a3d6ca10-23d7-4e93-ab0d-e2e8fdba9d8d",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -7648,7 +7897,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "c3f722a6-abd1-433e-b29f-32db6e3ca99f",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -7719,7 +7968,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "817cfe6a-757d-450c-aa41-62aee82f87a4",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -7786,7 +8035,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "80c74347-3854-4498-bb18-186c6d1abdc5",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -7858,7 +8107,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "771d3435-fa41-4089-abce-911366521385",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -7931,7 +8180,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "43f7e42e-08cc-4a65-a45f-0868bd20bf8e",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -8013,7 +8262,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "58a2ef9d-53ab-4fbb-9d28-0557d904283b",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -8097,7 +8346,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "4fa1ebe6-a1d6-444b-b26d-38db57ca1a65",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -8178,7 +8427,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "12f9ac81-acff-449b-86a5-c2f1b26923cb",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -8253,7 +8502,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "7dbdfddb-1071-4446-9b46-2053f5e9bbfb",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -8333,7 +8582,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "85a04c83-db62-49a7-b724-c5e7f967f91b",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -8409,7 +8658,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "07966ffd-29fa-4ffa-a19e-2288ca01fccb",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -8491,7 +8740,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "53492fe1-529e-4b9a-a569-73a34ff6f068",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -8569,7 +8818,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "8f5a4a4f-79ad-4383-bb3f-4bb36e43c6bd",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -8660,7 +8909,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "85cba395-848a-47b0-8836-2a6330008fb5",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -8730,7 +8979,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "110f5345-129f-410a-95ba-d8ab279b9389",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -8796,7 +9045,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "7f11b8db-a3f4-4834-9f4c-b1a1a13fb3d2",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -8868,7 +9117,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "5632a5c4-e1a4-44ee-9f1c-65e81b22679b",
+										"id": "9ff2c6df-f182-4c73-be16-53fae0e705d7",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -8934,7 +9183,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "5632a5c4-e1a4-44ee-9f1c-65e81b22679b",
+										"id": "378cbc8c-ecbf-470a-bd5d-1a538fd6f17d",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -9000,7 +9249,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "5632a5c4-e1a4-44ee-9f1c-65e81b22679b",
+										"id": "6386842a-6a82-4dd5-8f20-a61d2533ee7f",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -9066,7 +9315,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "a97f50cf-b53a-44fd-b8eb-22f3c2d4324e",
+										"id": "a0ff6f31-79db-49e7-ac14-1c0281894bc6",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -9133,7 +9382,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "fbfb3934-5a4f-4e83-9c1e-ffc199e62a03",
+										"id": "54b32d93-cc9e-4d14-b45c-e6d7301e6826",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -9198,7 +9447,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "fbfb3934-5a4f-4e83-9c1e-ffc199e62a03",
+										"id": "c7d7eb88-b245-4648-8782-7a0ad6bfa22b",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -9269,7 +9518,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "fbfb3934-5a4f-4e83-9c1e-ffc199e62a03",
+										"id": "2c44fd22-6a65-46fe-b10f-1d70921dcba9",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -9335,7 +9584,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "200f86ed-d330-4fb1-9c9d-228356bb8bcb",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -9401,7 +9650,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "a97f50cf-b53a-44fd-b8eb-22f3c2d4324e",
+										"id": "80b6f5ec-1200-4d25-a2bc-9f78e7c4bfe8",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -9469,7 +9718,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "bb1eedd8-e042-450d-b246-c311ed640746",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -9560,7 +9809,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "a9ee25f8-890e-499d-9b0a-63df29cf3673",
+								"id": "3d79dc29-e47c-4994-8083-922c5096a6ab",
 								"exec": [
 									"try {\r",
 									"    if (pm.environment.get(\"ClientID\") === \"\")\r",
@@ -9673,7 +9922,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+								"id": "42d5e2cf-bd62-47f6-9f38-83abded65c62",
 								"exec": [
 									"try {\r",
 									"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -9754,369 +10003,6 @@
 			"name": "Application",
 			"item": [
 				{
-					"name": "Identity and access (beta)",
-					"item": [
-						{
-							"name": "List conditionalAccessPolicies",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "c2200860-88b8-4d9f-9b9b-e693b6610dc6",
-										"exec": [
-											"try {\r",
-											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
-											"    {\r",
-											"        console.log(\"You need to run *Get App-Only Access Token* request first.\");\r",
-											"    }\r",
-											"    else\r",
-											"    {\r",
-											"        if (pm.response.status === \"Forbidden\")\r",
-											"        {\r",
-											"            console.log(\"You need to add user application permissions in your application to at least *Policy.Read.All* and *Policy.ReadWrite.ConditionalAccess* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *Application | Get App-Only Access Token* request to update access token. \");\r",
-											"        }\r",
-											"        else\r",
-											"        {\r",
-											"            var json = JSON.parse(responseBody);\r",
-											"        }\r",
-											"    }\r",
-											"}\r",
-											"catch (e) {\r",
-											"    console.log(e);\r",
-											"}"
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
-							"request": {
-								"auth": {
-									"type": "bearer",
-									"bearer": [
-										{
-											"key": "token",
-											"value": "{{AppAccessToken}}",
-											"type": "string"
-										}
-									]
-								},
-								"method": "GET",
-								"header": [
-									{
-										"key": "Content-Type",
-										"value": "application/json",
-										"type": "text"
-									}
-								],
-								"url": {
-									"raw": "https://graph.microsoft.com/beta/conditionalAccess/policies",
-									"protocol": "https",
-									"host": [
-										"graph",
-										"microsoft",
-										"com"
-									],
-									"path": [
-										"beta",
-										"conditionalAccess",
-										"policies"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Create conditionalAccessPolicy",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "0ab63815-e49a-422d-b3e5-712280601438",
-										"exec": [
-											"try {\r",
-											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
-											"    {\r",
-											"        console.log(\"You need to run *Get App-Only Access Token* request first.\");\r",
-											"    }\r",
-											"    else\r",
-											"    {\r",
-											"        if (pm.response.status === \"Forbidden\")\r",
-											"        {\r",
-											"            console.log(\"You need to add user application permissions in your application to at least *Policy.Read.All* and *Policy.ReadWrite.ConditionalAccess* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *Application | Get App-Only Access Token* request to update access token. \");\r",
-											"        }\r",
-											"        else\r",
-											"        {\r",
-											"            var json = JSON.parse(responseBody);\r",
-											"        }\r",
-											"    }\r",
-											"}\r",
-											"catch (e) {\r",
-											"    console.log(e);\r",
-											"}"
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
-							"request": {
-								"auth": {
-									"type": "bearer",
-									"bearer": [
-										{
-											"key": "token",
-											"value": "{{AppAccessToken}}",
-											"type": "string"
-										}
-									]
-								},
-								"method": "POST",
-								"header": [
-									{
-										"key": "Content-Type",
-										"value": "application/json",
-										"type": "text"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"displayName\": \"<OrgName> baseline policy: Require MFA for admins\",\r\n    \"state\": \"disabled\",\r\n    \"sessionControls\": null,\r\n    \"conditions\": {\r\n        \"signInRiskLevels\": [],\r\n        \"clientAppTypes\": [],\r\n        \"platforms\": null,\r\n        \"locations\": null,\r\n        \"deviceStates\": null,\r\n        \"applications\": {\r\n            \"includeApplications\": [\r\n                \"All\"\r\n            ],\r\n            \"excludeApplications\": [],\r\n            \"includeUserActions\": []\r\n        },\r\n        \"users\": {\r\n            \"includeUsers\": [],\r\n            \"excludeUsers\": [\r\n                \"<object-id-break-glass-admin>\",\r\n                \"<object-id-on-premises-sync-account>\"\r\n            ],\r\n            \"includeGroups\": [],\r\n            \"excludeGroups\": [],\r\n            \"includeRoles\": [\r\n                \"b0f54661-2d74-4c50-afa3-1ec803f12efe\",\r\n                \"b1be1c3e-b65d-4f19-8427-f6fa0d97feb9\",\r\n                \"29232cdf-9323-42fd-ade2-1d097af3e4de\",\r\n                \"62e90394-69f5-4237-9190-012177145e10\",\r\n                \"729827e3-9c14-49f7-bb1b-9608f156bbb8\",\r\n                \"966707d0-3269-4727-9be2-8c3a10f19b9d\",\r\n                \"194ae4cb-b126-40b2-bd5b-6091b380977d\",\r\n                \"f28a1f50-f6e7-4571-818b-6a12f2af6b6c\",\r\n                \"fe930be7-5e62-47db-91af-98c3a49a38b1\"\r\n            ],\r\n            \"excludeRoles\": []\r\n        }\r\n    },\r\n    \"grantControls\": {\r\n        \"operator\": \"OR\",\r\n        \"builtInControls\": [\r\n            \"mfa\"\r\n        ],\r\n        \"customAuthenticationFactors\": [],\r\n        \"termsOfUse\": []\r\n    }\r\n}"
-								},
-								"url": {
-									"raw": "https://graph.microsoft.com/beta/conditionalAccess/policies",
-									"protocol": "https",
-									"host": [
-										"graph",
-										"microsoft",
-										"com"
-									],
-									"path": [
-										"beta",
-										"conditionalAccess",
-										"policies"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Get conditionalAccessPolicy",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "3574ad9a-0bb1-4d89-8365-7a9e6207c00b",
-										"exec": [
-											"try {\r",
-											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
-											"    {\r",
-											"        console.log(\"You need to run *Get App-Only Access Token* request first.\");\r",
-											"    }\r",
-											"    else\r",
-											"    {\r",
-											"        if (pm.response.status === \"Forbidden\")\r",
-											"        {\r",
-											"            console.log(\"You need to add user application permissions in your application to at least *Policy.Read.All* and *Policy.ReadWrite.ConditionalAccess* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *Application | Get App-Only Access Token* request to update access token. \");\r",
-											"        }\r",
-											"        else\r",
-											"        {\r",
-											"            var json = JSON.parse(responseBody);\r",
-											"        }\r",
-											"    }\r",
-											"}\r",
-											"catch (e) {\r",
-											"    console.log(e);\r",
-											"}"
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
-							"request": {
-								"auth": {
-									"type": "bearer",
-									"bearer": [
-										{
-											"key": "token",
-											"value": "{{AppAccessToken}}",
-											"type": "string"
-										}
-									]
-								},
-								"method": "GET",
-								"header": [
-									{
-										"key": "Content-Type",
-										"value": "application/json",
-										"type": "text"
-									}
-								],
-								"url": {
-									"raw": "https://graph.microsoft.com/beta/conditionalAccess/policies/{id}",
-									"protocol": "https",
-									"host": [
-										"graph",
-										"microsoft",
-										"com"
-									],
-									"path": [
-										"beta",
-										"conditionalAccess",
-										"policies",
-										"{id}"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Update conditionalAccessPolicy",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "db0a8cf7-ad91-4b03-9046-eb2cf5c2a587",
-										"exec": [
-											"try {\r",
-											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
-											"    {\r",
-											"        console.log(\"You need to run *Get App-Only Access Token* request first.\");\r",
-											"    }\r",
-											"    else\r",
-											"    {\r",
-											"        if (pm.response.status === \"Forbidden\")\r",
-											"        {\r",
-											"            console.log(\"You need to add user application permissions in your application to at least *Policy.Read.All* and *Policy.ReadWrite.ConditionalAccess* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *Application | Get App-Only Access Token* request to update access token. \");\r",
-											"        }\r",
-											"        else\r",
-											"        {\r",
-											"            var json = JSON.parse(responseBody);\r",
-											"        }\r",
-											"    }\r",
-											"}\r",
-											"catch (e) {\r",
-											"    console.log(e);\r",
-											"}"
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
-							"request": {
-								"auth": {
-									"type": "bearer",
-									"bearer": [
-										{
-											"key": "token",
-											"value": "{{AppAccessToken}}",
-											"type": "string"
-										}
-									]
-								},
-								"method": "PATCH",
-								"header": [
-									{
-										"key": "Content-Type",
-										"value": "application/json",
-										"type": "text"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"displayName\": \"<OrgName> baseline policy: Require MFA for admins\",\r\n    \"state\": \"disabled\",\r\n    \"sessionControls\": null,\r\n    \"conditions\": {\r\n        \"signInRiskLevels\": [],\r\n        \"clientAppTypes\": [],\r\n        \"platforms\": null,\r\n        \"locations\": null,\r\n        \"deviceStates\": null,\r\n        \"applications\": {\r\n            \"includeApplications\": [\r\n                \"All\"\r\n            ],\r\n            \"excludeApplications\": [],\r\n            \"includeUserActions\": []\r\n        },\r\n        \"users\": {\r\n            \"includeUsers\": [],\r\n            \"excludeUsers\": [\r\n                \"<object-id-break-glass-admin>\",\r\n                \"<object-id-on-premises-sync-account>\"\r\n            ],\r\n            \"includeGroups\": [],\r\n            \"excludeGroups\": [],\r\n            \"includeRoles\": [\r\n                \"b0f54661-2d74-4c50-afa3-1ec803f12efe\",\r\n                \"b1be1c3e-b65d-4f19-8427-f6fa0d97feb9\",\r\n                \"29232cdf-9323-42fd-ade2-1d097af3e4de\",\r\n                \"62e90394-69f5-4237-9190-012177145e10\",\r\n                \"729827e3-9c14-49f7-bb1b-9608f156bbb8\",\r\n                \"966707d0-3269-4727-9be2-8c3a10f19b9d\",\r\n                \"194ae4cb-b126-40b2-bd5b-6091b380977d\",\r\n                \"f28a1f50-f6e7-4571-818b-6a12f2af6b6c\",\r\n                \"fe930be7-5e62-47db-91af-98c3a49a38b1\"\r\n            ],\r\n            \"excludeRoles\": []\r\n        }\r\n    },\r\n    \"grantControls\": {\r\n        \"operator\": \"OR\",\r\n        \"builtInControls\": [\r\n            \"mfa\"\r\n        ],\r\n        \"customAuthenticationFactors\": [],\r\n        \"termsOfUse\": []\r\n    }\r\n}"
-								},
-								"url": {
-									"raw": "https://graph.microsoft.com/beta/conditionalAccess/policies/{id}",
-									"protocol": "https",
-									"host": [
-										"graph",
-										"microsoft",
-										"com"
-									],
-									"path": [
-										"beta",
-										"conditionalAccess",
-										"policies",
-										"{id}"
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Delete conditionalAccessPolicy",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "5ad0e612-e626-4666-89ab-9f880ede596e",
-										"exec": [
-											"try {\r",
-											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
-											"    {\r",
-											"        console.log(\"You need to run *Get App-Only Access Token* request first.\");\r",
-											"    }\r",
-											"    else\r",
-											"    {\r",
-											"        if (pm.response.status === \"Forbidden\")\r",
-											"        {\r",
-											"            console.log(\"You need to add user application permissions in your application to at least *Policy.Read.All* and *Policy.ReadWrite.ConditionalAccess* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *Application | Get App-Only Access Token* request to update access token. \");\r",
-											"        }\r",
-											"        else\r",
-											"        {\r",
-											"            var json = JSON.parse(responseBody);\r",
-											"        }\r",
-											"    }\r",
-											"}\r",
-											"catch (e) {\r",
-											"    console.log(e);\r",
-											"}"
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
-							"request": {
-								"auth": {
-									"type": "bearer",
-									"bearer": [
-										{
-											"key": "token",
-											"value": "{{AppAccessToken}}",
-											"type": "string"
-										}
-									]
-								},
-								"method": "DELETE",
-								"header": [
-									{
-										"key": "Content-Type",
-										"value": "application/json",
-										"type": "text"
-									}
-								],
-								"url": {
-									"raw": "https://graph.microsoft.com/beta/conditionalAccess/policies/{id}",
-									"protocol": "https",
-									"host": [
-										"graph",
-										"microsoft",
-										"com"
-									],
-									"path": [
-										"beta",
-										"conditionalAccess",
-										"policies",
-										"{id}"
-									]
-								}
-							},
-							"response": []
-						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
-				},
-				{
 					"name": "Mail",
 					"item": [
 						{
@@ -10125,7 +10011,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "e2944f52-d640-47a7-a805-55eff5bf0690",
+										"id": "f76afb2c-97ac-4435-a10d-ec9ad1da9fe1",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -10217,7 +10103,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "e2bc29a2-fbed-4e5f-95bc-31150649eb81",
+										"id": "4865303f-b3cf-4165-81bf-fba4f3e2f948",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -10317,7 +10203,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "e2944f52-d640-47a7-a805-55eff5bf0690",
+										"id": "40053a00-5d43-47a3-8cb5-757f8260e794",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -10419,7 +10305,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "e2944f52-d640-47a7-a805-55eff5bf0690",
+										"id": "cfaa0adf-ecb9-409c-8bb7-8eb2d1365af5",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -10509,7 +10395,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "e2944f52-d640-47a7-a805-55eff5bf0690",
+										"id": "efc93ca4-4090-4f80-aed4-367333718c48",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -10604,7 +10490,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "4fa9cecd-99b3-42ee-8006-cd6100e2bdc1",
+										"id": "3bd2b24d-cd56-4508-8aaa-42eae65c0940",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -10670,7 +10556,7 @@
 									}
 								},
 								"url": {
-									"raw": "https://graph.microsoft.com/v1.0/subscriptions",
+									"raw": "https://graph.microsoft.com/beta/subscriptions",
 									"protocol": "https",
 									"host": [
 										"graph",
@@ -10693,12 +10579,721 @@
 					"name": "Teams",
 					"item": [
 						{
+							"name": "Memberships",
+							"item": [
+								{
+									"name": "Get Team Members",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "faf5c088-723f-4e90-9ec7-836b20fdcd97",
+												"exec": [
+													"try {\r",
+													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+													"    {\r",
+													"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+													"    }\r",
+													"    else\r",
+													"    {\r",
+													"        if (pm.response.status === \"Forbidden\")\r",
+													"        {\r",
+													"            console.log(\"You need to add user delegated permissions in your application to at least *Group.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+													"        }\r",
+													"        else\r",
+													"        {\r",
+													"            var json = JSON.parse(responseBody);\r",
+													"            postman.setEnvironmentVariable(\"TeamId\", json.value[0].id);\r",
+													"        }\r",
+													"    }\r",
+													"}\r",
+													"catch (e) {\r",
+													"    console.log(e);\r",
+													"}\r",
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{AppAccessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [
+											{
+												"key": "SdkVersion",
+												"type": "text",
+												"value": "postman-graph/v1.0"
+											}
+										],
+										"url": {
+											"raw": "https://graph.microsoft.com/v1.0/teams/{{GroupId}}/members",
+											"protocol": "https",
+											"host": [
+												"graph",
+												"microsoft",
+												"com"
+											],
+											"path": [
+												"v1.0",
+												"teams",
+												"{{GroupId}}",
+												"members"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Get Single Team Member",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "f28c974d-8d0d-46b8-9249-a42cf29b062e",
+												"exec": [
+													"try {\r",
+													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+													"    {\r",
+													"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+													"    }\r",
+													"    else\r",
+													"    {\r",
+													"        if (pm.response.status === \"Forbidden\")\r",
+													"        {\r",
+													"            console.log(\"You need to add user delegated permissions in your application to at least *Group.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+													"        }\r",
+													"        else\r",
+													"        {\r",
+													"            var json = JSON.parse(responseBody);\r",
+													"            postman.setEnvironmentVariable(\"TeamId\", json.value[0].id);\r",
+													"        }\r",
+													"    }\r",
+													"}\r",
+													"catch (e) {\r",
+													"    console.log(e);\r",
+													"}\r",
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{AppAccessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [
+											{
+												"key": "SdkVersion",
+												"type": "text",
+												"value": "postman-graph/v1.0"
+											}
+										],
+										"url": {
+											"raw": "https://graph.microsoft.com/v1.0/teams/{{GroupId}}/members/{{UserId}}",
+											"protocol": "https",
+											"host": [
+												"graph",
+												"microsoft",
+												"com"
+											],
+											"path": [
+												"v1.0",
+												"teams",
+												"{{GroupId}}",
+												"members",
+												"{{UserId}}"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Get Channel Members",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "15682f19-c01f-415c-a96a-75e657e92cd1",
+												"exec": [
+													"try {\r",
+													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+													"    {\r",
+													"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+													"    }\r",
+													"    else\r",
+													"    {\r",
+													"        if (pm.response.status === \"Forbidden\")\r",
+													"        {\r",
+													"            console.log(\"You need to add user delegated permissions in your application to at least *Group.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+													"        }\r",
+													"        else\r",
+													"        {\r",
+													"            var json = JSON.parse(responseBody);\r",
+													"            postman.setEnvironmentVariable(\"TeamId\", json.value[0].id);\r",
+													"        }\r",
+													"    }\r",
+													"}\r",
+													"catch (e) {\r",
+													"    console.log(e);\r",
+													"}\r",
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{AppAccessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [
+											{
+												"key": "SdkVersion",
+												"type": "text",
+												"value": "postman-graph/v1.0"
+											}
+										],
+										"url": {
+											"raw": "https://graph.microsoft.com/v1.0/teams/{{GroupId}}/channels/{{ChannelId}}/members",
+											"protocol": "https",
+											"host": [
+												"graph",
+												"microsoft",
+												"com"
+											],
+											"path": [
+												"v1.0",
+												"teams",
+												"{{GroupId}}",
+												"channels",
+												"{{ChannelId}}",
+												"members"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Add Channel Member",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "39873379-3c25-4663-a133-1d78facda4d5",
+												"exec": [
+													"try {\r",
+													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+													"    {\r",
+													"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+													"    }\r",
+													"    else\r",
+													"    {\r",
+													"        if (pm.response.status === \"Forbidden\")\r",
+													"        {\r",
+													"            console.log(\"You need to add user delegated permissions in your application to at least *Group.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+													"        }\r",
+													"        else\r",
+													"        {\r",
+													"            var json = JSON.parse(responseBody);\r",
+													"            postman.setEnvironmentVariable(\"TeamId\", json.value[0].id);\r",
+													"        }\r",
+													"    }\r",
+													"}\r",
+													"catch (e) {\r",
+													"    console.log(e);\r",
+													"}\r",
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{AppAccessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "SdkVersion",
+												"type": "text",
+												"value": "postman-graph/v1.0"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"@odata.type\": \"#microsoft.graph.aadUserConversationMember\",\r\n    \"roles\": [\"owner\"],\r\n    \"user@odata.bind\": \"https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://graph.microsoft.com/v1.0/teams/{{TeamId}}/channels/{{ChannelId}}/members",
+											"protocol": "https",
+											"host": [
+												"graph",
+												"microsoft",
+												"com"
+											],
+											"path": [
+												"v1.0",
+												"teams",
+												"{{TeamId}}",
+												"channels",
+												"{{ChannelId}}",
+												"members"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Remove Team Member",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "fb76b3de-c3a1-4687-80d4-d57a1ed9e404",
+												"exec": [
+													"try {\r",
+													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+													"    {\r",
+													"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+													"    }\r",
+													"    else\r",
+													"    {\r",
+													"        if (pm.response.status === \"Forbidden\")\r",
+													"        {\r",
+													"            console.log(\"You need to add user delegated permissions in your application to at least *Group.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+													"        }\r",
+													"        else\r",
+													"        {\r",
+													"            var json = JSON.parse(responseBody);\r",
+													"            postman.setEnvironmentVariable(\"TeamId\", json.value[0].id);\r",
+													"        }\r",
+													"    }\r",
+													"}\r",
+													"catch (e) {\r",
+													"    console.log(e);\r",
+													"}\r",
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"protocolProfileBehavior": {
+										"disabledSystemHeaders": {}
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{AppAccessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "SdkVersion",
+												"type": "text",
+												"value": "postman-graph/v1.0"
+											}
+										],
+										"url": {
+											"raw": "https://graph.microsoft.com/v1.0/teams/{{TeamId}}/members/{{UserId}}",
+											"protocol": "https",
+											"host": [
+												"graph",
+												"microsoft",
+												"com"
+											],
+											"path": [
+												"v1.0",
+												"teams",
+												"{{TeamId}}",
+												"members",
+												"{{UserId}}"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Remove Channel Member",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "3890ad38-58fd-467b-94e7-44b91473aec5",
+												"exec": [
+													"try {\r",
+													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+													"    {\r",
+													"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+													"    }\r",
+													"    else\r",
+													"    {\r",
+													"        if (pm.response.status === \"Forbidden\")\r",
+													"        {\r",
+													"            console.log(\"You need to add user delegated permissions in your application to at least *Group.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+													"        }\r",
+													"        else\r",
+													"        {\r",
+													"            var json = JSON.parse(responseBody);\r",
+													"            postman.setEnvironmentVariable(\"TeamId\", json.value[0].id);\r",
+													"        }\r",
+													"    }\r",
+													"}\r",
+													"catch (e) {\r",
+													"    console.log(e);\r",
+													"}\r",
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"protocolProfileBehavior": {
+										"disabledSystemHeaders": {}
+									},
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{AppAccessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "SdkVersion",
+												"type": "text",
+												"value": "postman-graph/v1.0"
+											}
+										],
+										"url": {
+											"raw": "https://graph.microsoft.com/v1.0/teams/{{TeamId}}/channels/{{ChannelId}}members/{{UserId}}",
+											"protocol": "https",
+											"host": [
+												"graph",
+												"microsoft",
+												"com"
+											],
+											"path": [
+												"v1.0",
+												"teams",
+												"{{TeamId}}",
+												"channels",
+												"{{ChannelId}}members",
+												"{{UserId}}"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Update Team Member",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "ebc586f5-30a3-40a0-b218-a1570ccd1e48",
+												"exec": [
+													"try {\r",
+													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+													"    {\r",
+													"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+													"    }\r",
+													"    else\r",
+													"    {\r",
+													"        if (pm.response.status === \"Forbidden\")\r",
+													"        {\r",
+													"            console.log(\"You need to add user delegated permissions in your application to at least *Group.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+													"        }\r",
+													"        else\r",
+													"        {\r",
+													"            var json = JSON.parse(responseBody);\r",
+													"            postman.setEnvironmentVariable(\"TeamId\", json.value[0].id);\r",
+													"        }\r",
+													"    }\r",
+													"}\r",
+													"catch (e) {\r",
+													"    console.log(e);\r",
+													"}\r",
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{AppAccessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "SdkVersion",
+												"type": "text",
+												"value": "postman-graph/v1.0"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"@odata.type\":\"#microsoft.graph.aadUserConversationMember\",\r\n  \"roles\": [\"owner\"]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://graph.microsoft.com/v1.0/teams/{{GroupId}}/members/{{UserId}}",
+											"protocol": "https",
+											"host": [
+												"graph",
+												"microsoft",
+												"com"
+											],
+											"path": [
+												"v1.0",
+												"teams",
+												"{{GroupId}}",
+												"members",
+												"{{UserId}}"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Update Channel Member",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "2d9654c9-59d1-4543-a8be-e8f66fc00861",
+												"exec": [
+													"try {\r",
+													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+													"    {\r",
+													"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+													"    }\r",
+													"    else\r",
+													"    {\r",
+													"        if (pm.response.status === \"Forbidden\")\r",
+													"        {\r",
+													"            console.log(\"You need to add user delegated permissions in your application to at least *Group.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+													"        }\r",
+													"        else\r",
+													"        {\r",
+													"            var json = JSON.parse(responseBody);\r",
+													"            postman.setEnvironmentVariable(\"TeamId\", json.value[0].id);\r",
+													"        }\r",
+													"    }\r",
+													"}\r",
+													"catch (e) {\r",
+													"    console.log(e);\r",
+													"}\r",
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{AppAccessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "SdkVersion",
+												"type": "text",
+												"value": "postman-graph/v1.0"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"@odata.type\":\"#microsoft.graph.aadUserConversationMember\",\r\n  \"roles\": [\"owner\"]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://graph.microsoft.com/v1.0/teams/{{GroupId}}/channels/{{ChannelId}}/members/{{UserId}}",
+											"protocol": "https",
+											"host": [
+												"graph",
+												"microsoft",
+												"com"
+											],
+											"path": [
+												"v1.0",
+												"teams",
+												"{{GroupId}}",
+												"channels",
+												"{{ChannelId}}",
+												"members",
+												"{{UserId}}"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Add Team Member",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "63d95342-c3cb-40ca-bef2-a4dddb5d9132",
+												"exec": [
+													"try {\r",
+													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+													"    {\r",
+													"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+													"    }\r",
+													"    else\r",
+													"    {\r",
+													"        if (pm.response.status === \"Forbidden\")\r",
+													"        {\r",
+													"            console.log(\"You need to add user delegated permissions in your application to at least *Group.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+													"        }\r",
+													"        else\r",
+													"        {\r",
+													"            var json = JSON.parse(responseBody);\r",
+													"            postman.setEnvironmentVariable(\"TeamId\", json.value[0].id);\r",
+													"        }\r",
+													"    }\r",
+													"}\r",
+													"catch (e) {\r",
+													"    console.log(e);\r",
+													"}\r",
+													""
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{AppAccessToken}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "SdkVersion",
+												"type": "text",
+												"value": "postman-graph/v1.0"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"@odata.type\": \"#microsoft.graph.aadUserConversationMember\",\r\n    \"roles\": [\"owner\"],\r\n    \"user@odata.bind\": \"https://graph.microsoft.com/v1.0/users/a82083e7-cc7c-48a4-9ed1-ce70e42f7453\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "https://graph.microsoft.com/v1.0/teams/{{GroupId}}/members",
+											"protocol": "https",
+											"host": [
+												"graph",
+												"microsoft",
+												"com"
+											],
+											"path": [
+												"v1.0",
+												"teams",
+												"{{GroupId}}",
+												"members"
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"protocolProfileBehavior": {},
+							"_postman_isSubFolder": true
+						},
+						{
 							"name": "Users Joined Teams",
 							"event": [
 								{
 									"listen": "test",
 									"script": {
-										"id": "86c19a0d-def2-432a-bcce-c4b638f3baf2",
+										"id": "8d8cd3b5-0eb9-4bc8-91ba-876ea5707d94",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -10763,6 +11358,773 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "Get Primary Channel",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "f326091a-baa4-49a8-be26-1e24abcd60f0",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to at least *Group.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            postman.setEnvironmentVariable(\"TeamId\", json.value[0].id);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AppAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/teams/{{GroupId}}/primaryChannel",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"teams",
+										"{{GroupId}}",
+										"primaryChannel"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Team Channels",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "51963cac-e4e5-4be3-97c8-d442ce02dd34",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to at least *Group.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            postman.setEnvironmentVariable(\"TeamId\", json.value[0].id);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AppAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/teams/{{GroupId}}/channels",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"teams",
+										"{{GroupId}}",
+										"channels"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Team",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "20143d4e-9147-4ae3-9d61-e465012b37ac",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to at least *Group.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            postman.setEnvironmentVariable(\"TeamId\", json.value[0].id);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AppAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/teams/{{TeamId}}",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"teams",
+										"{{TeamId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Team",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "ae71f17a-0e50-4069-b99d-2df328bd9487",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to at least *Group.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            postman.setEnvironmentVariable(\"TeamId\", json.value[0].id);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AppAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/groups/{{GroupId}}",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"groups",
+										"{{GroupId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Team From Group",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "689791b1-8eee-43c2-a5e2-8e308a4d3ff7",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to at least *Group.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            postman.setEnvironmentVariable(\"TeamId\", json.value[0].id);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AppAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{  \r\n  \"memberSettings\": {\r\n    \"allowCreatePrivateChannels\": true,\r\n    \"allowCreateUpdateChannels\": true\r\n  },\r\n  \"messagingSettings\": {\r\n    \"allowUserEditMessages\": true,\r\n    \"allowUserDeleteMessages\": true\r\n  },\r\n  \"funSettings\": {\r\n    \"allowGiphy\": true,\r\n    \"giphyContentRating\": \"strict\"\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/groups/{{GroupId}}/team",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"groups",
+										"{{GroupId}}",
+										"team"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Team",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "49f50ace-be1e-4a30-b575-560b3cfd49f4",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to at least *Group.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            postman.setEnvironmentVariable(\"TeamId\", json.value[0].id);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AppAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{  \r\n  \"memberSettings\": {\r\n    \"allowCreateUpdateChannels\": true\r\n  },\r\n  \"messagingSettings\": {\r\n    \"allowUserEditMessages\": true,\r\n    \"allowUserDeleteMessages\": true\r\n  },\r\n  \"funSettings\": {\r\n    \"allowGiphy\": true,\r\n    \"giphyContentRating\": \"strict\"\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/teams/{{TeamId}}",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"teams",
+										"{{TeamId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Team",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "c32f983d-f6b1-4a64-b170-8fa8c4eaa5e9",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to at least *Group.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            postman.setEnvironmentVariable(\"TeamId\", json.value[0].id);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AppAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"template@odata.bind\": \"https://graph.microsoft.com/v1.0/teamsTemplates('standard')\",\r\n  \"displayName\": \"My Sample Team\",\r\n  \"description\": \"My Sample Team’s Description\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/teams/{{TeamId}}/channels/{{ChannelId}}/members",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"teams",
+										"{{TeamId}}",
+										"channels",
+										"{{ChannelId}}",
+										"members"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Archive Team",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "56d23f64-c75d-4e03-a704-1396a611fd5c",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to at least *Group.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            postman.setEnvironmentVariable(\"TeamId\", json.value[0].id);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AppAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"shouldSetSpoSiteReadOnlyForMembers\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/teams/{{TeamId}}/archive",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"teams",
+										"{{TeamId}}",
+										"archive"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Clone Team",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "b7d56bde-6da5-43f0-889d-32e989840c4a",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to at least *Group.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            postman.setEnvironmentVariable(\"TeamId\", json.value[0].id);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AppAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{  \r\n     \"displayName\": \"Library Assist\",\r\n     \"description\": \"Self help community for library\",\r\n     \"mailNickname\": \"libassist\",\r\n     \"partsToClone\": \"apps,tabs,settings,channels,members\",\r\n     \"visibility\": \"public\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/teams/{{TeamId}}/clone",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"teams",
+										"{{TeamId}}",
+										"clone"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UnArchive Team",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "39efb1fd-0f85-43ef-9997-aa534d7d9f88",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to at least *Group.ReadWrite.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            postman.setEnvironmentVariable(\"TeamId\", json.value[0].id);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{AppAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/teams/{{TeamId}}/unarchive",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"teams",
+										"{{TeamId}}",
+										"unarchive"
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"protocolProfileBehavior": {},
@@ -10777,7 +12139,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "b29689b3-d1b1-4f0b-9e6e-888053194c1a",
+										"id": "1b035a84-11e6-453f-b238-f143b9f0ed52",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -10808,7 +12170,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "969d502c-8f05-4b21-a048-a0a2c5801a72",
+										"id": "abeb4c26-8ad6-429f-97d5-780cb3b594a9",
 										"exec": [
 											""
 										],
@@ -10857,7 +12219,7 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "b29689b3-d1b1-4f0b-9e6e-888053194c1a",
+										"id": "fef1e217-7884-46e2-a7bf-7f4d3268b49c",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -10888,7 +12250,7 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "969d502c-8f05-4b21-a048-a0a2c5801a72",
+										"id": "8f5a8f54-eeb3-4249-9f3a-01bc8869b884",
 										"exec": [
 											""
 										],
@@ -10957,7 +12319,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "a9ee25f8-890e-499d-9b0a-63df29cf3673",
+								"id": "42732d77-45cf-4e21-bb87-5cfb14604b95",
 								"exec": [
 									"try {\r",
 									"    if (pm.environment.get(\"ClientID\") === \"\")\r",
@@ -11058,7 +12420,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "7319dee9-ea3c-4f32-bdf4-150fa6e9ec0e",
+								"id": "6e525bfb-0ade-4dd0-9c5d-607830210342",
 								"exec": [
 									"pm.test(\"Status test\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
