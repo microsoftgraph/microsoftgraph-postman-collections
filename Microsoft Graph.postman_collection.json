@@ -1422,7 +1422,9 @@
 											"        else\r",
 											"        {\r",
 											"            var json = JSON.parse(responseBody);\r",
-											"            postman.setEnvironmentVariable(\"GroupId\", json[0].id);\r",
+											"            postman.setEnvironmentVariable(\"GroupId\", json.value[0].id);\r",
+											"            \r",
+											"            \r",
 											"        }\r",
 											"    }\r",
 											"}\r",
@@ -1472,6 +1474,163 @@
 										"groups"
 									]
 								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Group Owners",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "04738bdb-ca39-4353-aeaa-791907c88531",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to at least *Group.Read.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/groups/{{GroupId}}/owners",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"groups",
+										"{{GroupId}}",
+										"owners"
+									]
+								},
+								"description": "Retrieve a list of the group's owners"
+							},
+							"response": []
+						},
+						{
+							"name": "Get Group Members",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "04738bdb-ca39-4353-aeaa-791907c88531",
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to at least *Group.Read.All* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"        else\r",
+											"        {\r",
+											"            var json = JSON.parse(responseBody);\r",
+											"            \r",
+											"            \r",
+											"            \r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"url": {
+									"raw": "https://graph.microsoft.com/v1.0/groups/{{GroupId}}/members",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"v1.0",
+										"groups",
+										"{{GroupId}}",
+										"members"
+									]
+								},
+								"description": "Get a list of the group's direct members"
 							},
 							"response": []
 						}
