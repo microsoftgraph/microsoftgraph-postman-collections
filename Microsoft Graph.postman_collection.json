@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "3bf84d7a-45be-4a29-9dfb-9dff835f0808",
+		"_postman_id": "a422cb44-c379-40df-b266-4dfba693b2e2",
 		"name": "Microsoft Graph",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -17,7 +17,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "6bcd9f2f-9208-4476-b38f-813c8d2a8722",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -81,7 +80,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "20c492ac-6541-49a1-8604-6d8702e7b8d7",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -156,7 +154,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "7d661d0e-a86e-41e9-8f97-84525e78cbcb",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -223,7 +220,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "5eb2aea9-621d-4d05-a2f0-63b55d08320c",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -291,7 +287,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "3129c627-677d-47e1-bdfe-ccac5010332a",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -362,7 +357,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "2c6813c3-24da-4c2e-ba30-bb96cdcbe85d",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -432,9 +426,7 @@
 							},
 							"response": []
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Batch",
@@ -445,7 +437,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "755d189f-9c05-44be-83b3-3cdd6e84fe3a",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -520,7 +511,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "3d86b739-4bdd-4027-94e3-6a26ae773932",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -589,9 +579,7 @@
 							},
 							"response": []
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Events",
@@ -602,7 +590,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "56289db1-a743-44af-a21f-52f3a0834a7b",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -673,7 +660,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "bc068a05-5c39-45a8-b5fc-188b186dd32c",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -704,7 +690,6 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "744e7f38-8559-45b3-ae40-07368239fde8",
 										"exec": [
 											"postman.setEnvironmentVariable('Today',(new Date()).toISOString());",
 											"postman.setEnvironmentVariable('NextWeek',(new Date().addDays(7)).toISOString());"
@@ -770,7 +755,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "fdf4ffb4-94b7-4e30-9233-fd4ed5bc811e",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -846,7 +830,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "6ba8ab12-6c2f-4a9e-9eae-11a4911a740d",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -926,7 +909,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "5e080bdc-e552-47e1-aa23-e38a8e00e688",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -957,7 +939,6 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "20aadf51-87f6-4914-8522-eafb2852ecd0",
 										"exec": [
 											"postman.setEnvironmentVariable('Today',(new Date()).toISOString());",
 											"postman.setEnvironmentVariable('NextWeek',(new Date()).toISOString());"
@@ -1013,9 +994,7 @@
 							},
 							"response": []
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Files",
@@ -1026,7 +1005,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "279a1368-738a-4490-b3f6-6faa7f6fb165",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -1099,7 +1077,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "016b32b5-0382-41e2-8848-46229c123cca",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -1171,7 +1148,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "fa1caae2-840f-4da3-b67a-16b30a60c369",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -1243,7 +1219,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "3a9d9f74-3cbf-4c94-b491-d72e8dad7237",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -1322,7 +1297,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "6c36e2fb-edb0-4d68-a67c-847725de911a",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -1393,9 +1367,7 @@
 							},
 							"response": []
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Groups",
@@ -1406,7 +1378,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "2d4dbc7e-ac86-47ea-aafa-7f2e88418412",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -1483,7 +1454,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "04738bdb-ca39-4353-aeaa-791907c88531",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -1560,7 +1530,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "04738bdb-ca39-4353-aeaa-791907c88531",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -1634,9 +1603,7 @@
 							},
 							"response": []
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Insights",
@@ -1647,7 +1614,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "cc3f8487-48ae-436d-afcb-81e43a59ae34",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -1719,7 +1685,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "f549ef0e-f88c-4c1d-b980-1febdd00cc26",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -1784,9 +1749,7 @@
 							},
 							"response": []
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Mail",
@@ -1797,7 +1760,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "cd97c7a0-6e30-4188-ae45-12203824d38f",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -1873,7 +1835,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "bbdde697-50a9-4643-aff6-d81c5a2b9fd4",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -1950,7 +1911,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "96427de4-b44e-4cac-ad31-76f4f5ea764d",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -2027,7 +1987,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "645b3659-601d-46e4-81d3-c66720597ff7",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -2104,7 +2063,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "a4190c81-7ff3-4501-87fd-75acc69a250d",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -2185,7 +2143,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "c430e688-2b99-4eef-a17c-4a0bd923efd8",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -2264,7 +2221,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "80304916-131a-414e-967e-8e385d87f98e",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -2337,7 +2293,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "58452f38-231e-4830-a9ae-f0e6813460f9",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -2409,7 +2364,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "e4a202f7-ae87-4acf-a2f2-bffcc8bc2ef0",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -2490,7 +2444,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "d12bb957-37a9-4023-9adc-8e5387f87b2e",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -2572,7 +2525,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "c8c0a0c8-82ee-46c4-8015-3e1fffb81840",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -2643,7 +2595,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "b904fd56-d165-4463-9b57-ee5ce78124a9",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -2713,9 +2664,7 @@
 							},
 							"response": []
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Notebooks",
@@ -2726,7 +2675,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "1ac0485a-bc71-493b-911f-d02b47078810",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -2803,7 +2751,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "890a3c08-37d1-40df-8df6-037ef377afe6",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -2880,7 +2827,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "38ea34c1-e94d-44dc-a9a2-8abb75ba0903",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -2957,7 +2903,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "c35db53d-1ca2-4757-8279-e1cd023bdb0f",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -3038,7 +2983,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "48ad4f29-678c-4fbd-a41a-d80f758065d7",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -3115,9 +3059,7 @@
 							},
 							"response": []
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Extensions",
@@ -3131,7 +3073,6 @@
 										{
 											"listen": "test",
 											"script": {
-												"id": "8aef00fa-e755-4945-869d-7e42e6231e78",
 												"exec": [
 													"try {\r",
 													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -3206,7 +3147,6 @@
 										{
 											"listen": "test",
 											"script": {
-												"id": "4799bebd-9bda-4a7b-af96-59d0d843a5e7",
 												"exec": [
 													"try {\r",
 													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -3282,7 +3222,6 @@
 										{
 											"listen": "test",
 											"script": {
-												"id": "35f4c2e9-aa47-4a14-86f6-4522bcb498d3",
 												"exec": [
 													"try {\r",
 													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -3353,9 +3292,7 @@
 									},
 									"response": []
 								}
-							],
-							"protocolProfileBehavior": {},
-							"_postman_isSubFolder": true
+							]
 						},
 						{
 							"name": "Schema Extensions",
@@ -3366,7 +3303,6 @@
 										{
 											"listen": "test",
 											"script": {
-												"id": "98a1cfb5-9583-4991-9fc9-3450e93d7ec0",
 												"exec": [
 													"try {\r",
 													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -3431,7 +3367,6 @@
 										{
 											"listen": "test",
 											"script": {
-												"id": "87ae6b13-78bc-44ec-a468-42920237a15b",
 												"exec": [
 													"try {\r",
 													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -3506,7 +3441,6 @@
 										{
 											"listen": "test",
 											"script": {
-												"id": "f8049ca4-1e29-456e-836d-f3ac396ab1dd",
 												"exec": [
 													"try {\r",
 													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -3581,7 +3515,6 @@
 										{
 											"listen": "test",
 											"script": {
-												"id": "da5a7aa7-b2bb-4bbe-9111-ed9dd73b1824",
 												"exec": [
 													"try {\r",
 													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -3651,13 +3584,9 @@
 									},
 									"response": []
 								}
-							],
-							"protocolProfileBehavior": {},
-							"_postman_isSubFolder": true
+							]
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "People",
@@ -3668,7 +3597,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "16a13585-269d-41aa-b4d9-7b11ae4bbf7e",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -3739,7 +3667,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "5fd4408e-5ef6-41a2-8014-11320634eb0f",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -3820,7 +3747,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "cc2e0bb3-ffcd-4c4e-acfe-e6c62e4c769f",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -3898,7 +3824,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "b1501b8e-2371-48ad-bd2e-7d0e1ffa6e61",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -3980,7 +3905,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "0cecfa05-2380-4567-8102-b79c1b4d5f1e",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -4058,7 +3982,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "d0a4b46b-9aba-4011-b800-a52ec5d14b00",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -4136,7 +4059,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "904b9408-9a7d-4fec-9dd0-37cdd5ba1a45",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -4214,7 +4136,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "a4d4831d-5fb5-453e-8014-8a7a84a7bdbf",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -4280,9 +4201,7 @@
 							},
 							"response": []
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Planner",
@@ -4293,7 +4212,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "774733ff-100a-4297-aefd-2ffe5b03079c",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -4370,7 +4288,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "1b505eab-cbfd-4604-9dc4-7712e24da4c2",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -4448,7 +4365,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "a89720a1-dd4b-4cb8-a9df-40079e0d38f3",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -4526,7 +4442,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "d0b2f3b9-abf0-405f-809b-d16966f29f82",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -4603,7 +4518,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "0b45a07f-4a6b-4597-a3f6-6ebd6bbdaccd",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -4689,7 +4603,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "de623d69-a0a8-4bab-afef-176edcbaa03a",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -4767,7 +4680,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "6a69dec1-f670-4ea9-879f-077970183a18",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -4853,7 +4765,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "1e87c704-fe80-4113-918b-a62ae5e23905",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -4934,7 +4845,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "a45420ff-57e5-46b6-b2f0-67eaabde2969",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -5012,7 +4922,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "ddb48a58-288a-442d-b8b1-32cb8be63adc",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -5089,7 +4998,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "74b88048-63d6-4b58-9e35-7365dc408a53",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -5170,7 +5078,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "bcc1d93a-30ee-478e-84a5-8df16a1f4aa5",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -5256,7 +5163,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "693c1f68-aeb8-4d71-8700-aa1a16aff6ad",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -5328,9 +5234,7 @@
 							},
 							"response": []
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Search",
@@ -5384,7 +5288,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "ed36cdd4-1989-4bcb-9690-9e8369ca44ba",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -5803,7 +5706,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "1be65218-37ec-44e3-a090-136299f39eae",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -5878,7 +5780,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "12f79e6d-390f-43a8-a42d-2f9e01f3837d",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -5953,7 +5854,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "da85a3a0-434d-499c-be81-99fa970ebd64",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -6028,7 +5928,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "5f660039-1307-480c-a497-3e8cba25c1d2",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -6103,7 +6002,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "24889225-6c30-4bb8-b34c-71fca06bcf26",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -6171,10 +6069,82 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "Request Spelling Correction",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"try {\r",
+											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
+											"    {\r",
+											"        console.log(\"You need to run *On behalf of a User | Get User Access Token* request first.\");\r",
+											"    }\r",
+											"    else\r",
+											"    {\r",
+											"        if (pm.response.status === \"Forbidden\")\r",
+											"        {\r",
+											"            console.log(\"You need to add user delegated permissions in your application to at least *Files.ReadWrite* in portal.azure.com and then consent as user or Grant admin consent in portal. And re-run *On behalf of a User | Get User Access Token* request to update access token. \");\r",
+											"        }\r",
+											"    }\r",
+											"}\r",
+											"catch (e) {\r",
+											"    console.log(e);\r",
+											"}\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{UserAccessToken}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "SdkVersion",
+										"type": "text",
+										"value": "postman-graph/v1.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"requests\": [\n    {\n      \"entityTypes\": [\n        \"message\"\n      ],\n      \"query\": {\n        \"queryString\": \"testt\"\n      },\n      \"from\": 0,\n      \"size\": 5\n    }\n  ],\n  \"queryAlterationOptions\": {\n    \"enableSuggestion\": true,\n    \"enableModification\": true\n  }\n}"
+								},
+								"url": {
+									"raw": "https://graph.microsoft.com/beta/search/query",
+									"protocol": "https",
+									"host": [
+										"graph",
+										"microsoft",
+										"com"
+									],
+									"path": [
+										"beta",
+										"search",
+										"query"
+									]
+								}
+							},
+							"response": []
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Security",
@@ -6185,7 +6155,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "bdcaf622-2576-488b-9939-406319042876",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -6251,7 +6220,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "85a0d8d2-a300-49d2-91ec-61d33d89d65e",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -6327,7 +6295,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "128a3c1d-f311-4e1f-a0fc-b1a053b83d7f",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -6403,7 +6370,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "960c9479-22a5-4081-be8e-be8130b9642f",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -6479,7 +6445,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "794a89f3-fc34-4757-9608-7d69201ba1d4",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -6551,7 +6516,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "5a30426f-adb5-4160-b54b-31a878f670b2",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -6627,7 +6591,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "ff8d6c0f-942e-4866-9dc7-59e504ada018",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -6699,7 +6662,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "b80cc709-1d58-4ec8-ad72-453007cfc73c",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -6771,7 +6733,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "791dd3c3-b158-4625-a54d-a1c52dfc7453",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -6842,7 +6803,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "c82fa32d-fcd2-4454-b645-c7058f8ce258",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -6909,7 +6869,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "3e27255b-e743-49f1-9130-e4dbb5be413a",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -6980,7 +6939,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "74c1374b-be9c-48cf-9035-24014c3ead0d",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -7046,9 +7004,7 @@
 							},
 							"response": []
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "SharePoint",
@@ -7059,7 +7015,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "5fcdc46d-4deb-43d5-8569-33c51b27b309",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -7135,7 +7090,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "d8025ca7-c5b4-4701-9dde-e0b66f4a3ba0",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -7212,7 +7166,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "5494de48-73e8-46d6-a137-37704bc43cd5",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -7288,7 +7241,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "df1936b7-5524-41c0-92ab-323498aeda76",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -7360,7 +7312,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "bed356e0-adf1-429e-8d35-0bc6fcd8f505",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -7432,7 +7383,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "4f89d000-350b-49fa-ba7b-620e559d233f",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -7504,7 +7454,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "b9e76cde-584c-4e07-b1aa-0f2c6cabcc07",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -7581,7 +7530,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "755136fc-9a70-4a0a-b437-3f7a62d7cfea",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -7655,7 +7603,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "00659b80-890e-4626-bf86-5dfcbe43579d",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -7729,7 +7676,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "215ea8c5-bc99-4c63-ad8e-1436e41c826e",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -7803,7 +7749,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "f01ffd14-a5d6-405f-afcf-6655923698b5",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -7882,9 +7827,7 @@
 							},
 							"response": []
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Subscriptions",
@@ -7895,7 +7838,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "07a76d60-5384-4aef-87c3-6171cdce94f1",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -7959,9 +7901,7 @@
 							},
 							"response": []
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Tasks",
@@ -7972,7 +7912,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "a3d6ca10-23d7-4e93-ab0d-e2e8fdba9d8d",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -8043,9 +7982,7 @@
 							},
 							"response": []
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Teams",
@@ -8056,7 +7993,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "c3f722a6-abd1-433e-b29f-32db6e3ca99f",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -8127,7 +8063,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "817cfe6a-757d-450c-aa41-62aee82f87a4",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -8194,7 +8129,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "80c74347-3854-4498-bb18-186c6d1abdc5",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -8266,7 +8200,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "771d3435-fa41-4089-abce-911366521385",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -8339,7 +8272,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "43f7e42e-08cc-4a65-a45f-0868bd20bf8e",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -8421,7 +8353,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "58a2ef9d-53ab-4fbb-9d28-0557d904283b",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -8505,7 +8436,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "4fa1ebe6-a1d6-444b-b26d-38db57ca1a65",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -8586,7 +8516,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "12f9ac81-acff-449b-86a5-c2f1b26923cb",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -8661,7 +8590,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "7dbdfddb-1071-4446-9b46-2053f5e9bbfb",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -8741,7 +8669,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "85a04c83-db62-49a7-b724-c5e7f967f91b",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -8817,7 +8744,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "07966ffd-29fa-4ffa-a19e-2288ca01fccb",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -8899,7 +8825,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "53492fe1-529e-4b9a-a569-73a34ff6f068",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -8977,7 +8902,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "8f5a4a4f-79ad-4383-bb3f-4bb36e43c6bd",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -9055,9 +8979,7 @@
 							},
 							"response": []
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Users",
@@ -9068,7 +8990,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "85cba395-848a-47b0-8836-2a6330008fb5",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -9138,7 +9059,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "110f5345-129f-410a-95ba-d8ab279b9389",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -9204,7 +9124,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "7f11b8db-a3f4-4834-9f4c-b1a1a13fb3d2",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -9276,7 +9195,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "9ff2c6df-f182-4c73-be16-53fae0e705d7",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -9342,7 +9260,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "378cbc8c-ecbf-470a-bd5d-1a538fd6f17d",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -9408,7 +9325,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "6386842a-6a82-4dd5-8f20-a61d2533ee7f",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -9474,7 +9390,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "a0ff6f31-79db-49e7-ac14-1c0281894bc6",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -9541,7 +9456,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "54b32d93-cc9e-4d14-b45c-e6d7301e6826",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -9606,7 +9520,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "c7d7eb88-b245-4648-8782-7a0ad6bfa22b",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -9677,7 +9590,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "2c44fd22-6a65-46fe-b10f-1d70921dcba9",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -9743,7 +9655,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "200f86ed-d330-4fb1-9c9d-228356bb8bcb",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -9809,7 +9720,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "80b6f5ec-1200-4d25-a2bc-9f78e7c4bfe8",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -9877,7 +9787,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "bb1eedd8-e042-450d-b246-c311ed640746",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -9958,9 +9867,7 @@
 							},
 							"response": []
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Get User Access Token",
@@ -9968,7 +9875,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "3d79dc29-e47c-4994-8083-922c5096a6ab",
 								"exec": [
 									"try {\r",
 									"    if (pm.environment.get(\"ClientID\") === \"\")\r",
@@ -10081,7 +9987,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "42d5e2cf-bd62-47f6-9f38-83abded65c62",
 								"exec": [
 									"try {\r",
 									"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -10155,8 +10060,7 @@
 					},
 					"response": []
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "Application",
@@ -10170,7 +10074,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "f76afb2c-97ac-4435-a10d-ec9ad1da9fe1",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -10262,7 +10165,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "4865303f-b3cf-4165-81bf-fba4f3e2f948",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -10349,9 +10251,7 @@
 							},
 							"response": []
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "SharePoint",
@@ -10362,7 +10262,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "40053a00-5d43-47a3-8cb5-757f8260e794",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -10451,9 +10350,7 @@
 							},
 							"response": []
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Subscriptions",
@@ -10464,7 +10361,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "cfaa0adf-ecb9-409c-8bb7-8eb2d1365af5",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -10554,7 +10450,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "efc93ca4-4090-4f80-aed4-367333718c48",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -10649,7 +10544,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "3bd2b24d-cd56-4508-8aaa-42eae65c0940",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -10730,9 +10624,7 @@
 							},
 							"response": []
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Teams",
@@ -10746,7 +10638,6 @@
 										{
 											"listen": "test",
 											"script": {
-												"id": "faf5c088-723f-4e90-9ec7-836b20fdcd97",
 												"exec": [
 													"try {\r",
 													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -10818,7 +10709,6 @@
 										{
 											"listen": "test",
 											"script": {
-												"id": "f28c974d-8d0d-46b8-9249-a42cf29b062e",
 												"exec": [
 													"try {\r",
 													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -10891,7 +10781,6 @@
 										{
 											"listen": "test",
 											"script": {
-												"id": "15682f19-c01f-415c-a96a-75e657e92cd1",
 												"exec": [
 													"try {\r",
 													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -10965,7 +10854,6 @@
 										{
 											"listen": "test",
 											"script": {
-												"id": "39873379-3c25-4663-a133-1d78facda4d5",
 												"exec": [
 													"try {\r",
 													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -11048,7 +10936,6 @@
 										{
 											"listen": "test",
 											"script": {
-												"id": "fb76b3de-c3a1-4687-80d4-d57a1ed9e404",
 												"exec": [
 													"try {\r",
 													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -11124,7 +11011,6 @@
 										{
 											"listen": "test",
 											"script": {
-												"id": "3890ad38-58fd-467b-94e7-44b91473aec5",
 												"exec": [
 													"try {\r",
 													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -11201,7 +11087,6 @@
 										{
 											"listen": "test",
 											"script": {
-												"id": "ebc586f5-30a3-40a0-b218-a1570ccd1e48",
 												"exec": [
 													"try {\r",
 													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -11283,7 +11168,6 @@
 										{
 											"listen": "test",
 											"script": {
-												"id": "2d9654c9-59d1-4543-a8be-e8f66fc00861",
 												"exec": [
 													"try {\r",
 													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -11367,7 +11251,6 @@
 										{
 											"listen": "test",
 											"script": {
-												"id": "63d95342-c3cb-40ca-bef2-a4dddb5d9132",
 												"exec": [
 													"try {\r",
 													"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -11442,9 +11325,7 @@
 									},
 									"response": []
 								}
-							],
-							"protocolProfileBehavior": {},
-							"_postman_isSubFolder": true
+							]
 						},
 						{
 							"name": "Users Joined Teams",
@@ -11452,7 +11333,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "8d8cd3b5-0eb9-4bc8-91ba-876ea5707d94",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -11524,7 +11404,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "f326091a-baa4-49a8-be26-1e24abcd60f0",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -11596,7 +11475,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "51963cac-e4e5-4be3-97c8-d442ce02dd34",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -11668,7 +11546,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "20143d4e-9147-4ae3-9d61-e465012b37ac",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -11739,7 +11616,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "ae71f17a-0e50-4069-b99d-2df328bd9487",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -11813,7 +11689,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "689791b1-8eee-43c2-a5e2-8e308a4d3ff7",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -11894,7 +11769,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "49f50ace-be1e-4a30-b575-560b3cfd49f4",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -11974,7 +11848,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "c32f983d-f6b1-4a64-b170-8fa8c4eaa5e9",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -12057,7 +11930,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "56d23f64-c75d-4e03-a704-1396a611fd5c",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -12138,7 +12010,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "b7d56bde-6da5-43f0-889d-32e989840c4a",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -12219,7 +12090,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "39efb1fd-0f85-43ef-9997-aa534d7d9f88",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -12285,9 +12155,7 @@
 							},
 							"response": []
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Users",
@@ -12298,7 +12166,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "1b035a84-11e6-453f-b238-f143b9f0ed52",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -12329,7 +12196,6 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "abeb4c26-8ad6-429f-97d5-780cb3b594a9",
 										"exec": [
 											""
 										],
@@ -12378,7 +12244,6 @@
 								{
 									"listen": "test",
 									"script": {
-										"id": "fef1e217-7884-46e2-a7bf-7f4d3268b49c",
 										"exec": [
 											"try {\r",
 											"    if (responseBody.indexOf(\"InvalidAuthenticationToken\") !== -1)\r",
@@ -12409,7 +12274,6 @@
 								{
 									"listen": "prerequest",
 									"script": {
-										"id": "8f5a8f54-eeb3-4249-9f3a-01bc8869b884",
 										"exec": [
 											""
 										],
@@ -12468,9 +12332,7 @@
 							},
 							"response": []
 						}
-					],
-					"protocolProfileBehavior": {},
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Get App-Only Access Token",
@@ -12478,7 +12340,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "42732d77-45cf-4e21-bb87-5cfb14604b95",
 								"exec": [
 									"try {\r",
 									"    if (pm.environment.get(\"ClientID\") === \"\")\r",
@@ -12567,8 +12428,7 @@
 					},
 					"response": []
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "Misc",
@@ -12579,7 +12439,6 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "6e525bfb-0ade-4dd0-9c5d-607830210342",
 								"exec": [
 									"pm.test(\"Status test\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
@@ -12622,8 +12481,7 @@
 					},
 					"response": []
 				}
-			],
-			"protocolProfileBehavior": {}
+			]
 		},
 		{
 			"name": "v1.0 $metadata",
@@ -12687,6 +12545,5 @@
 			},
 			"response": []
 		}
-	],
-	"protocolProfileBehavior": {}
+	]
 }
